@@ -111,11 +111,6 @@
                                 "schedule": {
                                     "holidays": [
                                         "2023-08-15"
-                                    ],
-                                    "frequency": "PT4H",
-                                    "times": [
-                                        "1100",
-                                        "1900"
                                     ]
                                 },
                                 "range": {
