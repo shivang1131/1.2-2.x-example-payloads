@@ -1,0 +1,92 @@
+{
+  "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "stops": [
+          {
+            "type": "END",
+            "location": {
+              "area_code": "end_stop_area_code_value",
+              "gps": "end_stop_gps_value"
+            }
+          }
+        ]
+      }
+    },
+    "order": {
+      "items": [
+        {
+          "id": "item_id_value",
+          "location_ids": ["location_id_value"],
+          "parent_item_id": "parent_item_id_value",
+          "quantity": {
+            "selected": {
+              "count": "quantity_count_value"
+            }
+          },
+          "descriptor": {
+            "tags": {
+              "customization": {
+                "list": {
+                  "input_text": "customization_input_text_value"
+                }
+              }
+            }
+          },
+          "tags": {
+            "parent": {
+              "list": {
+                "id": "parent_list_id_value"
+              }
+            },
+            "type": {
+              "list": {
+                "type": "type_value"
+              }
+            }
+          }
+        }
+      ],
+      "offers": [
+        {
+          "id": "offer_id_value",
+          "tags": {
+            "selection": {
+              "list": {
+                "apply": "apply_value"
+              }
+            }
+          }
+        }
+      ],
+      "payment": {
+        "type": "payment_type_value"
+      },
+      "provider": {
+        "id": "provider_id_value",
+        "locations": {
+          "id": "provider_location_id_value"
+        }
+      }
+    }
+  }
+}

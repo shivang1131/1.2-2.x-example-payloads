@@ -1,0 +1,44 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T1",
+        "message_id": "M2",
+        "timestamp": "2023-06-03T08:00:30.000Z"
+    },
+    "message": {
+        "ack": {
+            "status": "NACK",
+            "tags": [
+                {
+                    "code": "bpp_terms",
+                    "list": [
+                        {
+                            "code": "finder_fee_type",
+                            "value": "percent"
+                        },
+                        {
+                            "code": "finder_fee_amount_min",
+                            "value": "1.5"
+                        },
+                        {
+                            "code": "finder_fee_amount_max",
+                            "value": "2.5"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "41001"
+    }
+}
