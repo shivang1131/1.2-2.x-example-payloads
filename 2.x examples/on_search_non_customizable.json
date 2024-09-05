@@ -1,0 +1,406 @@
+{
+  "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "images": {
+          "url": "image_url_value"
+        },
+        "long_desc": "long_description_value",
+        "name": "name_value",
+        "short_desc": "short_description_value"
+      },
+      "tags": {
+        "BPP_TERMS": {
+          "list": {
+            "ACCEPT_BAP_TERMS": "accept_bap_terms_value",
+            "COLLECT_PAYMENT": "collect_payment_value",
+            "NP_TYPE": "np_type_value"
+          }
+        }
+      },
+      "fulfillments": [
+        {
+          "id": "fulfillment_id_value",
+          "type": "fulfillment_type_value"
+        }
+      ],
+      "providers": {
+        "categories": [
+          {
+            "descriptor": {
+              "images": {
+                "url": "category_image_url_value"
+              },
+              "long_desc": "category_long_description_value",
+              "name": "category_name_value",
+              "short_desc": "category_short_description_value"
+            },
+            "id": "category_id_value",
+            "parent_category_id": "parent_category_id_value",
+            "tags": {
+              "attr": {
+                "list": [
+                  {
+                    "name": "attribute_name_value",
+                    "seq": "attribute_sequence_value"
+                  }
+                ]
+              },
+              "config": {
+                "list": [
+                  {
+                    "input": "config_input_value",
+                    "max": "config_max_value",
+                    "min": "config_min_value",
+                    "seq": "config_seq_value"
+                  }
+                ]
+              },
+              "display": {
+                "list": {
+                  "rank": "display_rank_value"
+                }
+              },
+              "timing": {
+                "list": [
+                  {
+                    "day_from": "timing_day_from_value",
+                    "day_to": "timing_day_to_value",
+                    "time_from": "timing_time_from_value",
+                    "time_to": "timing_time_to_value"
+                  }
+                ]
+              },
+              "type": {
+                "list": {
+                  "type": "category_type_value"
+                }
+              }
+            }
+          }
+        ],
+        "creds": {
+          "descriptor": {
+            "code": "cred_code_value",
+            "name": "cred_name_value",
+            "short_desc": "cred_short_desc_value"
+          },
+          "id": "cred_id_value",
+          "valid_from": "valid_from_value",
+          "expires_on": "expires_on_value",
+          "verify_url": "verify_url_value",
+          "url": "cred_url_value"
+        },
+        "descriptor": {
+          "images": {
+            "url": "provider_image_url_value"
+          },
+          "long_desc": "provider_long_desc_value",
+          "name": "provider_name_value",
+          "short_desc": "provider_short_desc_value"
+        },
+        "fulfillments": [
+          {
+            "contact": {
+              "email": "fulfillment_contact_email_value",
+              "phone": "fulfillment_contact_phone_value"
+            },
+            "id": "provider_fulfillment_id_value",
+            "type": "provider_fulfillment_type_value"
+          }
+        ],
+        "id": "provider_id_value",
+        "items": [
+          {
+            "tags": {
+              "SKU_properties": {
+                "list": {
+                  "available_on_cod": "available_on_cod_value",
+                  "cancellable": "cancellable_value",
+                  "contact_details_consumer_care": "contact_details_consumer_care_value",
+                  "return_window": "return_window_value",
+                  "returnable": "returnable_value",
+                  "seller_pickup_return": "seller_pickup_return_value"
+                }
+              },
+              "statutory_reqs_packaged_commodities": {
+                "list": {
+                  "common_or_generic_name_of_commodity": "generic_commodity_name_value",
+                  "expiry_date": "expiry_date_value",
+                  "manufacturer_or_packer_address": "packer_address_value",
+                  "manufacturer_or_packer_name": "packer_name_value",
+                  "mfg_license_no": "mfg_license_no_value",
+                  "month_year_of_manufacture_packing_import": "manufacture_date_value",
+                  "multiple_products_name_number_or_qty": "multiple_products_value"
+                }
+              },
+              "statutory_reqs_prepackaged_food": {
+                "list": {
+                  "additives_info": "additives_info_value",
+                  "brand_owner_FSSAI_license_no": "brand_owner_fssai_license_no_value",
+                  "importer_FSSAI_license_no": "importer_fssai_license_no_value",
+                  "ingredients_info": "ingredients_info_value",
+                  "nutritional_info": "nutritional_info_value",
+                  "other_FSSAI_license_no": "other_fssai_license_no_value"
+                }
+              },
+              "DEFAULT_SELECTION": {
+                "list": {
+                  "MAXIMUM_VALUE": "max_value",
+                  "VALUE": "default_value"
+                }
+              },
+              "RANGE": {
+                "list": {
+                  "LOWER": "range_lower_value",
+                  "UPPER": "range_upper_value"
+                }
+              },
+              "child": {
+                "list": {
+                  "id": "child_list_id_value"
+                }
+              },
+              "config": {
+                "list": [
+                  {
+                    "id": "config_id_value",
+                    "max": "config_max_value",
+                    "min": "config_min_value",
+                    "seq": "config_seq_value"
+                  }
+                ]
+              },
+              "custom_group": {
+                "list": {
+                  "id": "custom_group_id_value"
+                }
+              },
+              "image": {
+                "list": {
+                  "type": "image_type_value",
+                  "url": "image_url_value"
+                }
+              },
+              "origin": {
+                "list": {
+                  "country": "origin_country_value"
+                }
+              },
+              "parent": {
+                "list": {
+                  "default": "parent_default_value",
+                  "id": "parent_list_id_value"
+                }
+              },
+              "timing": {
+                "list": [
+                  {
+                    "day_from": "item_timing_day_from_value",
+                    "day_to": "item_timing_day_to_value",
+                    "time_from": "item_timing_time_from_value",
+                    "time_to": "item_timing_time_to_value"
+                  }
+                ]
+              },
+              "type": {
+                "list": {
+                  "type": "item_type_value"
+                }
+              },
+              "veg_nonveg": {
+                "list": {
+                  "non_veg": "non_veg_value",
+                  "veg": "veg_value"
+                }
+              }
+            },
+            "category_ids": "category_ids_value",
+            "descriptor": {
+              "code": "item_descriptor_code_value",
+              "images": {
+                "url": "item_image_url_value"
+              },
+              "long_desc": "item_long_desc_value",
+              "name": "item_name_value",
+              "short_desc": "item_short_desc_value"
+            },
+            "fulfillment_ids": ["fulfillment_id_value"],
+            "id": "item_id_value",
+            "location_ids": ["location_id_value"],
+            "parent_item_id": "parent_item_id_value",
+            "price": {
+              "currency": "currency_value",
+              "maximum_value": "price_maximum_value",
+              "value": "price_value"
+            },
+            "quantity": {
+              "available": {
+                "count": "available_count_value"
+              },
+              "maximum": {
+                "count": "maximum_count_value"
+              },
+              "unitized": {
+                "measure": {
+                  "unit": "measure_unit_value",
+                  "value": "measure_value_value"
+                }
+              }
+            },
+            "recommended": "recommended_value",
+            "related": "related_value"
+          }
+        ],
+        "locations": {
+          "area_code": "area_code_value",
+          "city": "city_value",
+          "state": "state_value",
+          "address": "location_address_value",
+          "circle": {
+            "gps": "location_circle_gps_value",
+            "radius": {
+              "unit": "radius_unit_value",
+              "value": "radius_value_value"
+            }
+          },
+          "gps": "location_gps_value",
+          "id": "location_id_value",
+          "time": {
+            "days": "location_time_days_value",
+            "label": "location_time_label_value",
+            "range": {
+              "start": "location_time_range_start_value",
+              "end": "location_time_range_end_value"
+            },
+            "schedule": {
+              "frequency": "location_time_schedule_frequency_value",
+              "holidays": "location_time_schedule_holidays_value",
+              "times": "location_time_schedule_times_value"
+            },
+            "timestamp": "location_time_timestamp_value"
+          }
+        },
+        "offers": [
+          {
+            "descriptor": {
+              "code": "offer_code_value",
+              "images": {
+                "url": "offer_image_url_value"
+              }
+            },
+            "item_ids": ["item_id_value"],
+            "location_ids": ["location_id_value"],
+            "tags": {
+              "benefit": {
+                "list": {
+                  "item_count": "offer_item_count_value",
+                  "item_id": "offer_item_id_value",
+                  "item_value": "offer_item_value_value",
+                  "value": "offer_value_value",
+                  "value_cap": "offer_value_cap_value",
+                  "value_type": "offer_value_type_value"
+                }
+              },
+              "meta": {
+                "list": {
+                  "additive": "offer_meta_additive_value",
+                  "auto": "offer_meta_auto_value"
+                }
+              },
+              "qualifier": {
+                "list": {
+                  "item_count": "offer_qualifier_item_count_value",
+                  "min_value": "offer_qualifier_min_value_value"
+                }
+              }
+            },
+            "time": {
+              "label": "offer_time_label_value",
+              "range": {
+                "start": "offer_time_range_start_value",
+                "end": "offer_time_range_end_value"
+              }
+            }
+          }
+        ],
+        "tags": {
+          "catalog_link": {
+            "list": {
+              "last_update": "catalog_link_last_update_value",
+              "type": "catalog_link_type_value",
+              "type_validity": "catalog_link_type_validity_value",
+              "type_value": "catalog_link_type_value_value"
+            }
+          },
+          "close_timing": {
+            "list": {
+              "end": "close_timing_end_value",
+              "location": "close_timing_location_value",
+              "start": "close_timing_start_value"
+            }
+          },
+          "order_value": {
+            "list": {
+              "min_value": "order_value_min_value"
+            }
+          },
+          "serviceability": {
+            "list": {
+              "category": "serviceability_category_value",
+              "day_from": "serviceability_day_from_value",
+              "day_to": "serviceability_day_to_value",
+              "location": "serviceability_location_value",
+              "time_from": "serviceability_time_from_value",
+              "time_to": "serviceability_time_to_value",
+              "type": "serviceability_type_value",
+              "unit": "serviceability_unit_value",
+              "val": "serviceability_val_value"
+            }
+          },
+          "timing": {
+            "list": [
+              {
+                "day_from": "provider_timing_day_from_value",
+                "day_to": "provider_timing_day_to_value",
+                "location": "provider_timing_location_value",
+                "time_from": "provider_timing_time_from_value",
+                "time_to": "provider_timing_time_to_value",
+                "type": "provider_timing_type_value"
+              }
+            ]
+          },
+          "np_fees": {
+            "list": {
+              "allow_bnp_fee": "np_fees_allow_bnp_fee_value",
+              "channel_margin_type": "np_fees_channel_margin_type_value",
+              "channel_margin_value": "np_fees_channel_margin_value_value"
+            }
+          }
+        },
+        "ttl": "provider_ttl_value"
+      }
+    }
+  }
+}

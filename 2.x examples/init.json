@@ -5,6 +5,8 @@
     "version": "2.x",
     "bap_id": "bap_id_value",
     "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
     "transaction_id": "transaction_id_value",
     "message_id": "message_id_value",
     "location": {
