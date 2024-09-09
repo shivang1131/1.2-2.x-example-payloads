@@ -1,0 +1,43 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "catalog": {
+            "providers": [
+                {
+                    "id": "P1",
+                    "locations": [
+                        {
+                            "id": "L1",
+                            "time": {
+                                "label": "close",
+                                "timestamp": "2023-06-03T10:20:00.000Z",
+                                "range": {
+                                    "start": "2023-06-03T16:00:00.000Z",
+                                    "end": "2023-06-03T23:59:00.000Z"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

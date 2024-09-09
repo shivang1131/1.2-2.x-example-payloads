@@ -1,0 +1,166 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "catalog": {
+            "providers": [
+                {
+                    "id": "P1",
+                    "items": [
+                        {
+                            "id": "I1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:00.000Z"
+                            },
+                            "parent_item_id": "V1",
+                            "descriptor": {
+                                "name": "Plain Atta",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "short_desc": "Plain Atta",
+                                "long_desc": "Plain Atta",
+                                "images": [{
+                                "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "kilogram",
+                                        "value": "1"
+                                    }
+                                },
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00",
+                                "maximum_value": "65.0"
+                            },
+                            // "category_id": "Foodgrains",
+                            "fulfillment_ids": ["F1"],
+                            "location_id": ["L1"],
+                            "tags": [
+                                {
+                                    "code": "origin",
+                                    "list": [
+                                        {
+                                            "code": "country",
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "image",
+                                    "list": [
+                                        {
+                                            "code": "type",
+                                            "value": "back_image"
+                                        },
+                                        {
+                                            "code": "url",
+                                            "value": "https://sellerNP.com/images/i1_back_image.png"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "veg_nonveg",
+                                    "list": [
+                                        {
+                                            "code": "veg",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "SKU_PROPERTIES",
+                                    "list": [
+                                        {
+                                            "code": "returnable",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "cancellable",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "return_window",
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "code": "seller_pickup_return",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "time_to_ship",
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "code": "available_on_cod",
+                                            "value": "false"
+                                        },
+                                        {
+                                            "code": "contact_details_consumer_care",
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "statutory_reqs_packaged_commodities",
+                                    "list": [
+                                        {
+                                            "code": "manufacturer_or_packer_name",
+                                            "value": "ITC"
+                                        },
+                                        {
+                                            "code": "manufacturer_or_packer_address",
+                                            "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
+                                        },
+                                        {
+                                            "code": "common_or_generic_name_of_commodity",
+                                            "value": "Ashirwad Atta"
+                                        },
+                                        {
+                                            "code": "month_year_of_manufacture_packing_import",
+                                            "value": "01/2023"
+                                        },
+                                        {
+                                            "code": "net_quantity_or_measure_of_commodity_in_pkg",
+                                            "value": "1kg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

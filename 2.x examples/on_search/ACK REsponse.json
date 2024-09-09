@@ -1,0 +1,129 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "ack": {
+            "status": "ACK",
+            "tags": [
+                {
+                    "code": "bap_provider_link",
+                    "list": [
+                        {
+                            "code": "provider_id",
+                            "value": "P1"
+                        },
+                        {
+                            "code": "location_id",
+                            "value": "L1"
+                        },
+                        {
+                            "code": "sku_count",
+                            "value": "1000"
+                        },
+                        {
+                            "code": "link1_type",
+                            "value": "android"
+                        },
+                        {
+                            "code": "link1_value",
+                            "value": "https://buyerNP.com/p1l1a"
+                        },
+                        {
+                            "code": "link2_type",
+                            "value": "ios"
+                        },
+                        {
+                            "code": "link2_value",
+                            "value": "https://buyerNP.com/p1l1i"
+                        },
+                        {
+                            "code": "link3_type",
+                            "value": "web"
+                        },
+                        {
+                            "code": "link3_value",
+                            "value": "https://buyerNP.com/p1l1w.htm"
+                        }
+                    ]
+                },
+                {
+                    "code": "bap_provider_link",
+                    "list": [
+                        {
+                            "code": "provider_id",
+                            "value": "P1"
+                        },
+                        {
+                            "code": "location_id",
+                            "value": "L2"
+                        },
+                        {
+                            "code": "sku_count",
+                            "value": "1000"
+                        },
+                        {
+                            "code": "link1_type",
+                            "value": "android"
+                        },
+                        {
+                            "code": "link1_value",
+                            "value": "https://buyerNP.com/p1l1a"
+                        },
+                        {
+                            "code": "link2_type",
+                            "value": "ios"
+                        },
+                        {
+                            "code": "link2_value",
+                            "value": "https://buyerNP.com/p1l1i"
+                        },
+                        {
+                            "code": "link3_type",
+                            "value": "web"
+                        },
+                        {
+                            "code": "link3_value",
+                            "value": "https://buyerNP.com/p1l1w.htm"
+                        }
+                    ]
+                },
+                {
+                    "code": "bap_promos",
+                    "list": [
+                        {
+                            "code": "category",
+                            "value": "Grocery"
+                        },
+                        {
+                            "code": "from",
+                            "value": "2023-05-28T00:00:00.000Z"
+                        },
+                        {
+                            "code": "to",
+                            "value": "2023-05-28T23:59:00.000Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
