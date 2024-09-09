@@ -1,0 +1,75 @@
+{
+  "context": {
+    "domain": "domain_value",
+    "action": "init",
+    "core_version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "city": "city_code_value",
+    "country": "country_code_value",
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "tracking": {
+      "id": "TRACK12345",
+      "location": {
+        "gps": "12.9715987,77.5945627"
+      },
+      "status": "active",
+      "tags": {
+        "order": {
+          "list": {
+            "id": {
+              "value": "ORDER12345"
+            }
+          }
+        },
+        "config": {
+          "list": [
+            {
+              "attr": {
+                "value": "attribute1"
+              },
+              "type": {
+                "value": "type1"
+              }
+            },
+            {
+              "attr": {
+                "value": "attribute2"
+              },
+              "type": {
+                "value": "type2"
+              }
+            }
+          ]
+        },
+        "path": {
+          "list": [
+            {
+              "lat_lng": {
+                "value": "12.9715987,77.5945627"
+              },
+              "sequence": {
+                "value": 1
+              }
+            },
+            {
+              "lat_lng": {
+                "value": "13.0826802,80.2707184"
+              },
+              "sequence": {
+                "value": 2
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
