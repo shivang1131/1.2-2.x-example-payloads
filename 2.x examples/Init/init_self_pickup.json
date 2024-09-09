@@ -108,7 +108,10 @@
                 "gps": "fulfillment_stop_gps_value"
               }
             }
-          ]
+          ],
+          "vehicle": {
+            "registration": "vehicle_registration_value"
+          }
         }
       ]
     }
