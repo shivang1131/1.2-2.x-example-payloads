@@ -1,29 +1,22 @@
 {
     "context": {
-        "domain": "ONDC:RET10",
-        "action": "on_status",
+        "domain": "ONDC:RET11",
+        "action": "on_update",
         "core_version": "1.2.0",
         "bap_id": "buyerNP.com",
         "bap_uri": "https://buyerNP.com/ondc",
         "bpp_id": "sellerNP.com",
         "bpp_uri": "https://sellerNP.com/ondc",
         "transaction_id": "T2",
-        "message_id": "M12",
+        "message_id": "M5",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-06-04T10:00:30.000Z",
-        "ttl": "PT30S"
+        "timestamp": "2023-06-03T10:30:30.000Z"
     },
     "message": {
         "order": {
             "id": "O1",
-            "state": "Completed",
-            "cancellation": {
-                "cancelled_by": "buyerNP.com",
-                "reason": {
-                    "id": "004"
-                }
-            },
+            "state": "Accepted",
             "provider": {
                 "id": "P1",
                 "locations": [
@@ -42,7 +35,7 @@
                 },
                 {
                     "id": "I1",
-                    "fulfillment_id": "R1",
+                    "fulfillment_id": "C1",
                     "quantity": {
                         "count": 1
                     }
@@ -67,21 +60,22 @@
             "fulfillments": [
                 {
                     "id": "F1",
-                    "@ondc/org/provider_name": "LSP or Provider name",
-                    "type": "Delivery",
-                    "tracking": false,
+                    "@ondc/org/provider_name": "LSP or Provider Name",
+                    "type": "Buyer-Delivery",
+                    "tracking": true,
                     "@ondc/org/TAT": "PT60M",
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered"
+                            "code": "Pending"
                         }
                     },
                     "start": {
                         "location": {
+                            "id": "L1",
                             "descriptor": {
                                 "name": "ABC Store"
                             },
-                            "gps": "12.967555,77.749666",
+                            "gps": "12.956399,77.636803",
                             "address": {
                                 "locality": "Jayanagar",
                                 "city": "Bengaluru",
@@ -93,24 +87,7 @@
                             "range": {
                                 "start": "2023-06-03T10:00:00.000Z",
                                 "end": "2023-06-03T10:30:00.000Z"
-                            },
-                            "timestamp": "2023-06-03T10:25:00.000Z"
-                        },
-                        "instructions": {
-                            "code": "1",
-                            "name": "ONDC Order",
-                            "short_desc": "value of PCC",
-                            "long_desc": "additional instructions for pickup",
-                            "images": [
-                                "https://lsp.com/pickup_image.png",
-                                "https://lsp.com/rider_location.png"
-                            ]
-                        },
-                        "authorization": {
-                            "type": "OTP",
-                            "token": "OTP code",
-                            "valid_from": "2023-06-03T12:00:00.000Z",
-                            "valid_to": "2023-06-03T14:00:00.000Z"
+                            }
                         },
                         "contact": {
                             "phone": "9886098860",
@@ -134,89 +111,78 @@
                             "range": {
                                 "start": "2023-06-03T11:00:00.000Z",
                                 "end": "2023-06-03T11:30:00.000Z"
-                            },
-                            "timestamp": "2023-06-03T11:35:00.000Z"
-                        },
-                        "instructions": {
-                            "code": "3",
-                            "name": "ONDC Order",
-                            "short_desc": "value of DCC",
-                            "long_desc": "additional instructions for delivery",
-                            "images": [
-                                "https://lsp.com/delivery_image.png",
-                                "https://lsp.com/rider_location.png"
-                            ]
-                        },
-                        "authorization": {
-                            "type": "OTP",
-                            "token": "OTP code",
-                            "valid_from": "2023-06-03T18:00:00.000Z",
-                            "valid_to": "2023-06-03T22:00:00.000Z"
+                            }
                         },
                         "person": {
                             "name": "name_of_person"
                         },
                         "contact": {
-                            "phone": "9886098860"
+                            "phone": "9886098860",
+                            "email": "nobody@nomail.com"
                         }
-                    },
-                    "agent": {
-                        "name": "agent_name",
-                        "phone": "9886098860"
-                    },
-                    "vehicle": {
-                        "registration": "3LVJ945"
+                    }
+                },
+                {
+                    "id": "C1",
+                    "type": "Cancel",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
                     },
                     "tags": [
                         {
-                            "code": "state",
+                            "code": "cancel_request",
                             "list": [
-                                {
-                                    "code": "ready_to_ship",
-                                    "value": "yes"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "routing",
-                            "list": [
-                                {
-                                    "code": "type",
-                                    "value": "P2P"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "tracking",
-                            "list": [
-                                {
-                                    "code": "gps_enabled",
-                                    "value": "yes"
-                                },
-                                {
-                                    "code": "url_enabled",
-                                    "value": "no"
-                                },
-                                {
-                                    "code": "url",
-                                    "value": "https://sellerNP.com/ondc/tracking_url"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "fulfillment_delay",
-                            "list": [
-                                {
-                                    "code": "state",
-                                    "value": "Order-picked-up"
-                                },
                                 {
                                     "code": "reason_id",
                                     "value": "002"
                                 },
                                 {
-                                    "code": "timestamp",
-                                    "value": "2023-06-06T22:00:00.000Z"
+                                    "code": "initiated_by",
+                                    "value": "sellerNP.com"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "item"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "I1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-170.00"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "tax"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "I1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "0.00"
                                 }
                             ]
                         }
@@ -226,7 +192,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "254"
+                    "value": "254.00"
                 },
                 "breakup": [
                     {
@@ -238,22 +204,22 @@
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "170"
+                            "value": "170.00"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "170"
+                                "value": "170.00"
                             }
                         }
                     },
                     {
                         "@ondc/org/item_id": "F1",
-                        "title": "Delivery charges",
+                        "title": "Buyer-Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "50"
+                            "value": "50.00"
                         }
                     },
                     {
@@ -284,7 +250,7 @@
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "25"
+                            "value": "25.00"
                         }
                     },
                     {
@@ -293,7 +259,7 @@
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "0.00"
                         }
                     },
                     {
@@ -302,7 +268,7 @@
                         "@ondc/org/title_type": "discount",
                         "price": {
                             "currency": "INR",
-                            "value": "-10"
+                            "value": "-10.00"
                         }
                     },
                     {
@@ -311,7 +277,7 @@
                         "@ondc/org/title_type": "misc",
                         "price": {
                             "currency": "INR",
-                            "value": "10"
+                            "value": "10.00"
                         }
                     }
                 ],
@@ -319,55 +285,32 @@
             },
             "payment": {
                 "uri": "https://ondc.transaction.com/payment",
-                "tl_method": "http/get",
                 "params": {
                     "currency": "INR",
                     "transaction_id": "3937",
-                    "amount": "254"
+                    "amount": "424.00"
                 },
                 "status": "PAID",
                 "type": "ON-ORDER",
                 "collected_by": "BAP",
-                "time": {
-                    "timestamp": "2023-06-04T10:00:00.000Z"
-                },
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3",
-                "@ondc/org/settlement_basis": "delivery",
-                "@ondc/org/settlement_window": "P1D",
-                "@ondc/org/withholding_amount": "10.00",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
                         "beneficiary_name": "xxxxx",
-                        "settlement_reference": "XXXX",
-                        "settlement_status": "PAID",
-                        "settlement_timestamp": "2023-02-04T10:00:00.000Z",
                         "settlement_type": "upi",
                         "upi_address": "gft@oksbi",
                         "settlement_bank_account_no": "XXXXXXXXXX",
                         "settlement_ifsc_code": "XXXXXXXXX",
                         "bank_name": "xxxx",
                         "branch_name": "xxxx"
-                    },
-                    {
-                        "settlement_counterparty": "buyer",
-                        "settlement_phase": "refund",
-                        "settlement_type": "upi",
-                        "settlement_amount": "1000",
-                        "settlement_timestamp": "2023-02-04T18:00:00.000Z"
                     }
                 ]
             },
-            "documents": [
-                {
-                    "url": "https://invoice_url",
-                    "label": "Invoice"
-                }
-            ],
             "created_at": "2023-06-03T09:30:00.000Z",
-            "updated_at": "2023-06-03T10:00:30.201Z"
+            "updated_at": "2023-06-03T10:31:30.000Z"
         }
     }
 }

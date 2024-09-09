@@ -1,0 +1,99 @@
+{
+  "context": {
+    "domain": "ONDC:RET11",
+    "action": "select",
+    "core_version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "city": "city_code_value",
+    "country": "country_code_value",
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "provider_id_value",
+        "locations": [
+          {
+            "id": "provider_location_id_value"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "item_id_value",
+          "parent_item_id": "dynamic_item_id",
+          "location_id": "location_id_value",
+          "quantity": {
+            "count": "quantity_count_value"
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "item_id_value",
+          "parent_item_id": "dynamic_item_id",
+          "location_id": "location_id_value",
+          "quantity": {
+            "count": "quantity_count_value"
+          },
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "customization"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "offers": [
+        {
+          "id": "offer_id_value",
+          "tags": [
+            {
+              "code": "selection",
+              "list": [
+                {
+                  "code": "apply",
+                  "value": "apply_value"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillment": {
+        "stops": [
+          {
+            "type": "END",
+            "location": {
+              "area_code": "end_stop_area_code_value",
+              "gps": "end_stop_gps_value"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "payment_type_value"
+      }
+    }
+  }
+}

@@ -53,7 +53,7 @@
             "tags": [
               { "code": "routing", "list": [{ "code": "type", "value": "P2P" }] }
             ],
-            "type": "Delivery",
+            "type": "Buyer-Delivery",
             "tracking": false,
             "start": {
               "location": {
@@ -107,7 +107,7 @@
             },
             {
               "price": { "value": "88.62", "currency": "INR" },
-              "title": "Delivery Charges",
+              "title": "Buyer-Delivery Charges",
               "@ondc/org/item_id": "11019920-45bb-4be7-a3e2-123b13be0146",
               "@ondc/org/title_type": "delivery"
             }
@@ -123,7 +123,7 @@
           },
           "status": "PAID",
           "type": "ON-ORDER",
-          "collected_by": "BPP",
+          "collected_by": "BAP",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
           "@ondc/org/buyer_app_finder_fee_amount": "3.0",
           "@ondc/org/settlement_details": [

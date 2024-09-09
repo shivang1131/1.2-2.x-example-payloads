@@ -1,0 +1,64 @@
+{
+    "context": {
+      "domain": "ONDC:RET10",
+      "action": "search",
+      "country": "country_code_value",
+      "city": "city_code_value",
+      "core_version":"2.x",
+      "bap_id": "bap_id_value",
+      "bap_uri": "bap_uri_value",
+      "transaction_id": "transaction_id_value",
+      "message_id": "message_id_value",
+      "timestamp": "timestamp_value",
+      "ttl": "ttl_value"
+    },
+    "message": {
+      "intent": {
+        "fulfillment": {
+          "type": "fulfillment_type_value",
+          "stops": [
+            {
+              "type": "stop_type_value",
+              "location": {
+                "area_code": "area_code_value",
+                "gps": "gps_value"
+              }
+            }
+          ]
+        },
+        "payment": {
+          "@ondc/org/BUYER_APP_FINDER_FEE_TYPE": "PERCENT",
+          "@ondc/org/BUYER_APP_FINDER_FEE_AMOUNT": "10"
+        },
+        "tags": [
+          {
+            "code": "CATALOG_INC",
+            "list": [
+              {
+                "code": "MODE",
+                "value": "stop"
+              }
+            ]
+          },
+          {
+            "code": "BAP_TERMS",
+            "list": [
+              {
+                "code": "STATIC_TERMS",
+                "value": "static_terms_value"
+              },
+              {
+                "code": "STATIC_TERMS_NEW",
+                "value": "static_terms_new_value"
+              },
+              {
+                "code": "EFFECTIVE_DATE",
+                "value": "effective_date_value"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

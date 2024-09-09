@@ -322,18 +322,6 @@
                   {
                     "code":"type",
                     "value":"inline"
-                  },
-                  {
-                    "code":"type_value",
-                    "value":"https://s3.amazon.com/xjhjsfsdfs/f-12349.zip"
-                  },
-                  {
-                    "code":"type_validity",
-                    "value":"PT24H"
-                  },
-                  {
-                    "code":"last_update",
-                    "value":"2023-05-21T00:00:00:000Z"
                   }
                 ]
               },
