@@ -1,19 +1,19 @@
 {
   "context": {
-        "domain": "domain_value",
-        "action": "init",
-        "core_version": "2.x",
-        "bap_id": "bap_id_value",
-        "bap_uri": "bap_uri_value",
-        "bpp_id": "bpp_id_value",
-        "bpp_uri": "bpp_uri_value",
-        "transaction_id": "transaction_id_value",
-        "message_id": "message_id_value",
-        "city": "city_code_value",
-        "country": "country_code_value",
-        "timestamp": "timestamp_value",
-        "ttl": "ttl_value"
-    },
+    "domain": "domain_value",
+    "action": "init",
+    "core_version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "city": "city_code_value",
+    "country": "country_code_value",
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
   "message": {
     "catalog": {
       "descriptor": {
@@ -128,16 +128,16 @@
         "items": [
           {
             "tags": {
-              "SKU_properties": {
-                "list": {
-                  "available_on_cod": "available_on_cod_value",
-                  "cancellable": "cancellable_value",
-                  "contact_details_consumer_care": "contact_details_consumer_care_value",
-                  "return_window": "return_window_value",
-                  "returnable": "returnable_value",
-                  "seller_pickup_return": "seller_pickup_return_value"
-                }
+              "code": "SKU_PROPERTIES",
+              "list": {
+                "available_on_cod": "available_on_cod_value",
+                "cancellable": "cancellable_value",
+                "contact_details_consumer_care": "contact_details_consumer_care_value",
+                "return_window": "return_window_value",
+                "returnable": "returnable_value",
+                "seller_pickup_return": "seller_pickup_return_value"
               },
+
               "statutory_reqs_packaged_commodities": {
                 "list": {
                   "common_or_generic_name_of_commodity": "generic_commodity_name_value",

@@ -1089,7 +1089,6 @@
     "error": {
         "type": "DOMAIN-ERROR",
         "code": "40002",
-        "message": "stringified json formatted as in point 7 below"
+        "message": "[{\"dynamic_item_id\":\"DI1\",\"item_id\":\"I1\",\"error\":\"40002\"}, {\"dynamic_item_id\":\"DI2\",\"customization_id\":\"C15\",\"customization_group_id\":\"CG3\",\"error\":\"40002\"}]"
     }
 }
-N.B.
