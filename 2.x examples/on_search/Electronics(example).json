@@ -101,31 +101,31 @@
                             },
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "config",
+                                    "code": "CONFIG",
                                     "list": [
                                         {
-                                            "code": "min",
+                                            "code": "MIN",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "max",
+                                            "code": "MAX",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "input",
+                                            "code": "INPUT",
                                             "value": "text"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "1"
                                         }
                                     ]
@@ -139,36 +139,36 @@
                             },
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "variant_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attr",
+                                    "code": "ATTR",
                                     "list": [
                                         {
-                                            "code": "name",
+                                            "code": "NAME",
                                             "value": "item.tags.attribute.colour"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "1"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attr",
+                                    "code": "ATTR",
                                     "list": [
                                         {
-                                            "code": "name",
+                                            "code": "NAME",
                                             "value": "item.tags.attribute.size"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "2"
                                         }
                                     ]
@@ -217,119 +217,119 @@
                             "location_ids": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attribute",
+                                    "code": "ATTRIBUTE",
                                     "list": [
                                         {
-                                            "code": "brand",
+                                            "code": "BRAND",
                                             "value": "iPhone"
                                         },
                                         {
-                                            "code": "model",
+                                            "code": "MODEL",
                                             "value": "iPhone 14"
                                         },
                                         {
-                                            "code": "model_year",
+                                            "code": "MODEL_YEAR",
                                             "value": "2021"
                                         },
                                         {
-                                            "code": "colour",
+                                            "code": "COLOUR",
                                             "value": "#FAF7F2"
                                         },
                                         {
-                                            "code": "colour_name",
+                                            "code": "COLOUR_NAME",
                                             "value": "Starlight"
                                         },
                                         {
-                                            "code": "ram",
+                                            "code": "RAM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "ram_unit",
+                                            "code": "RAM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "rom",
+                                            "code": "ROM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "rom_unit",
+                                            "code": "ROM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "storage",
+                                            "code": "STORAGE",
                                             "value": "256"
                                         },
                                         {
-                                            "code": "storage_unit",
+                                            "code": "STORAGE_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "screen_size",
+                                            "code": "SCREEN_SIZE",
                                             "value": "6.1"
                                         },
                                         {
-                                            "code": "primary_camera",
+                                            "code": "PRIMARY_CAMERA",
                                             "value": "48"
                                         },
                                         {
-                                            "code": "secondary_camera",
+                                            "code": "SECONDARY_CAMERA",
                                             "value": "24"
                                         },
                                         {
-                                            "code": "cpu",
+                                            "code": "CPU",
                                             "value": "A15"
                                         },
                                         {
-                                            "code": "gpu",
+                                            "code": "GPU",
                                             "value": "A16 bionic"
                                         },
                                         {
-                                            "code": "battery_capacity",
+                                            "code": "BATTERY_CAPACITY",
                                             "value": "3279"
                                         },
                                         {
-                                            "code": "os_type",
+                                            "code": "OS_TYPE",
                                             "value": "iOS"
                                         },
                                         {
-                                            "code": "os_version",
+                                            "code": "OS_VERSION",
                                             "value": "16.0"
                                         },
                                         {
-                                            "code": "connectivity",
+                                            "code": "CONNECTIVITY",
                                             "value": "4G"
                                         },
                                         {
-                                            "code": "form_factor",
+                                            "code": "FORM_FACTOR",
                                             "value": "touchscreen"
                                         },
                                         {
-                                            "code": "weight",
+                                            "code": "WEIGHT",
                                             "value": "172"
                                         },
                                         {
-                                            "code": "length",
+                                            "code": "LENGTH",
                                             "value": "14.67"
                                         },
                                         {
-                                            "code": "breadth",
+                                            "code": "BREADTH",
                                             "value": "7.15"
                                         },
                                         {
-                                            "code": "height",
+                                            "code": "HEIGHT",
                                             "value": "0.78"
                                         },
                                         {
-                                            "code": "refurbished",
+                                            "code": "REFURBISHED",
                                             "value": "yes"
                                         }
                                     ]
@@ -338,52 +338,52 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "P7D"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "PT3H"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "Foxconn Ltd"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "A-1, Chennai-Bangalore National Highway, Nh-4, Sriperumbudur, Kanchipuram, Tamil Nadu 602105"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Mobile Phone"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "06/2023"
                                         }
                                     ]
@@ -426,119 +426,119 @@
                             "location_ids": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attribute",
+                                    "code": "ATTRIBUTE",
                                     "list": [
                                         {
-                                            "code": "brand",
+                                            "code": "BRAND",
                                             "value": "iPhone"
                                         },
                                         {
-                                            "code": "model",
+                                            "code": "MODEL",
                                             "value": "iPhone 14"
                                         },
                                         {
-                                            "code": "model_year",
+                                            "code": "MODEL_YEAR",
                                             "value": "2021"
                                         },
                                         {
-                                            "code": "colour",
+                                            "code": "COLOUR",
                                             "value": "#FAF7F2"
                                         },
                                         {
-                                            "code": "colour_name",
+                                            "code": "COLOUR_NAME",
                                             "value": "Starlight"
                                         },
                                         {
-                                            "code": "ram",
+                                            "code": "RAM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "ram_unit",
+                                            "code": "RAM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "rom",
+                                            "code": "ROM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "rom_unit",
+                                            "code": "ROM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "storage",
+                                            "code": "STORAGE",
                                             "value": "512"
                                         },
                                         {
-                                            "code": "storage_unit",
+                                            "code": "STORAGE_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "screen_size",
+                                            "code": "SCREEN_SIZE",
                                             "value": "6.1"
                                         },
                                         {
-                                            "code": "primary_camera",
+                                            "code": "PRIMARY_CAMERA",
                                             "value": "48"
                                         },
                                         {
-                                            "code": "secondary_camera",
+                                            "code": "SECONDARY_CAMERA",
                                             "value": "24"
                                         },
                                         {
-                                            "code": "cpu",
+                                            "code": "CPU",
                                             "value": "A15"
                                         },
                                         {
-                                            "code": "gpu",
+                                            "code": "GPU",
                                             "value": "A16 bionic"
                                         },
                                         {
-                                            "code": "battery_capacity",
+                                            "code": "BATTERY_CAPACITY",
                                             "value": "3279"
                                         },
                                         {
-                                            "code": "os_type",
+                                            "code": "OS_TYPE",
                                             "value": "iOS"
                                         },
                                         {
-                                            "code": "os_version",
+                                            "code": "OS_VERSION",
                                             "value": "16.0"
                                         },
                                         {
-                                            "code": "connectivity",
+                                            "code": "CONNECTIVITY",
                                             "value": "4G"
                                         },
                                         {
-                                            "code": "form_factor",
+                                            "code": "FORM_FACTOR",
                                             "value": "touchscreen"
                                         },
                                         {
-                                            "code": "weight",
+                                            "code": "WEIGHT",
                                             "value": "172"
                                         },
                                         {
-                                            "code": "length",
+                                            "code": "LENGTH",
                                             "value": "14.67"
                                         },
                                         {
-                                            "code": "breadth",
+                                            "code": "BREADTH",
                                             "value": "7.15"
                                         },
                                         {
-                                            "code": "height",
+                                            "code": "HEIGHT",
                                             "value": "0.78"
                                         },
                                         {
-                                            "code": "refurbished",
+                                            "code": "REFURBISHED",
                                             "value": "yes"
                                         }
                                     ]
@@ -547,52 +547,52 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "P7D"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "P1D"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "Foxconn Ltd"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "A-1, Chennai-Bangalore National Highway, Nh-4, Sriperumbudur, Kanchipuram, Tamil Nadu 602105"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Mobile Phone"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "06/2023"
                                         }
                                     ]
@@ -635,119 +635,119 @@
                             "location_ids": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attribute",
+                                    "code": "ATTRIBUTE",
                                     "list": [
                                         {
-                                            "code": "brand",
+                                            "code": "BRAND",
                                             "value": "iPhone"
                                         },
                                         {
-                                            "code": "model",
+                                            "code": "MODEL",
                                             "value": "iPhone 14"
                                         },
                                         {
-                                            "code": "model_year",
+                                            "code": "MODEL_YEAR",
                                             "value": "2021"
                                         },
                                         {
-                                            "code": "colour",
+                                            "code": "COLOUR",
                                             "value": "#343B43"
                                         },
                                         {
-                                            "code": "colour_name",
+                                            "code": "COLOUR_NAME",
                                             "value": "Midnight (black)"
                                         },
                                         {
-                                            "code": "ram",
+                                            "code": "RAM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "ram_unit",
+                                            "code": "RAM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "rom",
+                                            "code": "ROM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "rom_unit",
+                                            "code": "ROM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "storage",
+                                            "code": "STORAGE",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "storage_unit",
+                                            "code": "STORAGE_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "screen_size",
+                                            "code": "SCREEN_SIZE",
                                             "value": "6.1"
                                         },
                                         {
-                                            "code": "primary_camera",
+                                            "code": "PRIMARY_CAMERA",
                                             "value": "48"
                                         },
                                         {
-                                            "code": "secondary_camera",
+                                            "code": "SECONDARY_CAMERA",
                                             "value": "24"
                                         },
                                         {
-                                            "code": "cpu",
+                                            "code": "CPU",
                                             "value": "A15"
                                         },
                                         {
-                                            "code": "gpu",
+                                            "code": "GPU",
                                             "value": "A16 bionic"
                                         },
                                         {
-                                            "code": "battery_capacity",
+                                            "code": "BATTERY_CAPACITY",
                                             "value": "3279"
                                         },
                                         {
-                                            "code": "os_type",
+                                            "code": "OS_TYPE",
                                             "value": "iOS"
                                         },
                                         {
-                                            "code": "os_version",
+                                            "code": "OS_VERSION",
                                             "value": "16.0"
                                         },
                                         {
-                                            "code": "connectivity",
+                                            "code": "CONNECTIVITY",
                                             "value": "4G"
                                         },
                                         {
-                                            "code": "form_factor",
+                                            "code": "FORM_FACTOR",
                                             "value": "touchscreen"
                                         },
                                         {
-                                            "code": "weight",
+                                            "code": "WEIGHT",
                                             "value": "172"
                                         },
                                         {
-                                            "code": "length",
+                                            "code": "LENGTH",
                                             "value": "14.67"
                                         },
                                         {
-                                            "code": "breadth",
+                                            "code": "BREADTH",
                                             "value": "7.15"
                                         },
                                         {
-                                            "code": "height",
+                                            "code": "HEIGHT",
                                             "value": "0.78"
                                         },
                                         {
-                                            "code": "refurbished",
+                                            "code": "REFURBISHED",
                                             "value": "yes"
                                         }
                                     ]
@@ -756,52 +756,52 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "P7D"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "P1D"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "Foxconn Ltd"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "A-1, Chennai-Bangalore National Highway, Nh-4, Sriperumbudur, Kanchipuram, Tamil Nadu 602105"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Mobile Phone"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "06/2023"
                                         }
                                     ]
@@ -841,154 +841,141 @@
                                 "maximum_value": "109990.0"
                             },
                             // "category_id": "Mobile Phone",
-                            "fulfillment_id": "F1",
-                            "location_id": "L1",
-                            "@ondc/org/returnable": true,
-                            "@ondc/org/cancellable": true,
-                            "@ondc/org/return_window": "P7D",
-                            "@ondc/org/seller_pickup_return": true,
-                            "@ondc/org/time_to_ship": "PT3H",
-                            "@ondc/org/available_on_cod": false,
-                            "@ondc/org/contact_details_consumer_care": "Ramesh,ramesh@abc.com,18004254444",
-                            "@ondc/org/statutory_reqs_packaged_commodities": {
-                                "manufacturer_or_packer_name": "Foxconn Ltd",
-                                "manufacturer_or_packer_address": "A-1, Chennai-Bangalore National Highway, Nh-4, Sriperumbudur, Kanchipuram, Tamil Nadu 602105",
-                                "common_or_generic_name_of_commodity": "Mobile Phone",
-                                "month_year_of_manufacture_packing_import": "06/2023"
-                            },
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attribute",
+                                    "code": "ATTRIBUTE",
                                     "list": [
                                         {
-                                            "code": "brand",
+                                            "code": "BRAND",
                                             "value": "iPhone"
                                         },
                                         {
-                                            "code": "model",
+                                            "code": "MODEL",
                                             "value": "iPhone 14"
                                         },
                                         {
-                                            "code": "model_year",
+                                            "code": "MODEL_YEAR",
                                             "value": "2021"
                                         },
                                         {
-                                            "code": "colour",
+                                            "code": "COLOUR",
                                             "value": "#343B43"
                                         },
                                         {
-                                            "code": "colour_name",
+                                            "code": "COLOUR_NAME",
                                             "value": "Midnight (black)"
                                         },
                                         {
-                                            "code": "ram",
+                                            "code": "RAM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "ram_unit",
+                                            "code": "RAM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "rom",
+                                            "code": "ROM",
                                             "value": "128"
                                         },
                                         {
-                                            "code": "rom_unit",
+                                            "code": "ROM_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "storage",
+                                            "code": "STORAGE",
                                             "value": "512"
                                         },
                                         {
-                                            "code": "storage_unit",
+                                            "code": "STORAGE_UNIT",
                                             "value": "GB"
                                         },
                                         {
-                                            "code": "screen_size",
+                                            "code": "SCREEN_SIZE",
                                             "value": "6.1"
                                         },
                                         {
-                                            "code": "primary_camera",
+                                            "code": "PRIMARY_CAMERA",
                                             "value": "48"
                                         },
                                         {
-                                            "code": "secondary_camera",
+                                            "code": "SECONDARY_CAMERA",
                                             "value": "24"
                                         },
                                         {
-                                            "code": "cpu",
+                                            "code": "CPU",
                                             "value": "A15"
                                         },
                                         {
-                                            "code": "gpu",
+                                            "code": "GPU",
                                             "value": "A16 bionic"
                                         },
                                         {
-                                            "code": "battery_capacity",
+                                            "code": "BATTERY_CAPACITY",
                                             "value": "3279"
                                         },
                                         {
-                                            "code": "os_type",
+                                            "code": "OS_TYPE",
                                             "value": "iOS"
                                         },
                                         {
-                                            "code": "os_version",
+                                            "code": "OS_VERSION",
                                             "value": "16.0"
                                         },
                                         {
-                                            "code": "connectivity",
+                                            "code": "CONNECTIVITY",
                                             "value": "4G"
                                         },
                                         {
-                                            "code": "form_factor",
+                                            "code": "FORM_FACTOR",
                                             "value": "touchscreen"
                                         },
                                         {
-                                            "code": "weight",
+                                            "code": "WEIGHT",
                                             "value": "172"
                                         },
                                         {
-                                            "code": "length",
+                                            "code": "LENGTH",
                                             "value": "14.67"
                                         },
                                         {
-                                            "code": "breadth",
+                                            "code": "BREADTH",
                                             "value": "7.15"
                                         },
                                         {
-                                            "code": "height",
+                                            "code": "HEIGHT",
                                             "value": "0.78"
                                         },
                                         {
-                                            "code": "refurbished",
+                                            "code": "REFURBISHED",
                                             "value": "yes"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "item"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "custom_group",
+                                    "code": "CUSTOM_GROUP",
                                     "list": [
                                         {
-                                            "code": "id",
+                                            "code": "ID",
                                             "value": "CG1"
                                         }
                                     ]
@@ -997,52 +984,52 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "P7D"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "P1D"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "Foxconn Ltd"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "A-1, Chennai-Bangalore National Highway, Nh-4, Sriperumbudur, Kanchipuram, Tamil Nadu 602105"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Mobile Phone"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "06/2023"
                                         }
                                     ]
@@ -1077,19 +1064,19 @@
                             "related": true,
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "customization"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "parent",
+                                    "code": "PARENT",
                                     "list": [
                                         {
-                                            "code": "id",
+                                            "code": "ID",
                                             "value": "CG1"
                                         }
                                     ]
@@ -1113,55 +1100,55 @@
                     ],
                     "tags": [
                         {
-                            "code": "timing",
+                            "code": "TIMING",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "All"
                                 },
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "day_from",
+                                    "code": "DAY_FROM",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "day_to",
+                                    "code": "DAY_TO",
                                     "value": "7"
                                 },
                                 {
-                                    "code": "time_from",
+                                    "code": "TIME_FROM",
                                     "value": "0000"
                                 },
                                 {
-                                    "code": "time_to",
+                                    "code": "TIME_TO",
                                     "value": "2359"
                                 }
                             ]
                         },
                         {
-                            "code": "serviceability",
+                            "code": "SERVICEABILITY",
                             "list": [
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "category",
+                                    "code": "CATEGORY",
                                     "value": "Mobile Phone"
                                 },
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "12"
                                 },
                                 {
-                                    "code": "val",
+                                    "code": "VAL",
                                     "value": "IND"
                                 },
                                 {
-                                    "code": "unit",
+                                    "code": "UNIT",
                                     "value": "country"
                                 }
                             ]

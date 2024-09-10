@@ -137,16 +137,16 @@
                             "location_ids": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "image",
+                                    "code": "IMAGE",
                                     "list": [
                                         {
                                             "code": "type",
@@ -159,46 +159,46 @@
                                     ]
                                 },
                                 {
-                                    "code": "attribute",
+                                    "code": "ATTRIBUTE",
                                     "list": [
                                         {
-                                            "code": "brand",
+                                            "code": "BRAND",
                                             "value": "Kesh King"
                                         },
                                         {
-                                            "code": "colour",
+                                            "code": "COLOUR",
                                             "value": "#000000"
                                         },
                                         {
-                                            "code": "colour_name",
+                                            "code": "COLOUR_NAME",
                                             "value": "Black"
                                         },
                                         {
-                                            "code": "gender",
+                                            "code": "GENDER",
                                             "value": "male"
                                         },
                                         {
-                                            "code": "concern",
+                                            "code": "CONCERN",
                                             "value": "tangled_hair"
                                         },
                                         {
-                                            "code": "ingredient",
+                                            "code": "INGREDIENT",
                                             "value": "neem"
                                         },
                                         {
-                                            "code": "conscious",
+                                            "code": "CONSCIOUS",
                                             "value": "natural"
                                         },
                                         {
-                                            "code": "preference",
+                                            "code": "PREFERENCE",
                                             "value": "herbal"
                                         },
                                         {
-                                            "code": "formulation",
+                                            "code": "FORMULATION",
                                             "value": "liquid"
                                         },
                                         {
-                                            "code": "skin_type",
+                                            "code": "SKIN_TYPE",
                                             "value": "normal"
                                         }
                                     ]
@@ -207,52 +207,52 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "P7D"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "P1D"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "Emami Ltd"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "Emami Ltd., 687 Anandapur, Kolkata 700107"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Hair Oil"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "06/2023"
                                         }
                                     ]
@@ -276,64 +276,64 @@
                     ],
                     "tags": [
                         {
-                            "code": "order_value",
+                            "code": "ORDER_VALUE",
                             "list": [
                                 {
-                                    "code": "min_value",
+                                    "code": "MIN_VALUE",
                                     "value": "300.00"
                                 }
                             ]
                         },
                         {
-                            "code": "timing",
+                            "code": "TIMING",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "All"
                                 },
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "day_from",
+                                    "code": "DAY_FROM",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "day_to",
+                                    "code": "DAY_TO",
                                     "value": "7"
                                 },
                                 {
-                                    "code": "time_from",
+                                    "code": "TIME_FROM",
                                     "value": "0000"
                                 },
                                 {
-                                    "code": "time_to",
+                                    "code": "TIME_TO",
                                     "value": "2359"
                                 }
                             ]
                         },
                         {
-                            "code": "serviceability",
+                            "code": "SERVICEABILITY",
                             "list": [
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "category",
+                                    "code": "CATEGORY",
                                     "value": "Hair Care"
                                 },
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "12"
                                 },
                                 {
-                                    "code": "val",
+                                    "code": "VAL",
                                     "value": "IND"
                                 },
                                 {
-                                    "code": "unit",
+                                    "code": "UNIT",
                                     "value": "country"
                                 }
                             ]

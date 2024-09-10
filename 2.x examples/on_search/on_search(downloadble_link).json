@@ -46,7 +46,7 @@
                                 }
                             ]
             },
-            "bpp/providers": [
+            "providers": [
                 {
                     "id": "P1",
                     "time": {
@@ -88,7 +88,6 @@
                             "https://sellerNP.com/images/store1.png"
                         ]
                     },
-                    "@ondc/org/fssai_license_no": "12345678901234",
                     "ttl": "P1D",
                     "locations": [
                         {
@@ -133,42 +132,42 @@
                                     "https://sellerNP.com/ondc/m005.png"
                                 ]
                             },
-                            "tags": [
+                            "TAGS": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "custom_menu"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "timing",
+                                    "code": "TIMING",
                                     "list": [
                                         {
-                                            "code": "day_from",
+                                            "code": "DAY_FROM",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "day_to",
+                                            "code": "DAY_TO",
                                             "value": "5"
                                         },
                                         {
-                                            "code": "time_from",
+                                            "code": "TIME_FROM",
                                             "value": "1800"
                                         },
                                         {
-                                            "code": "time_to",
+                                            "code": "TIME_TO",
                                             "value": "2200"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "display",
+                                    "code": "DISPLAY",
                                     "list": [
                                         {
-                                            "code": "rank",
+                                            "code": "RANK",
                                             "value": "3"
                                         }
                                     ]
@@ -182,31 +181,31 @@
                             },
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "config",
+                                    "code": "CONFIG",
                                     "list": [
                                         {
-                                            "code": "min",
+                                            "code": "MIN",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "max",
+                                            "code": "MAX",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "input",
+                                            "code": "INPUT",
                                             "value": "select"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "1"
                                         }
                                     ]
@@ -220,31 +219,31 @@
                             },
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "config",
+                                    "code": "CONFIG",
                                     "list": [
                                         {
-                                            "code": "min",
+                                            "code": "MIN",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "max",
+                                            "code": "MAX",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "input",
+                                            "code": "INPUT",
                                             "value": "select"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "2"
                                         }
                                     ]
@@ -258,31 +257,31 @@
                             },
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "config",
+                                    "code": "CONFIG",
                                     "list": [
                                         {
-                                            "code": "min",
+                                            "code": "MIN",
                                             "value": "0"
                                         },
                                         {
-                                            "code": "max",
+                                            "code": "MAX",
                                             "value": "2"
                                         },
                                         {
-                                            "code": "input",
+                                            "code": "INPUT",
                                             "value": "select"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "3"
                                         }
                                     ]
@@ -290,88 +289,112 @@
                             ]
                         }
                     ],
-                    "category_id": "F&B",
+                    // "category_id": "F&B",
                     "category_ids": [
                         "5:1"
                     ],
-                    "fulfillment_id": "F1",
-                    "location_id": "L1",
-                    "related": false,
-                    "recommended": true,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/return_window": "PT1H",
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/time_to_ship": "PT45M",
-                    "@ondc/org/available_on_cod": false,
-                    "@ondc/org/contact_details_consumer_care": "Ramesh,ramesh@abc.com,18004254444",
+                    "fulfillment_ids": ["F1"],
+                    "location_ids": ["L1"],
                     "tags": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "item"
                                 }
                             ]
                         },
                         {
-                            "code": "custom_group",
+                            "code": "CUSTOM_GROUP",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG1"
                                 }
                             ]
                         },
                         {
-                            "code": "config",
+                            "code": "CONFIG",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG1"
                                 },
                                 {
-                                    "code": "min",
+                                    "code": "MIN",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "max",
+                                    "code": "MAX",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "seq",
+                                    "code": "SEQ",
                                     "value": "1"
                                 }
                             ]
                         },
                         {
-                            "code": "timing",
+                            "code": "TIMING",
                             "list": [
                                 {
-                                    "code": "day_from",
+                                    "code": "DAY_FROM",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "day_to",
+                                    "code": "DAY_TO",
                                     "value": "5"
                                 },
                                 {
-                                    "code": "time_from",
+                                    "code": "TIME_FROM",
                                     "value": "1800"
                                 },
                                 {
-                                    "code": "time_to",
+                                    "code": "TIME_TO",
                                     "value": "2200"
                                 }
                             ]
                         },
                         {
-                            "code": "veg_nonveg",
+                            "code": "VEG_NONVEG",
                             "list": [
                                 {
-                                    "code": "veg",
+                                    "code": "VEG",
                                     "value": "yes"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "SKU_PROPERTIES",
+                            "list": [
+                                {
+                                    "code": "RETURNABLE",
+                                    "value": "true"
+                                },
+                                {
+                                    "code": "CANCELLABLE",
+                                    "value": "true"
+                                },
+                                {
+                                    "code": "RETURN_WINDOW",
+                                    "value": "PT1H"
+                                },
+                                {
+                                    "code": "SELLER_PICKUP_RETURN",
+                                    "value": "true"
+                                },
+                                {
+                                    "code": "TIME_TO_SHIP",
+                                    "value": "PT45M"
+                                },
+                                {
+                                    "code": "AVAILABLE_ON_COD",
+                                    "value": "false"
+                                },
+                                {
+                                    "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                    "value": "Ramesh,info@keshking.com,18001035155"
                                 }
                             ]
                         }
@@ -399,41 +422,41 @@
                     "related": true,
                     "tags": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "customization"
                                 }
                             ]
                         },
                         {
-                            "code": "parent",
+                            "code": "PARENT",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG1"
                                 },
                                 {
-                                    "code": "default",
+                                    "code": "DEFAULT",
                                     "value": "yes"
                                 }
                             ]
                         },
                         {
-                            "code": "child",
+                            "code": "CHILD",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG2"
                                 }
                             ]
                         },
                         {
-                            "code": "veg_nonveg",
+                            "code": "VEG_NONVEG",
                             "list": [
                                 {
-                                    "code": "veg",
+                                    "code": "VEG",
                                     "value": "yes"
                                 }
                             ]
@@ -462,41 +485,41 @@
                     "related": true,
                     "tags": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "customization"
                                 }
                             ]
                         },
                         {
-                            "code": "parent",
+                            "code": "PARENT",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG2"
                                 },
                                 {
-                                    "code": "default",
+                                    "code": "DEFAULT",
                                     "value": "yes"
                                 }
                             ]
                         },
                         {
-                            "code": "child",
+                            "code": "CHILD",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG3"
                                 }
                             ]
                         },
                         {
-                            "code": "veg_nonveg",
+                            "code": "VEG_NONVEG",
                             "list": [
                                 {
-                                    "code": "veg",
+                                    "code": "VEG",
                                     "value": "yes"
                                 }
                             ]
@@ -525,32 +548,32 @@
                     "related": true,
                     "tags": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "customization"
                                 }
                             ]
                         },
                         {
-                            "code": "parent",
+                            "code": "PARENT",
                             "list": [
                                 {
-                                    "code": "id",
+                                    "code": "ID",
                                     "value": "CG3"
                                 },
                                 {
-                                    "code": "default",
+                                    "code": "DEFAULT",
                                     "value": "yes"
                                 }
                             ]
                         },
                         {
-                            "code": "veg_nonveg",
+                            "code": "VEG_NONVEG",
                             "list": [
                                 {
-                                    "code": "veg",
+                                    "code": "VEG",
                                     "value": "yes"
                                 }
                             ]
@@ -591,31 +614,31 @@
                             ]
                         },
                         {
-                            "code": "benefit",
+                            "code": "BENEFIT",
                             "list": [
                                 {
-                                    "code": "value_type",
+                                    "code": "VALUE_TYPE",
                                     "value": "percent"
                                 },
                                 {
-                                    "code": "value",
+                                    "code": "VALUE",
                                     "value": "-60.00"
                                 },
                                 {
-                                    "code": "value_cap",
+                                    "code": "VALUE_CAP",
                                     "value": "-120.00"
                                 }
                             ]
                         },
                         {
-                            "code": "meta",
+                            "code": "META",
                             "list": [
                                 {
-                                    "code": "additive",
+                                    "code": "ADDITIVE",
                                     "value": "no"
                                 },
                                 {
-                                    "code": "auto",
+                                    "code": "AUTO",
                                     "value": "yes"
                                 }
                             ]
@@ -645,36 +668,36 @@
                     },
                     "tags": [
                         {
-                            "code": "qualifier",
+                            "code": "QUALIFIER",
                             "list": [
                                 {
-                                    "code": "min_value",
+                                    "code": "MIN_VALUE",
                                     "value": "499.00"
                                 }
                             ]
                         },
                         {
-                            "code": "benefit",
+                            "code": "BENEFIT",
                             "list": [
                                 {
-                                    "code": "value_type",
+                                    "code": "VALUE_TYPE",
                                     "value": "amount"
                                 },
                                 {
-                                    "code": "value",
+                                    "code": "VALUE",
                                     "value": "-150.00"
                                 }
                             ]
                         },
                         {
-                            "code": "meta",
+                            "code": "META",
                             "list": [
                                 {
-                                    "code": "additive",
+                                    "code": "ADDITIVE",
                                     "value": "no"
                                 },
                                 {
-                                    "code": "auto",
+                                    "code": "AUTO",
                                     "value": "yes"
                                 }
                             ]
@@ -704,36 +727,36 @@
                     },
                     "tags": [
                         {
-                            "code": "qualifier",
+                            "code": "QUALIFIER",
                             "list": [
                                 {
-                                    "code": "item_count",
+                                    "code": "ITEM_COUNT",
                                     "value": "2"
                                 }
                             ]
                         },
                         {
-                            "code": "benefit",
+                            "code": "BENEFIT",
                             "list": [
                                 {
-                                    "code": "item_id",
+                                    "code": "ITEM_ID",
                                     "value": "I1"
                                 },
                                 {
-                                    "code": "item_count",
+                                    "code": "ITEM_COUNT",
                                     "value": "3"
                                 }
                             ]
                         },
                         {
-                            "code": "meta",
+                            "code": "META",
                             "list": [
                                 {
-                                    "code": "additive",
+                                    "code": "ADDITIVE",
                                     "value": "no"
                                 },
                                 {
-                                    "code": "auto",
+                                    "code": "AUTO",
                                     "value": "yes"
                                 }
                             ]
@@ -763,40 +786,40 @@
                     },
                     "tags": [
                         {
-                            "code": "qualifier",
+                            "code": "QUALIFIER",
                             "list": [
                                 {
-                                    "code": "min_value",
+                                    "code": "MIN_VALUE",
                                     "value": "598.00"
                                 }
                             ]
                         },
                         {
-                            "code": "benefit",
+                            "code": "BENEFIT",
                             "list": [
                                 {
-                                    "code": "item_count",
+                                    "code": "ITEM_COUNT",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "item_id",
+                                    "code": "ITEM_ID",
                                     "value": "sku id for extra item"
                                 },
                                 {
-                                    "code": "item_value",
+                                    "code": "ITEM_VALUE",
                                     "value": "200.00"
                                 }
                             ]
                         },
                         {
-                            "code": "meta",
+                            "code": "META",
                             "list": [
                                 {
-                                    "code": "additive",
+                                    "code": "ADDITIVE",
                                     "value": "no"
                                 },
                                 {
-                                    "code": "auto",
+                                    "code": "AUTO",
                                     "value": "yes"
                                 }
                             ]
@@ -806,276 +829,276 @@
             ],
             "tags": [
                 {
-                    "code": "order_value",
+                    "code": "ORDER_VALUE",
                     "list": [
                         {
-                            "code": "min_value",
+                            "code": "MIN_VALUE",
                             "value": "300.00"
                         }
                     ]
                 },
                 {
-                    "code": "catalog_link",
+                    "code": "CATALOG_LINK",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "inline"
                         },
                         {
-                            "code": "type_value",
+                            "code": "TYPE_VALUE",
                             "value": "https://s3.amazon.com/xjhjsfsdfs/s-12349.zip"
                         },
                         {
-                            "code": "type_validity",
+                            "code": "TYPE_VALIDITY",
                             "value": "PT24H"
                         },
                         {
-                            "code": "last_update",
+                            "code": "LAST_UPDATE",
                             "value": "2023-05-21T00:00:00:000Z"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Order"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "1"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "5"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "0900"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "1100"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Order"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "1"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "5"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "1300"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "1530"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Order"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "1"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "5"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "1830"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "2130"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Order"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "6"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "7"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "1300"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "1600"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Order"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "6"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "7"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "1900"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "2300"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Self-Pickup"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "1"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "7"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "1100"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "2000"
                         }
                     ]
                 },
                 {
-                    "code": "timing",
+                    "code": "TIMING",
                     "list": [
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "Delivery"
                         },
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "day_from",
+                            "code": "DAY_FROM",
                             "value": "1"
                         },
                         {
-                            "code": "day_to",
+                            "code": "DAY_TO",
                             "value": "7"
                         },
                         {
-                            "code": "time_from",
+                            "code": "TIME_FROM",
                             "value": "1100"
                         },
                         {
-                            "code": "time_to",
+                            "code": "TIME_TO",
                             "value": "2200"
                         }
                     ]
                 },
                 {
-                    "code": "close_timing",
+                    "code": "CLOSE_TIMING",
                     "list": [
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "start",
+                            "code": "START",
                             "value": "2023-06-03T16:00:00.000Z"
                         },
                         {
-                            "code": "end",
+                            "code": "END",
                             "value": "2023-06-03T23:59:00.000Z"
                         }
                     ]
                 },
                 {
-                    "code": "serviceability",
+                    "code": "SERVICEABILITY",
                     "list": [
                         {
-                            "code": "location",
+                            "code": "LOCATION",
                             "value": "L1"
                         },
                         {
-                            "code": "category",
+                            "code": "CATEGORY",
                             "value": "F&B"
                         },
                         {
-                            "code": "type",
+                            "code": "TYPE",
                             "value": "10"
                         },
                         {
-                            "code": "val",
+                            "code": "VAL",
                             "value": "3"
                         },
                         {
-                            "code": "unit",
+                            "code": "UNIT",
                             "value": "km"
                         }
                     ]

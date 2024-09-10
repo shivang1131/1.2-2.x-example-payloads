@@ -48,40 +48,40 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "min_value",
+                                            "code": "MIN_VALUE",
                                             "value": "159"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "value_type",
+                                            "code": "VALUE_TYPE",
                                             "value": "percent"
                                         },
                                         {
-                                            "code": "value",
+                                            "code": "VALUE",
                                             "value": "-60.00"
                                         },
                                         {
-                                            "code": "value_cap",
+                                            "code": "VALUE_CAP",
                                             "value": "-120.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -111,36 +111,36 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "min_value",
+                                            "code": "MIN_VALUE",
                                             "value": "499.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "value_type",
+                                            "code": "VALUE_TYPE",
                                             "value": "amount"
                                         },
                                         {
-                                            "code": "value",
+                                            "code": "VALUE",
                                             "value": "-150.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -170,36 +170,36 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "item_count",
+                                            "code": "ITEM_COUNT",
                                             "value": "2"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "item_id",
+                                            "code": "ITEM_ID",
                                             "value": "I1"
                                         },
                                         {
-                                            "code": "item_count",
+                                            "code": "ITEM_COUNT",
                                             "value": "3"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -229,40 +229,40 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "min_value",
+                                            "code": "MIN_VALUE",
                                             "value": "598.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "item_count",
+                                            "code": "ITEM_COUNT",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "item_id",
+                                            "code": "ITEM_ID",
                                             "value": "sku id for extra item"
                                         },
                                         {
-                                            "code": "item_value",
+                                            "code": "ITEM_VALUE",
                                             "value": "200.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]

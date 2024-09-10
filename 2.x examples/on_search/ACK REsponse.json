@@ -25,42 +25,42 @@
             "status": "ACK",
             "tags": [
                 {
-                    "code": "bap_provider_link",
+                    "code": "BAP_PROVIDER_LINK",
                     "list": [
                         {
-                            "code": "provider_id",
+                            "code": "PROVIDER_ID",
                             "value": "P1"
                         },
                         {
-                            "code": "location_id",
+                            "code": "LOCATION_ID",
                             "value": "L1"
                         },
                         {
-                            "code": "sku_count",
+                            "code": "SKU_COUNT",
                             "value": "1000"
                         },
                         {
-                            "code": "link1_type",
+                            "code": "LINK1_TYPE",
                             "value": "android"
                         },
                         {
-                            "code": "link1_value",
+                            "code": "LINK1_VALUE",
                             "value": "https://buyerNP.com/p1l1a"
                         },
                         {
-                            "code": "link2_type",
+                            "code": "LINK2_TYPE",
                             "value": "ios"
                         },
                         {
-                            "code": "link2_value",
+                            "code": "LINK2_VALUE",
                             "value": "https://buyerNP.com/p1l1i"
                         },
                         {
-                            "code": "link3_type",
+                            "code": "LINK3_TYPE",
                             "value": "web"
                         },
                         {
-                            "code": "link3_value",
+                            "code": "LINK3_VALUE",
                             "value": "https://buyerNP.com/p1l1w.htm"
                         }
                     ]

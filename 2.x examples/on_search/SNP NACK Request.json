@@ -23,18 +23,18 @@
             "status": "NACK",
             "tags": [
                 {
-                    "code": "bpp_terms",
+                    "code": "BPP_TERMS",
                     "list": [
                         {
-                            "code": "finder_fee_type",
+                            "code": "FINDER_FEE_TYPE",
                             "value": "percent"
                         },
                         {
-                            "code": "finder_fee_amount_min",
+                            "code": "FINDER_FEE_AMOUNT_MIN",
                             "value": "1.5"
                         },
                         {
-                            "code": "finder_fee_amount_max",
+                            "code": "FINDER_FEE_AMOUNT_MAX",
                             "value": "2.5"
                         }
                     ]

@@ -131,23 +131,23 @@
                             },
                             "tags": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "variant_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "attr",
+                                    "code": "ATTR",
                                     "list": [
                                         {
-                                            "code": "name",
+                                            "code": "NAME",
                                             "value": "item.quantity.unitized.measure"
                                         },
                                         {
-                                            "code": "seq",
+                                            "code": "SEQ",
                                             "value": "1"
                                         }
                                     ]
@@ -198,32 +198,32 @@
                             // "category_id": "Foodgrains",
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "image",
+                                    "code": "IMAGE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "back_image"
                                         },
                                         {
-                                            "code": "url",
+                                            "code": "URL",
                                             "value": "https://sellerNP.com/images/i1_back_image.png"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "veg_nonveg",
+                                    "code": "VEG_NONVEG",
                                     "list": [
                                         {
-                                            "code": "veg",
+                                            "code": "VEG",
                                             "value": "yes"
                                         }
                                     ]
@@ -232,77 +232,77 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "PT1H"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "PT45M"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "ITC"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Ashirwad Atta"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "01/2023"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_prepackaged_food",
+                                    "code": "STATUTORY_REQS_PREPACKAGED_FOOD",
                                     "list": [
                                         {
-                                            "code": "nutritional_info",
+                                            "code": "NUTRITIONAL_INFO",
                                             "value": "Energy(KCal)-(per 100kg) 420,(per serving 50g)250;Protein(g)-(per 100kg) 12,(per serving 50g) 6"
                                         },
                                         {
-                                            "code": "additives_info",
-                                            "value": "Preservatives,Artificial Colours"
+                                            "code": "ADDITIVES_INFO",
+                                            "value": "Preservatives,Artificial COLOURS"
                                         },
                                         {
-                                            "code": "brand_owner_FSSAI_license_no",
+                                            "code": "BRAND_OWNER_FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         },
                                         {
-                                            "code": "other_FSSAI_license_no",
+                                            "code": "OTHER_FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         },
                                         {
-                                            "code": "brand__FSSAI_license_no",
+                                            "code": "BRAND__FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         }
                                     ]
@@ -349,19 +349,19 @@
                             "location_ids": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "veg_nonveg",
+                                    "code": "VEG_NONVEG",
                                     "list": [
                                         {
-                                            "code": "veg",
+                                            "code": "VEG",
                                             "value": "yes"
                                         }
                                     ]
@@ -370,77 +370,77 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "PT1H"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "PT45M"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "ITC"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Ashirwad Atta"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "01/2023"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_prepackaged_food",
+                                    "code": "STATUTORY_REQS_PREPACKAGED_FOOD",
                                     "list": [
                                         {
-                                            "code": "nutritional_info",
+                                            "code": "NUTRITIONAL_INFO",
                                             "value": "Energy(KCal)-(per 100kg) 420,(per serving 50g)250;Protein(g)-(per 100kg) 12,(per serving 50g) 6"
                                         },
                                         {
-                                            "code": "additives_info",
+                                            "code": "ADDITIVES_INFO",
                                             "value": "Preservatives,Artificial Colours"
                                         },
                                         {
-                                            "code": "brand_owner_FSSAI_license_no",
+                                            "code": "BRAND_OWNER_FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         },
                                         {
-                                            "code": "other_FSSAI_license_no",
+                                            "code": "OTHER_FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         },
                                         {
-                                            "code": "brand__FSSAI_license_no",
+                                            "code": "BRAND__FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         }
                                     ]
@@ -487,19 +487,19 @@
                             "location_id": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "veg_nonveg",
+                                    "code": "VEG_NONVEG",
                                     "list": [
                                         {
-                                            "code": "veg",
+                                            "code": "VEG",
                                             "value": "yes"
                                         }
                                     ]
@@ -508,77 +508,77 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "PT1H"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "PT45M"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "ITC"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Ashirwad Atta"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "01/2023"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_prepackaged_food",
+                                    "code": "STATUTORY_REQS_PREPACKAGED_FOOD",
                                     "list": [
                                         {
-                                            "code": "nutritional_info",
+                                            "code": "NUTRITIONAL_INFO",
                                             "value": "Energy(KCal)-(per 100kg) 420,(per serving 50g)250;Protein(g)-(per 100kg) 12,(per serving 50g) 6"
                                         },
                                         {
-                                            "code": "additives_info",
+                                            "code": "ADDITIVES_INFO",
                                             "value": "Preservatives,Artificial Colours"
                                         },
                                         {
-                                            "code": "brand_owner_FSSAI_license_no",
+                                            "code": "BRAND_OWNER_FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         },
                                         {
-                                            "code": "other_FSSAI_license_no",
+                                            "code": "OTHER_FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         },
                                         {
-                                            "code": "brand__FSSAI_license_no",
+                                            "code": "BRAND__FSSAI_LICENSE_NO",
                                             "value": "12345678901234"
                                         }
                                     ]
@@ -597,18 +597,18 @@
                             "url": "https://abcd.cdn.com/images/badge-img",
                             "tags": [
                                 {
-                                    "code": "verification",
+                                    "code": "VERIFICATION",
                                     "list": [
                                         {
-                                            "code": "verify_url",
+                                            "code": "VERIFY_URL",
                                             "value": "https://abcd.dnb.com/verify?id=''ESG-12345678''"
                                         },
                                         {
-                                            "code": "valid_from",
+                                            "code": "VALID_FROM",
                                             "value": "2023-06-03T00:00:00:000Z"
                                         },
                                         {
-                                            "code": "valid_to",
+                                            "code": "VALID_TO",
                                             "value": "2024-06-03T23:59:59:999Z"
                                         }
                                     ]
@@ -640,40 +640,40 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "min_value",
+                                            "code": "MIN_VALUE",
                                             "value": "159.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "value_type",
+                                            "code": "VALUE_TYPE",
                                             "value": "percent"
                                         },
                                         {
-                                            "code": "value",
+                                            "code": "VALUE",
                                             "value": "-60.00"
                                         },
                                         {
-                                            "code": "value_cap",
+                                            "code": "VALUE_CAP",
                                             "value": "-120.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -703,36 +703,36 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "min_value",
+                                            "code": "MIN_VALUE",
                                             "value": "499.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "value_type",
+                                            "code": "VALUE_TYPE",
                                             "value": "amount"
                                         },
                                         {
-                                            "code": "value",
+                                            "code": "VALUE",
                                             "value": "-150.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -762,32 +762,32 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "item_count",
+                                            "code": "ITEM_COUNT",
                                             "value": "2"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "item_count",
+                                            "code": "ITEM_COUNT",
                                             "value": "3"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -817,40 +817,40 @@
                             },
                             "tags": [
                                 {
-                                    "code": "qualifier",
+                                    "code": "QUALIFIER",
                                     "list": [
                                         {
-                                            "code": "min_value",
+                                            "code": "MIN_VALUE",
                                             "value": "598.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "benefit",
+                                    "code": "BENEFIT",
                                     "list": [
                                         {
-                                            "code": "item_count",
+                                            "code": "ITEM_COUNT",
                                             "value": "1"
                                         },
                                         {
-                                            "code": "item_id",
+                                            "code": "ITEM_ID",
                                             "value": "sku id for extra item"
                                         },
                                         {
-                                            "code": "item_value",
+                                            "code": "ITEM_VALUE",
                                             "value": "200.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "meta",
+                                    "code": "META",
                                     "list": [
                                         {
-                                            "code": "additive",
+                                            "code": "ADDITIVE",
                                             "value": "no"
                                         },
                                         {
-                                            "code": "auto",
+                                            "code": "AUTO",
                                             "value": "yes"
                                         }
                                     ]
@@ -860,148 +860,148 @@
                     ],
                     "tags": [
                         {
-                            "code": "order_value",
+                            "code": "ORDER_VALUE",
                             "list": [
                                 {
-                                    "code": "min_value",
+                                    "code": "MIN_VALUE",
                                     "value": "300.00"
                                 }
                             ]
                         },
                         {
-                            "code": "catalog_link",
+                            "code": "CATALOG_LINK",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "inline"
                                 }
                             ]
                         },
                         {
-                            "code": "timing",
+                            "code": "TIMING",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "day_from",
+                                    "code": "DAY_FROM",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "day_to",
+                                    "code": "DAY_TO",
                                     "value": "7"
                                 },
                                 {
-                                    "code": "time_from",
+                                    "code": "TIME_FROM",
                                     "value": "0000"
                                 },
                                 {
-                                    "code": "time_to",
+                                    "code": "TIME_TO",
                                     "value": "2359"
                                 }
                             ]
                         },
                         {
-                            "code": "timing",
+                            "code": "TIMING",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "Self-Pickup"
                                 },
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "day_from",
+                                    "code": "DAY_FROM",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "day_to",
+                                    "code": "DAY_TO",
                                     "value": "7"
                                 },
                                 {
-                                    "code": "time_from",
+                                    "code": "TIME_FROM",
                                     "value": "1100"
                                 },
                                 {
-                                    "code": "time_to",
+                                    "code": "TIME_TO",
                                     "value": "2000"
                                 }
                             ]
                         },
                         {
-                            "code": "timing",
+                            "code": "TIMING",
                             "list": [
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "Delivery"
                                 },
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "day_from",
+                                    "code": "DAY_FROM",
                                     "value": "1"
                                 },
                                 {
-                                    "code": "day_to",
+                                    "code": "DAY_TO",
                                     "value": "7"
                                 },
                                 {
-                                    "code": "time_from",
+                                    "code": "TIME_FROM",
                                     "value": "1100"
                                 },
                                 {
-                                    "code": "time_to",
+                                    "code": "TIME_TO",
                                     "value": "2200"
                                 }
                             ]
                         },
                         {
-                            "code": "close_timing",
+                            "code": "CLOSE_TIMING",
                             "list": [
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "start",
+                                    "code": "START",
                                     "value": "2023-06-03T16:00:00.000Z"
                                 },
                                 {
-                                    "code": "end",
+                                    "code": "END",
                                     "value": "2023-06-03T23:59:00.000Z"
                                 }
                             ]
                         },
                         {
-                            "code": "serviceability",
+                            "code": "SERVICEABILITY",
                             "list": [
                                 {
-                                    "code": "location",
+                                    "code": "LOCATION",
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "category",
+                                    "code": "CATEGORY",
                                     "value": "Foodgrains"
                                 },
                                 {
-                                    "code": "type",
+                                    "code": "TYPE",
                                     "value": "10"
                                 },
                                 {
-                                    "code": "val",
+                                    "code": "VAL",
                                     "value": "3"
                                 },
                                 {
-                                    "code": "unit",
+                                    "code": "UNIT",
                                     "value": "km"
                                 }
                             ]

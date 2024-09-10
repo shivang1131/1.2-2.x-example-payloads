@@ -68,32 +68,32 @@
                             "location_id": ["L1"],
                             "tags": [
                                 {
-                                    "code": "origin",
+                                    "code": "ORIGIN",
                                     "list": [
                                         {
-                                            "code": "country",
+                                            "code": "COUNTRY",
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "image",
+                                    "code": "IMAGE",
                                     "list": [
                                         {
-                                            "code": "type",
+                                            "code": "TYPE",
                                             "value": "back_image"
                                         },
                                         {
-                                            "code": "url",
+                                            "code": "URL",
                                             "value": "https://sellerNP.com/images/i1_back_image.png"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "veg_nonveg",
+                                    "code": "VEG_NONVEG",
                                     "list": [
                                         {
-                                            "code": "veg",
+                                            "code": "VEG",
                                             "value": "yes"
                                         }
                                     ]
@@ -102,56 +102,56 @@
                                     "code": "SKU_PROPERTIES",
                                     "list": [
                                         {
-                                            "code": "returnable",
+                                            "code": "RETURNABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "cancellable",
+                                            "code": "CANCELLABLE",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "return_window",
+                                            "code": "RETURN_WINDOW",
                                             "value": "PT1H"
                                         },
                                         {
-                                            "code": "seller_pickup_return",
+                                            "code": "SELLER_PICKUP_RETURN",
                                             "value": "true"
                                         },
                                         {
-                                            "code": "time_to_ship",
+                                            "code": "TIME_TO_SHIP",
                                             "value": "PT45M"
                                         },
                                         {
-                                            "code": "available_on_cod",
+                                            "code": "AVAILABLE_ON_COD",
                                             "value": "false"
                                         },
                                         {
-                                            "code": "contact_details_consumer_care",
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "statutory_reqs_packaged_commodities",
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
                                     "list": [
                                         {
-                                            "code": "manufacturer_or_packer_name",
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
                                             "value": "ITC"
                                         },
                                         {
-                                            "code": "manufacturer_or_packer_address",
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
                                             "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
                                         },
                                         {
-                                            "code": "common_or_generic_name_of_commodity",
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
                                             "value": "Ashirwad Atta"
                                         },
                                         {
-                                            "code": "month_year_of_manufacture_packing_import",
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
                                             "value": "01/2023"
                                         },
                                         {
-                                            "code": "net_quantity_or_measure_of_commodity_in_pkg",
+                                            "code": "NET_QUANTITY_OR_MEASURE_OF_COMMODITY_IN_PKG",
                                             "value": "1kg"
                                         }
                                     ]
