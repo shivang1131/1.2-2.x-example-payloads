@@ -1,19 +1,25 @@
 {
   "context": {
-        "domain": "domain_value",
-        "action": "init",
-        "core_version": "2.x",
-        "bap_id": "bap_id_value",
-        "bap_uri": "bap_uri_value",
-        "bpp_id": "bpp_id_value",
-        "bpp_uri": "bpp_uri_value",
-        "transaction_id": "transaction_id_value",
-        "message_id": "message_id_value",
-        "city": "city_code_value",
-        "country": "country_code_value",
-        "timestamp": "timestamp_value",
-        "ttl": "ttl_value"
+    "domain": "ecommerce",
+    "action": "order_status",
+    "version": "1.0.0",
+    "bap_id": "bap-12345",
+    "bap_uri": "https://bap.example.com",
+"bpp_id":"bpp_id_value",
+"bpp_uri":"bpp_uri_value",
+    "transaction_id": "txn-67890",
+    "message_id": "msg-98765",
+    "location": {
+      "city": {
+        "code": "BLR"
+      },
+      "country": {
+        "code": "IND"
+      }
     },
+    "timestamp": "2024-09-04T12:34:56Z",
+    "ttl": "PT30M"
+  },
   "message": {
     "order_id": "order-987654321"
   }

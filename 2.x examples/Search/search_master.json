@@ -1,14 +1,20 @@
 {
   "context": {
-    "domain": "ONDC:RET10",
-    "action": "search",
-    "country": "country_code_value",
-    "city": "city_code_value",
-    "core_version": "2.x",
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
     "bap_id": "bap_id_value",
     "bap_uri": "bap_uri_value",
     "transaction_id": "transaction_id_value",
     "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
     "timestamp": "timestamp_value",
     "ttl": "ttl_value"
   },
