@@ -1,24 +1,22 @@
 {
   "context": {
-    "domain": "ecommerce",
-    "action": "order_status",
-    "version": "1.0.0",
-    "bap_id": "bap-12345",
-    "bap_uri": "https://bap.example.com",
-"bpp_id":"bpp_id_value",
-"bpp_uri":"bpp_uri_value",
-    "transaction_id": "txn-67890",
-    "message_id": "msg-98765",
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
     "location": {
       "city": {
-        "code": "BLR"
+        "code": "city_code_value"
       },
       "country": {
-        "code": "IND"
+        "code": "country_code_value"
       }
     },
-    "timestamp": "2024-09-04T12:34:56Z",
-    "ttl": "PT30M"
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
   },
   "message": {
     "order_id": "ORD-67890"
