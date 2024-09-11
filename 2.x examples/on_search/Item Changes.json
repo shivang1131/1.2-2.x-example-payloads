@@ -23,6 +23,14 @@
             "providers": [
                 {
                     "id": "P1",
+                    "categories" : [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Foodgrains"
+                            }
+                        }
+                    ],
                     "items": [
                         {
                             "id": "I1",
@@ -63,7 +71,7 @@
                                 "value": "65.00",
                                 "maximum_value": "65.0"
                             },
-                            // "category_id": "Foodgrains",
+                            "category_ids": ["CG1"],
                             "fulfillment_ids": ["F1"],
                             "location_id": ["L1"],
                             "tags": [

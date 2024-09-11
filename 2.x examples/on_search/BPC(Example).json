@@ -93,6 +93,14 @@
                             }
                         }
                     ],
+                    "categories" : [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Hair Care - Shampoo, Oils, Conditioners"
+                            }
+                        }
+                    ],
                     "items": [
                         {
                             "id": "I1",
@@ -132,7 +140,7 @@
                                 "value": "251.00",
                                 "maximum_value": "349.0"
                             },
-                            // "category_id": "Hair Care - Shampoo, Oils, Conditioners",
+                            "category_ids" : ["CG1"],
                             "fulfillment_ids": ["F1"],
                             "location_ids": ["L1"],
                             "tags": [

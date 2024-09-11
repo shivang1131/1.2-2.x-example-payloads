@@ -123,6 +123,14 @@
                             }
                         }
                     ],
+                    "categories" : [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Home Furnishings"
+                            }
+                        }
+                    ],
                     "items": [
                         {
                             "id": "I1",
@@ -162,7 +170,7 @@
                                 "value": "2808.00",
                                 "maximum_value": "2808.0"
                             },
-                            // "category_id": "Home Furnishings",
+                            "category_ids": ["CG1"],
                             "fulfillment_ids": ["F1"],
                             "location_ids": ["L1"],
                             "tags": [

@@ -141,6 +141,14 @@
                   }
                 }
               ],
+              "categories" : [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Nutrition and Fitness Supplements"
+                            }
+                        }
+                    ],
               "items":
               [
                 {
@@ -188,7 +196,7 @@
                     "value":"65.00",
                     "maximum_value":"65.0"
                   },
-                //   "category_id":"Nutrition and Fitness Supplements",
+                  "category_ids": ["CG1"],
                   "fulfillment_ids":["F1"],
                   "location_ids":["L1"],
                   "tags":

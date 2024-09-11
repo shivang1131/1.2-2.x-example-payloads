@@ -153,6 +153,12 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Foodgrains"
+                            }
                         }
                     ],
                     "items": [
@@ -195,7 +201,9 @@
                                 "value": "65.00",
                                 "maximum_value": "65.0"
                             },
-                            // "category_id": "Foodgrains",
+                            "category_ids": ["CG1"],
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
                             "tags": [
                                 {
                                     "code": "ORIGIN",
@@ -344,7 +352,7 @@
                                 "value": "125.00",
                                 "maximum_value": "125.0"
                             },
-                            // "category_id": "Foodgrains",
+                            "category_ids": ["CG1"],
                             "fulfillment_ids": ["F1"],
                             "location_ids": ["L1"],
                             "tags": [
@@ -482,7 +490,7 @@
                                 "value": "300.00",
                                 "maximum_value": "300.0"
                             },
-                            "category_id": "Foodgrains",
+                            "category_ids": ["CG1"],
                             "fulfillment_ids": ["F1"],
                             "location_id": ["L1"],
                             "tags": [
