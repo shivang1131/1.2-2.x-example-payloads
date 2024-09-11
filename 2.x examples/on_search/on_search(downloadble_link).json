@@ -1,23 +1,18 @@
 {
     "context": {
-    "domain": "domain_value",
-    "action": "action_value",
-    "version": "2.x",
-    "bap_id": "bap_id_value",
-    "bap_uri": "bap_uri_value",
-    "transaction_id": "transaction_id_value",
-    "message_id": "message_id_value",
-    "location": {
-      "city": {
-        "code": "city_code_value"
-      },
-      "country": {
-        "code": "country_code_value"
-      }
+        "domain": "ONDC:RET11",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T1",
+        "message_id": "M1",
+        "timestamp": "2023-06-03T08:00:30.000Z"
     },
-    "timestamp": "timestamp_value",
-    "ttl": "ttl_value"
-  },
     "message": {
         "catalog": {
             "fulfillments": [
@@ -39,12 +34,31 @@
                 "short_desc": "Seller Marketplace",
                 "long_desc": "Seller Marketplace",
                 "images": [{
-                                    "url": "https://sellerNP.com/symbol/np.png"
-                                },
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                ],
+                "tags": [
+                    {
+                        "code": "BPP_TERMS",
+                        "list": [
+                            {
+                                "code": "NP_TYPE",
+                                "value": "ISN"
+                            },
+                            {
+                                "code": "ACCEPT_BAP_TERMS",
+                                "value": "Y"
+                            },
+                            {
+                                "code": "COLLECT_PAYMENT",
+                                "value": "Y"
+                            }
+                        ]
+                    }
+                ]
             },
             "providers": [
                 {
@@ -81,12 +95,15 @@
                     ],
                     "descriptor": {
                         "name": "Store 1",
-                        "symbol": "https://sellerNP.com/images/store1.png",
                         "short_desc": "Store 1",
                         "long_desc": "Store 1",
-                        "images": [
-                            "https://sellerNP.com/images/store1.png"
-                        ]
+                        "images": [{
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                ]
                     },
                     "ttl": "P1D",
                     "locations": [
@@ -110,7 +127,7 @@
                             "city": "Bengaluru",
                             "area_code": "560076",
                             "state": "KA",
-                            "address": "locality|street",
+                            "ADDRESS": "street|locality",
                             "circle": {
                                 "gps": "12.967555,77.749666",
                                 "radius": {
@@ -128,11 +145,15 @@
                                 "name": "Pizza",
                                 "short_desc": "Veg and Non-Veg pizza",
                                 "long_desc": "American and Italian Veg and Non-Veg Pizza",
-                                "images": [
-                                    "https://sellerNP.com/ondc/m005.png"
-                                ]
+                                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
                             },
-                            "TAGS": [
+                            "tags": [
                                 {
                                     "code": "TYPE",
                                     "list": [
@@ -289,306 +310,18 @@
                             ]
                         }
                     ],
-                    // "category_id": "F&B",
-                    "category_ids": [
-                        "5:1"
-                    ],
-                    "fulfillment_ids": ["F1"],
-                    "location_ids": ["L1"],
-                    "tags": [
-                        {
-                            "code": "TYPE",
-                            "list": [
-                                {
-                                    "code": "TYPE",
-                                    "value": "item"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "CUSTOM_GROUP",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG1"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "CONFIG",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG1"
-                                },
-                                {
-                                    "code": "MIN",
-                                    "value": "1"
-                                },
-                                {
-                                    "code": "MAX",
-                                    "value": "1"
-                                },
-                                {
-                                    "code": "SEQ",
-                                    "value": "1"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "TIMING",
-                            "list": [
-                                {
-                                    "code": "DAY_FROM",
-                                    "value": "1"
-                                },
-                                {
-                                    "code": "DAY_TO",
-                                    "value": "5"
-                                },
-                                {
-                                    "code": "TIME_FROM",
-                                    "value": "1800"
-                                },
-                                {
-                                    "code": "TIME_TO",
-                                    "value": "2200"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "VEG_NONVEG",
-                            "list": [
-                                {
-                                    "code": "VEG",
-                                    "value": "yes"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "SKU_PROPERTIES",
-                            "list": [
-                                {
-                                    "code": "RETURNABLE",
-                                    "value": "true"
-                                },
-                                {
-                                    "code": "CANCELLABLE",
-                                    "value": "true"
-                                },
-                                {
-                                    "code": "RETURN_WINDOW",
-                                    "value": "PT1H"
-                                },
-                                {
-                                    "code": "SELLER_PICKUP_RETURN",
-                                    "value": "true"
-                                },
-                                {
-                                    "code": "TIME_TO_SHIP",
-                                    "value": "PT45M"
-                                },
-                                {
-                                    "code": "AVAILABLE_ON_COD",
-                                    "value": "false"
-                                },
-                                {
-                                    "code": "CONTACT_DETAILS_CONSUMER_CARE",
-                                    "value": "Ramesh,info@keshking.com,18001035155"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "C1",
-                    "descriptor": {
-                        "name": "New Hand Tossed"
-                    },
-                    "quantity": {
-                        "available": {
-                            "count": "99"
-                        },
-                        "maximum": {
-                            "count": "99"
-                        }
-                    },
-                    "price": {
-                        "currency": "INR",
-                        "value": "0.0",
-                        "maximum_value": "0.0"
-                    },
-                    "category_id": "F&B",
-                    "related": true,
-                    "tags": [
-                        {
-                            "code": "TYPE",
-                            "list": [
-                                {
-                                    "code": "TYPE",
-                                    "value": "customization"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "PARENT",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG1"
-                                },
-                                {
-                                    "code": "DEFAULT",
-                                    "value": "yes"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "CHILD",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG2"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "VEG_NONVEG",
-                            "list": [
-                                {
-                                    "code": "VEG",
-                                    "value": "yes"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "C2",
-                    "descriptor": {
-                        "name": "Regular"
-                    },
-                    "quantity": {
-                        "available": {
-                            "count": "99"
-                        },
-                        "maximum": {
-                            "count": "99"
-                        }
-                    },
-                    "price": {
-                        "currency": "INR",
-                        "value": "0.0",
-                        "maximum_value": "0.0"
-                    },
-                    "category_id": "F&B",
-                    "related": true,
-                    "tags": [
-                        {
-                            "code": "TYPE",
-                            "list": [
-                                {
-                                    "code": "TYPE",
-                                    "value": "customization"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "PARENT",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG2"
-                                },
-                                {
-                                    "code": "DEFAULT",
-                                    "value": "yes"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "CHILD",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG3"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "VEG_NONVEG",
-                            "list": [
-                                {
-                                    "code": "VEG",
-                                    "value": "yes"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "C3",
-                    "descriptor": {
-                        "name": "Grilled Mushrooms"
-                    },
-                    "quantity": {
-                        "available": {
-                            "count": "99"
-                        },
-                        "maximum": {
-                            "count": "99"
-                        }
-                    },
-                    "price": {
-                        "currency": "INR",
-                        "value": "35.0",
-                        "maximum_value": "35.0"
-                    },
-                    "category_id": "F&B",
-                    "related": true,
-                    "tags": [
-                        {
-                            "code": "TYPE",
-                            "list": [
-                                {
-                                    "code": "TYPE",
-                                    "value": "customization"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "PARENT",
-                            "list": [
-                                {
-                                    "code": "ID",
-                                    "value": "CG3"
-                                },
-                                {
-                                    "code": "DEFAULT",
-                                    "value": "yes"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "VEG_NONVEG",
-                            "list": [
-                                {
-                                    "code": "VEG",
-                                    "value": "yes"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ],
             "offers": [
                 {
                     "id": "DISCP60",
                     "descriptor": {
                         "code": "discount",
-                        "images": [
-                            "https://sellerNP.com/images/offer2-banner.png"
-                        ]
+                        "images": [{
+                            "url": "https://sellerNP.com/symbol/np.png"
+                        },
+                        {
+                            "url": "https://sellerNP.com/images/np.png"
+                        }
+                    ]
                     },
                     "location_ids": [
                         "L1"
@@ -605,10 +338,10 @@
                     },
                     "tags": [
                         {
-                            "code": "qualifier",
+                            "code": "QUALIFIER",
                             "list": [
                                 {
-                                    "code": "min_value",
+                                    "code": "MIN_VALUE",
                                     "value": "159"
                                 }
                             ]
@@ -649,9 +382,13 @@
                     "id": "FLAT150",
                     "descriptor": {
                         "code": "discount",
-                        "images": [
-                            "https://sellerNP.com/images/offer2-banner.png"
-                        ]
+                        "images": [{
+                            "url": "https://sellerNP.com/symbol/np.png"
+                        },
+                        {
+                            "url": "https://sellerNP.com/images/np.png"
+                        }
+                    ]
                     },
                     "location_ids": [
                         "L1"
@@ -708,9 +445,13 @@
                     "id": "BUY2GET3",
                     "descriptor": {
                         "code": "buyXgetY",
-                        "images": [
-                            "https://sellerNP.com/images/offer1-banner.png"
-                        ]
+                        "images": [{
+                            "url": "https://sellerNP.com/symbol/np.png"
+                        },
+                        {
+                            "url": "https://sellerNP.com/images/np.png"
+                        }
+                    ]
                     },
                     "location_ids": [
                         "L1"
@@ -767,9 +508,13 @@
                     "id": "FREEBIE",
                     "descriptor": {
                         "code": "freebie",
-                        "images": [
-                            "https://sellerNP.com/images/offer3-banner.png"
-                        ]
+                        "images": [{
+                            "url": "https://sellerNP.com/symbol/np.png"
+                        },
+                        {
+                            "url": "https://sellerNP.com/images/np.png"
+                        }
+                    ]
                     },
                     "location_ids": [
                         "L1"
@@ -842,7 +587,7 @@
                     "list": [
                         {
                             "code": "TYPE",
-                            "value": "inline"
+                            "value": "link"
                         },
                         {
                             "code": "TYPE_VALUE",
@@ -1102,8 +847,17 @@
                             "value": "km"
                         }
                     ]
+                },
+                {
+                    "code": "FSSAI",
+                    "list": [
+                        {
+                            "code": "LICENSE_NO",
+                            "value": "1234567890"
+                        }
+                    ]
                 }
             ]
-        }
+        }]
     }
-}
+}}
