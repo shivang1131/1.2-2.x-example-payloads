@@ -1,18 +1,23 @@
 {
     "context": {
-        "domain": "ONDC:RET11",
-        "country": "IND",
-        "city": "std:080",
-        "action": "on_search",
-        "core_version": "1.2.0",
-        "bap_id": "buyerNP.com",
-        "bap_uri": "https://buyerNP.com/ondc",
-        "bpp_id": "sellerNP.com",
-        "bpp_uri": "https://sellerNP.com/ondc",
-        "transaction_id": "T1",
-        "message_id": "M1",
-        "timestamp": "2023-06-03T08:00:30.000Z"
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
     },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
     "message": {
         "catalog": {
             "fulfillments": [
