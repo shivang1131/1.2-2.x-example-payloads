@@ -444,29 +444,26 @@
         "ttl": "P1D"
       },
       "payment": {
-        "uri": "https://razorpay.com/",
-        "tl_method": "http/get",
-        "params": {
-          "amount": "1753.45",
-          "currency": "INR",
-          "transaction_id": "order_Oeh33EhEOF9ASQ"
-        },
-        "status": "PAID",
-        "type": "ON-ORDER",
-        "collected_by": "BAP",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BPP",
+        "uri": "https://snp.com/pg",
+        "status": "NOT-PAID",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/buyer_app_finder_fee_amount": "3",
+        "@ondc/org/settlement_basis": "delivery",
+        "@ondc/org/settlement_window": "P1D",
+        "@ondc/org/withholding_amount": "10.00",
         "@ondc/org/settlement_details": [
           {
-            "bank_name": "ICICI",
-            "branch_name": "BANGALORE - INDIRA NAGAR",
-            "upi_address": "",
-            "settlement_type": "neft",
-            "beneficiary_name": " NAFFA INNOVATIONS PRIVATE LIMITED NODAL ACCOUNT",
-            "settlement_phase": "sale-amount",
-            "settlement_ifsc_code": "ICIC0000169",
             "settlement_counterparty": "seller-app",
-            "settlement_bank_account_no": "016905011158"
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "beneficiary_name": "xxxxx",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "XXXXXXXXXX",
+            "settlement_ifsc_code": "XXXXXXXXX",
+            "bank_name": "xxxx",
+            "branch_name": "xxxx"
           }
         ]
       },

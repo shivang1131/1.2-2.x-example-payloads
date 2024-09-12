@@ -454,7 +454,7 @@
         },
         "status": "PAID",
         "type": "ON-FULFILLMENT",
-        "collected_by": "BAP",
+        "collected_by": "BPP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
