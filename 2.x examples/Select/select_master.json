@@ -46,38 +46,70 @@
             }
           },
           "descriptor": {
-            "tags": {
-              "customization": {
-                "list": {
-                  "input_text": "customization_input_text_value"
-                }
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "CUSTOMIZATION"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "INPUT_TEXT"
+                    },
+                    "value": "customization_input_text_value"
+                  }
+                ]
               }
-            }
+            ]
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "parent_list_id_value"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "parent_list_id_value"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "type_value"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "type_value"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "offers": [
         {
           "id": "offer_id_value",
-          "tags": {
-            "selection": {
-              "list": {
-                "apply": "apply_value"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "SELECTION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "APPLY"
+                  },
+                  "value": "apply_value"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "payment": {

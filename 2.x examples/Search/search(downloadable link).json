@@ -1,5 +1,5 @@
 {
-    "context": {
+  "context": {
     "domain": "domain_value",
     "action": "action_value",
     "version": "2.x",
@@ -18,41 +18,52 @@
     "timestamp": "timestamp_value",
     "ttl": "ttl_value"
   },
-    "message": {
-      "intent": {
-        "payment": {
-          "BUYER_FINDER_FEE_TYPE": "PERCENT",
-          "BUYER_FINDER_FEE_AMOUNT": "10"
-        },
-        "tags": [
-          {
-            "code": "CATALOG_FULL",
-            "list": [
-              {
-                "code": "PAYLOAD_TYPE",
-                "value": "link"
-              }
-            ]
+  "message": {
+    "intent": {
+      "payment": {
+        "BUYER_FINDER_FEE_TYPE": "PERCENT",
+        "BUYER_FINDER_FEE_AMOUNT": "10"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "CATALOG_FULL"
           },
-          {
-            "code": "BAP_TERMS",
-            "list": [
-              {
-                "code": "STATIC_TERMS",
-                "value": "static_terms_value"
+          "list": [
+            {
+              "descriptor": {
+                "code": "PAYLOAD_TYPE"
               },
-              {
-                "code": "STATIC_TERMS_NEW",
-                "value": "static_terms_new_value"
+              "value": "link"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
               },
-              {
-                "code": "EFFECTIVE_DATE",
-                "value": "effective_date_value"
-              }
-            ]
-          }
-        ]
-      }
+              "value": "static_terms_value"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS_NEW"
+              },
+              "value": "static_terms_new_value"
+            },
+            {
+              "descriptor": {
+                "code": "EFFECTIVE_DATE"
+              },
+              "value": "effective_date_value"
+            }
+          ]
+        }
+      ]
     }
   }
-  
+}

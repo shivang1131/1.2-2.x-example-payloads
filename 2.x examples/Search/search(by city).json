@@ -25,7 +25,7 @@
         },
         "payment": {
           "BUYER_FINDER_FEE_TYPE": "PERCENT",
-          "BUYER_FINDER_FEE_AMOUNT": "3"
+          "BUYER_FINDER_FEE_PERCENTAGE": "3"
         }
       }
     }

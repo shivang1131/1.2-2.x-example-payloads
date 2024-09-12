@@ -1,5 +1,5 @@
 {
-    "context": {
+  "context": {
     "domain": "domain_value",
     "action": "action_value",
     "version": "2.x",
@@ -18,48 +18,55 @@
     "timestamp": "timestamp_value",
     "ttl": "ttl_value"
   },
-    "message": {
-      "intent": {
-        "item": {
-          "descriptor": {
-            "name": "item_name_value"
-          }
-        },
-        "fulfillment": {
-          "type": "fulfillment_type_value",
-          "end": {
-            "location": {
-              "gps": "gps_value",
-              "address": {
-                "area_code": "area_code_value"
-              }
+  "message": {
+    "intent": {
+      "item": {
+        "descriptor": {
+          "name": "item_name_value"
+        }
+      },
+      "fulfillment": {
+        "type": "fulfillment_type_value",
+        "end": {
+          "location": {
+            "gps": "gps_value",
+            "address": {
+              "area_code": "area_code_value"
             }
           }
-        },
-        "payment": {
-          "BUYER_FINDER_FEE_TYPE": "PERCENT",
-          "BUYER_FINDER_FEE_AMOUNT": "3"
-        },
-        "tags": [
-          {
-            "code": "BAP_TERMS",
-            "list": [
-              {
-                "code": "STATIC_TERMS",
-                "value": "static_terms_value"
+        }
+      },
+      "payment": {
+        "BUYER_FINDER_FEE_TYPE": "PERCENT",
+        "BUYER_FINDER_FEE_PERCENTAGE": "3"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
               },
-              {
-                "code": "STATIC_TERMS_NEW",
-                "value": "static_terms_new_value"
+              "value": "static_terms_value"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS_NEW"
               },
-              {
-                "code": "EFFECTIVE_DATE",
-                "value": "effective_date_value"
-              }
-            ]
-          }
-        ]
-      }
+              "value": "static_terms_new_value"
+            },
+            {
+              "descriptor": {
+                "code": "EFFECTIVE_DATE"
+              },
+              "value": "effective_date_value"
+            }
+          ]
+        }
+      ]
     }
   }
-  
+}

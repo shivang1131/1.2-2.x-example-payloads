@@ -34,10 +34,14 @@
           },
           "tags": [
             {
-              "code": "type",
+              "descriptor": {
+                "code": "TYPE"
+              },
               "list": [
                 {
-                  "code": "type",
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
                   "value": "item"
                 }
               ]
@@ -53,10 +57,14 @@
           },
           "tags": [
             {
-              "code": "type",
+              "descriptor": {
+                "code": "TYPE"
+              },
               "list": [
                 {
-                  "code": "type",
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
                   "value": "customization"
                 }
               ]
@@ -69,10 +77,14 @@
           "id": "offer_id_value",
           "tags": [
             {
-              "code": "selection",
+              "descriptor": {
+                "code": "SELECTION"
+              },
               "list": [
                 {
-                  "code": "apply",
+                  "descriptor": {
+                    "code": "APPLY"
+                  },
                   "value": "apply_value"
                 }
               ]

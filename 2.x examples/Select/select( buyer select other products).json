@@ -38,10 +38,14 @@
           "id": "offer_id_value",
           "tags": [
             {
-              "code": "selection",
+              "descriptor": {
+                "code": "SELECTION"
+              },
               "list": [
                 {
-                  "code": "apply",
+                  "descriptor": {
+                    "code": "APPLY"
+                  },
                   "value": "apply_value"
                 }
               ]

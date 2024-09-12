@@ -32,18 +32,34 @@
               "count": 1
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG1"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG1"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "I1",
@@ -54,13 +70,21 @@
               "count": 1
             }
           },
-          "tags": {
-            "type": {
-              "list": {
-                "type": "item"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "ITEM"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "offers": [
@@ -76,14 +100,27 @@
         "state": {
           "code": "billing_state_code_value"
         },
-        "tags": {
-          "AUDIT_TIMESTAMP": {
-            "list": {
-              "CREATED_AT": "created_at_value",
-              "UPDATED_AT": "updated_at_value"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "created_at_value"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "updated_at_value"
+              }
+            ]
           }
-        },
+        ],
         "email": "billing_email_value",
         "name": "billing_name_value",
         "phone": "billing_phone_value",

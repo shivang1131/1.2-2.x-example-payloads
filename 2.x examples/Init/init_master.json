@@ -28,14 +28,27 @@
         "state": {
           "code": "billing_state_code_value"
         },
-        "tags": {
-          "AUDIT_TIMESTAMP": {
-            "list": {
-              "CREATED_AT": "created_at_value",
-              "UPDATED_AT": "updated_at_value"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "created_at_value"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "updated_at_value"
+              }
+            ]
           }
-        },
+        ],
         "email": "billing_email_value",
         "name": "billing_name_value",
         "phone": "billing_phone_value",
@@ -76,18 +89,34 @@
               "count": "quantity_count_value"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "parent_list_id_value"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "parent_list_id_value"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "type_value"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "type_value"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "offers": [

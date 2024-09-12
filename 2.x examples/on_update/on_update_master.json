@@ -1,4 +1,5 @@
-{"context": {
+{
+  "context": {
     "domain": "domain_value",
     "action": "action_value",
     "version": "2.x",
@@ -17,228 +18,319 @@
     "timestamp": "timestamp_value",
     "ttl": "ttl_value"
   },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "PROVIDER987",
-          "locations": {
-            "id": "LOC001"
+  "message": {
+    "order": {
+      "provider": {
+        "id": "PROVIDER987",
+        "locations": {
+          "id": "LOC001"
+        }
+      },
+      "items": [
+        {
+          "id": "ITEM001",
+          "fulfillment_ids": "FULFILLMENT001",
+          "quantity": {
+            "selected": {
+              "count": 2
+            }
           }
-        },
-        "items": [
+        }
+      ],
+      "billing": {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890",
+        "address": [
           {
-            "id": "ITEM001",
-            "fulfillment_ids": "FULFILLMENT001",
-            "quantity": {
-              "selected": {
-                "count": 2
+            "name": "John's Home",
+            "building": "10",
+            "locality": "Downtown",
+            "country": "USA",
+            "area_code": "12345"
+          },
+          {
+            "city": "Cityname",
+            "state": "Statename"
+          }
+        ],
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "2023-08-29T12:00:00Z"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "2023-08-30T12:00:00Z"
+              }
+            ]
+          }
+        ]
+      },
+      "fulfillments": {
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "descriptor": {
+                "name": "Warehouse A"
+              },
+              "address": {
+                "name": "Warehouse A",
+                "building": "Building 5",
+                "locality": "Industrial Area",
+                "city": "Cityname",
+                "state": "Statename",
+                "area_code": "560001"
+              },
+              "gps": "12.9715987,77.5945627",
+              "time": {
+                "timestamp": "2023-08-29T10:30:00Z"
+              },
+              "instructions": {
+                "images": ["image_url_001"],
+                "code": "INST001",
+                "name": "Handle with care",
+                "short_desc": "Fragile items",
+                "authorization": {
+                  "type": "QR",
+                  "token": "AUTH_TOKEN_123",
+                  "valid_from": "2023-08-29T09:00:00Z",
+                  "valid_to": "2023-08-29T12:00:00Z"
+                }
+              },
+              "contact": {
+                "phone": "987-654-3210",
+                "email": "contact@warehouse.com"
+              }
+            }
+          },
+          {
+            "type": "END",
+            "location": {
+              "address": {
+                "name": "John's Home",
+                "building": "10",
+                "locality": "Downtown",
+                "city": "Cityname",
+                "state": "Statename",
+                "country": "Countryname",
+                "area_code": "12345"
+              },
+              "gps": "13.0826802,80.2707184",
+              "time": {
+                "timestamp": "2023-08-30T15:30:00Z"
+              },
+              "instructions": {
+                "images": ["image_url_002"],
+                "code": "INST002",
+                "name": "Leave at door",
+                "short_desc": "Leave package at front door",
+                "authorization": {
+                  "type": "QR",
+                  "token": "AUTH_TOKEN_456",
+                  "valid_from": "2023-08-30T13:00:00Z",
+                  "valid_to": "2023-08-30T17:00:00Z"
+                }
+              },
+              "person": {
+                "name": "John Doe"
+              },
+              "contact": {
+                "phone": "123-456-7890",
+                "email": "john.doe@example.com"
               }
             }
           }
         ],
-        "billing": {
-          "name": "John Doe",
-          "email": "john.doe@example.com",
-          "phone": "123-456-7890",
-          "address": [
-            {
-              "name": "John's Home",
-              "building": "10",
-              "locality": "Downtown",
-              "country": "USA",
-              "area_code": "12345"
-            },
-            {
-              "city": "Cityname",
-              "state": "Statename"
-            }
-          ],
-          "tags": {
-            "AUDIT_TIMESTAMP": {
-              "list": {
-                "CREATED_AT": "2023-08-29T12:00:00Z",
-                "UPDATED_AT": "2023-08-30T12:00:00Z"
-              }
-            }
+        "agent": {
+          "person": {
+            "name": "Delivery Agent"
+          },
+          "contact": {
+            "phone": "998-765-4321"
           }
         },
-        "fulfillments": {
-          "stops": [
-            {
-              "type": "START",
-              "location": {
-                "descriptor": {
-                  "name": "Warehouse A"
-                },
-                "address": {
-                  "name": "Warehouse A",
-                  "building": "Building 5",
-                  "locality": "Industrial Area",
-                  "city": "Cityname",
-                  "state": "Statename",
-                  "area_code": "560001"
-                },
-                "gps": "12.9715987,77.5945627",
-                "time": {
-                  "timestamp": "2023-08-29T10:30:00Z"
-                },
-                "instructions": {
-                  "images": ["image_url_001"],
-                  "code": "INST001",
-                  "name": "Handle with care",
-                  "short_desc": "Fragile items",
-                  "authorization": {
-                    "type": "QR",
-                    "token": "AUTH_TOKEN_123",
-                    "valid_from": "2023-08-29T09:00:00Z",
-                    "valid_to": "2023-08-29T12:00:00Z"
-                  }
-                },
-                "contact": {
-                  "phone": "987-654-3210",
-                  "email": "contact@warehouse.com"
-                }
-              }
-            },
-            {
-              "type": "END",
-              "location": {
-                "address": {
-                  "name": "John's Home",
-                  "building": "10",
-                  "locality": "Downtown",
-                  "city": "Cityname",
-                  "state": "Statename",
-                  "country": "Countryname",
-                  "area_code": "12345"
-                },
-                "gps": "13.0826802,80.2707184",
-                "time": {
-                  "timestamp": "2023-08-30T15:30:00Z"
-                },
-                "instructions": {
-                  "images": ["image_url_002"],
-                  "code": "INST002",
-                  "name": "Leave at door",
-                  "short_desc": "Leave package at front door",
-                  "authorization": {
-                    "type": "QR",
-                    "token": "AUTH_TOKEN_456",
-                    "valid_from": "2023-08-30T13:00:00Z",
-                    "valid_to": "2023-08-30T17:00:00Z"
-                  }
-                },
-                "person": {
-                  "name": "John Doe"
-                },
-                "contact": {
-                  "phone": "123-456-7890",
-                  "email": "john.doe@example.com"
-                }
-              }
-            }
-          ],
-          "agent": {
-            "person": {
-              "name": "Delivery Agent"
-            },
-            "contact": {
-              "phone": "998-765-4321"
-            }
-          },
-          "vehicle": {
-            "registration": "ABC-1234"
-          },
-          "id": "FULFILLMENT001",
-          "tags": {
-            "CONSIGNMENT": {
-              "list": {
-                "PROVIDER_NAME": "DeliveryCo",
-                "TAT": "24 hours"
-              }
-            }
-          },
-          "tracking": "123456789",
-          "state": {
-            "descriptor": {
-              "code": "ready_to_ship"
-            }
-          },
-          "type": "delivery"
+        "vehicle": {
+          "registration": "ABC-1234"
         },
-        "quote": {
-          "price": {
-            "currency": "USD",
-            "value": "100.00"
-          },
-          "breakup": [
-            {
-              "item": {
-                "quantity": {
-                  "selected": {
-                    "count": 2
-                  }
+        "id": "FULFILLMENT001",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "PROVIDER_NAME"
                 },
-                "price": {
-                  "currency": "USD",
-                  "value": "50.00"
+                "value": "DeliveryCo"
+              },
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "24 hours"
+              }
+            ]
+          }
+        ],
+        "tracking": "123456789",
+        "state": {
+          "descriptor": {
+            "code": "ready_to_ship"
+          }
+        },
+        "type": "delivery"
+      },
+      "quote": {
+        "price": {
+          "currency": "USD",
+          "value": "100.00"
+        },
+        "breakup": [
+          {
+            "item": {
+              "quantity": {
+                "selected": {
+                  "count": 2
                 }
               },
               "price": {
                 "currency": "USD",
-                "value": "100.00"
+                "value": "50.00"
               }
-            }
-          ],
-          "ttl": "2023-09-01T12:00:00Z"
-        },
-        "payments": {
-          "params": {
-            "currency": "USD",
-            "transaction_id": "TXN123456",
-            "amount": "100.00"
-          },
-          "tags": {
-            "settlement_details": {
-              "list": {
-                "settlement_counterparty": "John Doe",
-                "settlement_phase": "processing",
-                "beneficiary_name": "John Doe",
-                "settlement_type": "upi",
-                "upi_address": "john@bank",
-                "settlement_bank_account_no": "1234567890",
-                "settlement_ifsc_code": "BANK0001234",
-                "bank_name": "BankName",
-                "branch_name": "MainBranch"
-              }
-            }
-          },
-          "url": "https://paymentgateway.com/pay",
-          "status": "pending",
-          "type": "prepaid",
-          "collected_by": "payment_gateway"
-        },
-        "tags": {
-          "BAP_TERMS": {
-            "list": {
-              "BUYER_FINDER_FEE_TYPE": "PERCENT",
-              "BUYER_FINDER_FEE_PERCENTAGE": "3",
-              "BUYER_FINDER_FEE_AMOUNT": "100"
+            },
+            "price": {
+              "currency": "USD",
+              "value": "100.00"
             }
           }
+        ],
+        "ttl": "2023-09-01T12:00:00Z"
+      },
+      "payments": {
+        "params": {
+          "currency": "USD",
+          "transaction_id": "TXN123456",
+          "amount": "100.00"
         },
-        "documents": {
-          "url": "https://documents.com/doc.pdf",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "John Doe"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "processing"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "John Doe"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "upi"
+              },
+              {
+                "descriptor": {
+                  "code": "UPI_ADDRESS"
+                },
+                "value": "john@bank"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                },
+                "value": "1234567890"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_IFSC_CODE"
+                },
+                "value": "BANK0001234"
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "BankName"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "MainBranch"
+              }
+            ]
+          }
+        ],
+        "url": "https://paymentgateway.com/pay",
+        "status": "pending",
+        "type": "prepaid",
+        "collected_by": "payment_gateway"
+      },
+      "tags": [
+        {
           "descriptor": {
-            "code": "DOC123"
+            "code": "BAP_TERMS"
           },
-          "mime_type": "application/pdf"
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_TYPE"
+              },
+              "value": "PERCENT"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+              },
+              "value": "3"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_AMOUNT"
+              },
+              "value": "100"
+            }
+          ]
+        }
+      ],
+      "documents": {
+        "url": "https://documents.com/doc.pdf",
+        "descriptor": {
+          "code": "DOC123"
         },
-        "id": "ORDER12345",
-        "status": "confirmed",
-        "created_at": "2023-08-29T10:00:00Z",
-        "updated_at": "2023-08-30T12:00:00Z"
-      }
+        "mime_type": "application/pdf"
+      },
+      "id": "ORDER12345",
+      "status": "confirmed",
+      "created_at": "2023-08-29T10:00:00Z",
+      "updated_at": "2023-08-30T12:00:00Z"
     }
   }
-  
+}
