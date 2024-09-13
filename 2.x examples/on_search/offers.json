@@ -1,24 +1,23 @@
-
 {
     "context": {
-    "domain": "domain_value",
-    "action": "action_value",
-    "version": "2.x",
-    "bap_id": "bap_id_value",
-    "bap_uri": "bap_uri_value",
-    "transaction_id": "transaction_id_value",
-    "message_id": "message_id_value",
-    "location": {
-      "city": {
-        "code": "city_code_value"
-      },
-      "country": {
-        "code": "country_code_value"
-      }
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
     },
-    "timestamp": "timestamp_value",
-    "ttl": "ttl_value"
-  },
     "message": {
         "catalog": {
             "providers": [
@@ -48,40 +47,58 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN_VALUE",
+                                            "descriptor": {
+                                                "code": "MIN_VALUE"
+                                            },
                                             "value": "159"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VALUE_TYPE",
+                                            "descriptor": {
+                                                "code": "VALUE_TYPE"
+                                            },
                                             "value": "percent"
                                         },
                                         {
-                                            "code": "VALUE",
+                                            "descriptor": {
+                                                "code": "VALUE"
+                                            },
                                             "value": "-60.00"
                                         },
                                         {
-                                            "code": "VALUE_CAP",
+                                            "descriptor": {
+                                                "code": "VALUE_CAP"
+                                            },
                                             "value": "-120.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -111,36 +128,52 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN_VALUE",
+                                            "descriptor": {
+                                                "code": "MIN_VALUE"
+                                            },
                                             "value": "499.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VALUE_TYPE",
+                                            "descriptor": {
+                                                "code": "VALUE_TYPE"
+                                            },
                                             "value": "amount"
                                         },
                                         {
-                                            "code": "VALUE",
+                                            "descriptor": {
+                                                "code": "VALUE"
+                                            },
                                             "value": "-150.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -170,36 +203,52 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ITEM_COUNT",
+                                            "descriptor": {
+                                                "code": "ITEM_COUNT"
+                                            },
                                             "value": "2"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ITEM_ID",
+                                            "descriptor": {
+                                                "code": "ITEM_ID"
+                                            },
                                             "value": "I1"
                                         },
                                         {
-                                            "code": "ITEM_COUNT",
+                                            "descriptor": {
+                                                "code": "ITEM_COUNT"
+                                            },
                                             "value": "3"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -229,40 +278,58 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN_VALUE",
+                                            "descriptor": {
+                                                "code": "MIN_VALUE"
+                                            },
                                             "value": "598.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ITEM_COUNT",
+                                            "descriptor": {
+                                                "code": "ITEM_COUNT"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "ITEM_ID",
+                                            "descriptor": {
+                                                "code": "ITEM_ID"
+                                            },
                                             "value": "sku id for extra item"
                                         },
                                         {
-                                            "code": "ITEM_VALUE",
+                                            "descriptor": {
+                                                "code": "ITEM_VALUE"
+                                            },
                                             "value": "200.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]

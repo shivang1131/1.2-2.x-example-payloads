@@ -1,124 +1,172 @@
 {
     "context": {
-    "domain": "domain_value",
-    "action": "action_value",
-    "version": "2.x",
-    "bap_id": "bap_id_value",
-    "bap_uri": "bap_uri_value",
-    "bpp_id": "bpp_id_value",
-    "bpp_uri": "bpp_uri_value",
-    "transaction_id": "transaction_id_value",
-    "message_id": "message_id_value",
-    "location": {
-      "city": {
-        "code": "city_code_value"
-      },
-      "country": {
-        "code": "country_code_value"
-      }
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "bpp_id": "bpp_id_value",
+        "bpp_uri": "bpp_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
     },
-    "timestamp": "timestamp_value",
-    "ttl": "ttl_value"
-  },
     "message": {
         "ack": {
             "status": "ACK",
             "tags": [
                 {
-                    "code": "BAP_PROVIDER_LINK",
+                    "descriptor": {
+                        "code": "BAP_PROVIDER_LINK"
+                    },
                     "list": [
                         {
-                            "code": "PROVIDER_ID",
+                            "descriptor": {
+                                "code": "PROVIDER_ID"
+                            },
                             "value": "P1"
                         },
                         {
-                            "code": "LOCATION_ID",
+                            "descriptor": {
+                                "code": "LOCATION_ID"
+                            },
                             "value": "L1"
                         },
                         {
-                            "code": "SKU_COUNT",
+                            "descriptor": {
+                                "code": "SKU_COUNT"
+                            },
                             "value": "1000"
                         },
                         {
-                            "code": "LINK1_TYPE",
+                            "descriptor": {
+                                "code": "LINK1_TYPE"
+                            },
                             "value": "android"
                         },
                         {
-                            "code": "LINK1_VALUE",
+                            "descriptor": {
+                                "code": "LINK1_VALUE"
+                            },
                             "value": "https://buyerNP.com/p1l1a"
                         },
                         {
-                            "code": "LINK2_TYPE",
+                            "descriptor": {
+                                "code": "LINK2_TYPE"
+                            },
                             "value": "ios"
                         },
                         {
-                            "code": "LINK2_VALUE",
+                            "descriptor": {
+                                "code": "LINK2_VALUE"
+                            },
                             "value": "https://buyerNP.com/p1l1i"
                         },
                         {
-                            "code": "LINK3_TYPE",
+                            "descriptor": {
+                                "code": "LINK3_TYPE"
+                            },
                             "value": "web"
                         },
                         {
-                            "code": "LINK3_VALUE",
+                            "descriptor": {
+                                "code": "LINK3_VALUE"
+                            },
                             "value": "https://buyerNP.com/p1l1w.htm"
                         }
                     ]
                 },
                 {
-                    "code": "bap_provider_link",
+                    "descriptor": {
+                        "code": "BAP_PROVIDER_LINK"
+                    },
                     "list": [
                         {
-                            "code": "provider_id",
+                            "descriptor": {
+                                "code": "PROVIDER_ID"
+                            },
                             "value": "P1"
                         },
                         {
-                            "code": "location_id",
+                            "descriptor": {
+                                "code": "LOCATION_ID"
+                            },
                             "value": "L2"
                         },
                         {
-                            "code": "sku_count",
+                            "descriptor": {
+                                "code": "SKU_COUNT"
+                            },
                             "value": "1000"
                         },
                         {
-                            "code": "link1_type",
+                            "descriptor": {
+                                "code": "LINK1_TYPE"
+                            },
                             "value": "android"
                         },
                         {
-                            "code": "link1_value",
+                            "descriptor": {
+                                "code": "LINK1_VALUE"
+                            },
                             "value": "https://buyerNP.com/p1l1a"
                         },
                         {
-                            "code": "link2_type",
+                            "descriptor": {
+                                "code": "LINK2_TYPE"
+                            },
                             "value": "ios"
                         },
                         {
-                            "code": "link2_value",
+                            "descriptor": {
+                                "code": "LINK2_VALUE"
+                            },
                             "value": "https://buyerNP.com/p1l1i"
                         },
                         {
-                            "code": "link3_type",
+                            "descriptor": {
+                                "code": "LINK3_TYPE"
+                            },
                             "value": "web"
                         },
                         {
-                            "code": "link3_value",
+                            "descriptor": {
+                                "code": "LINK3_VALUE"
+                            },
                             "value": "https://buyerNP.com/p1l1w.htm"
                         }
                     ]
                 },
                 {
-                    "code": "bap_promos",
+                    "descriptor": {
+                        "code": "BAP_PROMOS"
+                    },
                     "list": [
                         {
-                            "code": "category",
+                            "descriptor": {
+                                "code": "CATEGORY"
+                            },
                             "value": "Grocery"
                         },
                         {
-                            "code": "from",
+                            "descriptor": {
+                                "code": "FROM"
+                            },
                             "value": "2023-05-28T00:00:00.000Z"
                         },
                         {
-                            "code": "to",
+                            "descriptor": {
+                                "code": "TO"
+                            },
                             "value": "2023-05-28T23:59:00.000Z"
                         }
                     ]

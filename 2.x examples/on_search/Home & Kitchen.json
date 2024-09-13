@@ -1,23 +1,23 @@
 {
     "context": {
-    "domain": "domain_value",
-    "action": "action_value",
-    "version": "2.x",
-    "bap_id": "bap_id_value",
-    "bap_uri": "bap_uri_value",
-    "transaction_id": "transaction_id_value",
-    "message_id": "message_id_value",
-    "location": {
-      "city": {
-        "code": "city_code_value"
-      },
-      "country": {
-        "code": "country_code_value"
-      }
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
     },
-    "timestamp": "timestamp_value",
-    "ttl": "ttl_value"
-  },
     "message": {
         "catalog": {
             "fulfillments": [
@@ -38,13 +38,14 @@
                 "name": "Seller NP",
                 "short_desc": "Seller Marketplace",
                 "long_desc": "Seller Marketplace",
-                "images": [{
-                                    "url": "https://sellerNP.com/symbol/np.png"
-                                },
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                "images": [
+                    {
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                ]
             },
             "providers": [
                 {
@@ -83,12 +84,13 @@
                         "name": "Store 1",
                         "short_desc": "Store 1",
                         "long_desc": "Store 1",
-                        "images": [{
-                                    "url": "https://sellerNP.com/symbol/np.png"
-                                },
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
+                        "images": [
+                            {
+                                "url": "https://sellerNP.com/symbol/np.png"
+                            },
+                            {
+                                "url": "https://sellerNP.com/images/np.png"
+                            }
                         ]
                     },
                     "ttl": "P1D",
@@ -123,7 +125,7 @@
                             }
                         }
                     ],
-                    "categories" : [
+                    "categories": [
                         {
                             "id": "CG1",
                             "descriptor": {
@@ -143,13 +145,14 @@
                                 "code": "1:XXXXXXXXXXXXX",
                                 "long_desc": "Hantex | Satin Double Bedsheet with Two Pillow Covers | Vertical Stripe Bedsheet | Horizontal Stripe Pillow Cover | Colour - Ochre, Fir Green & Pearl Beige  | Viscose Rayon - Cotton Blend | Hantex | Handloom | Kerala Handcrafted Fabric | Kerala Kaithari ",
                                 "short_desc": "Satin Double Bedsheet with Two Pillow Covers | Vertical Stripe Bedsheet | Horizontal Stripe Pillow Cover | Colour - Ochre, Fir Green & Pearl Beige ",
-                                "images": [{
-                                    "url": "https://sellerNP.com/symbol/np.png"
-                                },
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                                "images": [
+                                    {
+                                        "url": "https://sellerNP.com/symbol/np.png"
+                                    },
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "quantity": {
                                 "unitized": {
@@ -170,99 +173,149 @@
                                 "value": "2808.00",
                                 "maximum_value": "2808.0"
                             },
-                            "category_ids": ["CG1"],
-                            "fulfillment_ids": ["F1"],
-                            "location_ids": ["L1"],
+                            "category_ids": [
+                                "CG1"
+                            ],
+                            "fulfillment_ids": [
+                                "F1"
+                            ],
+                            "location_ids": [
+                                "L1"
+                            ],
                             "tags": [
                                 {
-                                    "code": "ORIGIN",
+                                    "descriptor": {
+                                        "code": "ORIGIN"
+                                    },
                                     "list": [
                                         {
-                                            "code": "COUNTRY",
+                                            "descriptor": {
+                                                "code": "COUNTRY"
+                                            },
                                             "value": "IND"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "IMAGE",
+                                    "descriptor": {
+                                        "code": "IMAGE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "back_image"
                                         },
                                         {
-                                            "code": "URL",
+                                            "descriptor": {
+                                                "code": "URL"
+                                            },
                                             "value": "https://sellerNP.com/images/i1_back_image.png"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "ATTRIBUTE",
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "BRAND",
+                                            "descriptor": {
+                                                "code": "BRAND"
+                                            },
                                             "value": "Hiyanshi"
                                         },
                                         {
-                                            "code": "COLOUR",
+                                            "descriptor": {
+                                                "code": "COLOUR"
+                                            },
                                             "value": "#000000"
                                         },
                                         {
-                                            "code": "MATERIAL",
+                                            "descriptor": {
+                                                "code": "MATERIAL"
+                                            },
                                             "value": "cotton"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "SKU_PROPERTIES",
+                                    "descriptor": {
+                                        "code": "SKU_PROPERTIES"
+                                    },
                                     "list": [
                                         {
-                                            "code": "RETURNABLE",
+                                            "descriptor": {
+                                                "code": "RETURNABLE"
+                                            },
                                             "value": "true"
                                         },
                                         {
-                                            "code": "CANCELLABLE",
+                                            "descriptor": {
+                                                "code": "CANCELLABLE"
+                                            },
                                             "value": "true"
                                         },
                                         {
-                                            "code": "RETURN_WINDOW",
+                                            "descriptor": {
+                                                "code": "RETURN_WINDOW"
+                                            },
                                             "value": "PT1H"
                                         },
                                         {
-                                            "code": "SELLER_PICKUP_RETURN",
+                                            "descriptor": {
+                                                "code": "SELLER_PICKUP_RETURN"
+                                            },
                                             "value": "true"
                                         },
                                         {
-                                            "code": "TIME_TO_SHIP",
+                                            "descriptor": {
+                                                "code": "TIME_TO_SHIP"
+                                            },
                                             "value": "PT45M"
                                         },
                                         {
-                                            "code": "AVAILABLE_ON_COD",
+                                            "descriptor": {
+                                                "code": "AVAILABLE_ON_COD"
+                                            },
                                             "value": "false"
                                         },
                                         {
-                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "descriptor": {
+                                                "code": "CONTACT_DETAILS_CONSUMER_CARE"
+                                            },
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
+                                    "descriptor": {
+                                        "code": "STATUTORY_REQS_PACKAGED_COMMODITIES"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MANUFACTURER_OR_PACKER_NAME",
+                                            "descriptor": {
+                                                "code": "MANUFACTURER_OR_PACKER_NAME"
+                                            },
                                             "value": "ITC"
                                         },
                                         {
-                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
+                                            "descriptor": {
+                                                "code": "MANUFACTURER_OR_PACKER_ADDRESS"
+                                            },
                                             "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
                                         },
                                         {
-                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
+                                            "descriptor": {
+                                                "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY"
+                                            },
                                             "value": "Ashirwad Atta"
                                         },
                                         {
-                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
+                                            "descriptor": {
+                                                "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT"
+                                            },
                                             "value": "01/2023"
                                         }
                                     ]
@@ -281,18 +334,26 @@
                             "url": "https://abcd.cdn.com/images/badge-img",
                             "tags": [
                                 {
-                                    "code": "VERIFICATION",
+                                    "descriptor": {
+                                        "code": "VERIFICATION"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VERIFY_URL",
+                                            "descriptor": {
+                                                "code": "VERIFY_URL"
+                                            },
                                             "value": "https://abcd.dnb.com/verify?id=''ESG-12345678''"
                                         },
                                         {
-                                            "code": "VALID_FROM",
+                                            "descriptor": {
+                                                "code": "VALID_FROM"
+                                            },
                                             "value": "2023-06-03T00:00:00:000Z"
                                         },
                                         {
-                                            "code": "VALID_TO",
+                                            "descriptor": {
+                                                "code": "VALID_TO"
+                                            },
                                             "value": "2024-06-03T23:59:59:999Z"
                                         }
                                     ]
@@ -302,143 +363,211 @@
                     ],
                     "tags": [
                         {
-                            "code": "ORDER_VALUE",
+                            "descriptor": {
+                                "code": "ORDER_VALUE"
+                            },
                             "list": [
                                 {
-                                    "code": "MIN_VALUE",
+                                    "descriptor": {
+                                        "code": "MIN_VALUE"
+                                    },
                                     "value": "2000.00"
                                 }
                             ]
                         },
                         {
-                            "code": "CATALOG_LINK",
+                            "descriptor": {
+                                "code": "CATALOG_LINK"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "inline"
                                 },
                                 {
-                                    "code": "TYPE_VALUE",
+                                    "descriptor": {
+                                        "code": "TYPE_VALUE"
+                                    },
                                     "value": "https://s3.amazon.com/x-12349.zip"
                                 },
                                 {
-                                    "code": "TYPE_VALIDITY",
+                                    "descriptor": {
+                                        "code": "TYPE_VALIDITY"
+                                    },
                                     "value": "PT24H"
                                 },
                                 {
-                                    "code": "LAST_UPDATE",
+                                    "descriptor": {
+                                        "code": "LAST_UPDATE"
+                                    },
                                     "value": "2023-05-21T00:00:00:000Z"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "0000"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2359"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Self-Pickup"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1100"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2000"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Delivery"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1100"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2200"
                                 }
                             ]
                         },
                         {
-                            "code": "SERVICEABILITY",
+                            "descriptor": {
+                                "code": "SERVICEABILITY"
+                            },
                             "list": [
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "CATEGORY",
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
                                     "value": "Home Furnishings"
                                 },
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "12"
                                 },
                                 {
-                                    "code": "VAL",
+                                    "descriptor": {
+                                        "code": "VAL"
+                                    },
                                     "value": "IND"
                                 },
                                 {
-                                    "code": "UNIT",
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
                                     "value": "country"
                                 }
                             ]
@@ -447,24 +576,32 @@
                 }
             ],
             "tags": [
-                    {
-                        "code": "BPP_TERMS",
-                        "list": [
-                            {
-                                "code": "NP_TYPE",
-                                "value": "MSN"
+                {
+                    "descriptor": {
+                        "code": "BPP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "NP_TYPE"
                             },
-                            {
-                                "code": "ACCEPT_BAP_TERMS",
-                                "value": "Y"
+                            "value": "MSN"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "ACCEPT_BAP_TERMS"
                             },
-                            {
-                                "code": "COLLECT_PAYMENT",
-                                "value": "Y"
-                            }
-                        ]
-                    }
-                ]
+                            "value": "Y"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "COLLECT_PAYMENT"
+                            },
+                            "value": "Y"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

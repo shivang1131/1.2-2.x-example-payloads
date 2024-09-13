@@ -1,23 +1,23 @@
 {
     "context": {
-    "domain": "domain_value",
-    "action": "action_value",
-    "version": "2.x",
-    "bap_id": "bap_id_value",
-    "bap_uri": "bap_uri_value",
-    "transaction_id": "transaction_id_value",
-    "message_id": "message_id_value",
-    "location": {
-      "city": {
-        "code": "city_code_value"
-      },
-      "country": {
-        "code": "country_code_value"
-      }
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
     },
-    "timestamp": "timestamp_value",
-    "ttl": "ttl_value"
-  },
     "message": {
         "catalog": {
             "fulfillments": [
@@ -38,13 +38,14 @@
                 "name": "Seller NP",
                 "short_desc": "Seller Marketplace",
                 "long_desc": "Seller Marketplace",
-                "images": [{
-                    "url": "https://sellerNP.com/symbol/np.png"
-                },
-                {
-                    "url": "https://sellerNP.com/images/np.png"
-                }
-            ]
+                "images": [
+                    {
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                ]
             },
             "providers": [
                 {
@@ -83,13 +84,14 @@
                         "name": "Store 1",
                         "short_desc": "Store 1",
                         "long_desc": "Store 1",
-                        "images": [{
-                        "url": "https://sellerNP.com/symbol/np.png"
-                    },
-                    {
-                        "url": "https://sellerNP.com/images/np.png"
-                    }
-                    ]
+                        "images": [
+                            {
+                                "url": "https://sellerNP.com/symbol/np.png"
+                            },
+                            {
+                                "url": "https://sellerNP.com/images/np.png"
+                            }
+                        ]
                     },
                     "ttl": "P1D",
                     "locations": [
@@ -131,50 +133,69 @@
                                 "name": "Pizza",
                                 "short_desc": "Veg and Non-Veg pizza",
                                 "long_desc": "American and Italian Veg and Non-Veg Pizza",
-                                "images": [{
-                        "url": "https://sellerNP.com/symbol/np.png"
-                        },
-                        {
-                            "url": "https://sellerNP.com/images/np.png"
-                        }
-                        ]
+                                "images": [
+                                    {
+                                        "url": "https://sellerNP.com/symbol/np.png"
+                                    },
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "custom_menu"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "TIMING",
+                                    "descriptor": {
+                                        "code": "TIMING"
+                                    },
                                     "list": [
                                         {
-                                            "code": "DAY_FROM",
+                                            "descriptor": {
+                                                "code": "DAY_FROM"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "DAY_TO",
+                                            "descriptor": {
+                                                "code": "DAY_TO"
+                                            },
                                             "value": "5"
                                         },
                                         {
-                                            "code": "TIME_FROM",
+                                            "descriptor": {
+                                                "code": "TIME_FROM"
+                                            },
                                             "value": "1800"
                                         },
                                         {
-                                            "code": "TIME_TO",
+                                            "descriptor": {
+                                                "code": "TIME_TO"
+                                            },
                                             "value": "2200"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "DISPLAY",
+                                    "descriptor": {
+                                        "code": "DISPLAY"
+                                    },
                                     "list": [
                                         {
-                                            "code": "rank",
+                                            "descriptor": {
+                                                "code": "rank"
+                                            },
                                             "value": "3"
                                         }
                                     ]
@@ -188,31 +209,45 @@
                             },
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CONFIG",
+                                    "descriptor": {
+                                        "code": "CONFIG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN",
+                                            "descriptor": {
+                                                "code": "MIN"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "MAX",
+                                            "descriptor": {
+                                                "code": "MAX"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "INPUT",
+                                            "descriptor": {
+                                                "code": "INPUT"
+                                            },
                                             "value": "select"
                                         },
                                         {
-                                            "code": "SEQ",
+                                            "descriptor": {
+                                                "code": "SEQ"
+                                            },
                                             "value": "1"
                                         }
                                     ]
@@ -226,31 +261,45 @@
                             },
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CONFIG",
+                                    "descriptor": {
+                                        "code": "CONFIG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN",
+                                            "descriptor": {
+                                                "code": "MIN"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "MAX",
+                                            "descriptor": {
+                                                "code": "MAX"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "INPUT",
+                                            "descriptor": {
+                                                "code": "INPUT"
+                                            },
                                             "value": "select"
                                         },
                                         {
-                                            "code": "SEQ",
+                                            "descriptor": {
+                                                "code": "SEQ"
+                                            },
                                             "value": "2"
                                         }
                                     ]
@@ -264,31 +313,45 @@
                             },
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "custom_group"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CONFIG",
+                                    "descriptor": {
+                                        "code": "CONFIG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN",
+                                            "descriptor": {
+                                                "code": "MIN"
+                                            },
                                             "value": "0"
                                         },
                                         {
-                                            "code": "MAX",
+                                            "descriptor": {
+                                                "code": "MAX"
+                                            },
                                             "value": "2"
                                         },
                                         {
-                                            "code": "INPUT",
+                                            "descriptor": {
+                                                "code": "INPUT"
+                                            },
                                             "value": "select"
                                         },
                                         {
-                                            "code": "SEQ",
+                                            "descriptor": {
+                                                "code": "SEQ"
+                                            },
                                             "value": "3"
                                         }
                                     ]
@@ -313,13 +376,14 @@
                                 "name": "Farmhouse Pizza",
                                 "short_desc": "Farmhouse Pizza",
                                 "long_desc": "Farmhouse Pizza",
-                                "images": [{
-                                    "url": "https://sellerNP.com/symbol/np.png"
-                                },
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                                "images": [
+                                    {
+                                        "url": "https://sellerNP.com/symbol/np.png"
+                                    },
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "quantity": {
                                 "unitized": {
@@ -341,27 +405,39 @@
                                 "maximum_value": "269.0",
                                 "tags": [
                                     {
-                                        "code": "RANGE",
+                                        "descriptor": {
+                                            "code": "RANGE"
+                                        },
                                         "list": [
                                             {
-                                                "code": "LOWER",
+                                                "descriptor": {
+                                                    "code": "LOWER"
+                                                },
                                                 "value": "269.00"
                                             },
                                             {
-                                                "code": "UPPER",
+                                                "descriptor": {
+                                                    "code": "UPPER"
+                                                },
                                                 "value": "304.00"
                                             }
                                         ]
                                     },
                                     {
-                                        "code": "DEFAULT_SELECTION",
+                                        "descriptor": {
+                                            "code": "DEFAULT_SELECTION"
+                                        },
                                         "list": [
                                             {
-                                                "code": "VALUE",
+                                                "descriptor": {
+                                                    "code": "VALUE"
+                                                },
                                                 "value": "269.00"
                                             },
                                             {
-                                                "code": "MAXIMUM_VALUE",
+                                                "descriptor": {
+                                                    "code": "MAXIMUM_VALUE"
+                                                },
                                                 "value": "290.00"
                                             }
                                         ]
@@ -369,111 +445,164 @@
                                 ]
                             },
                             "category_ids": [
-                                "5:1","CG4"
+                                "5:1",
+                                "CG4"
                             ],
-                            "fulfillment_ids": ["F1"],
-                            "location_ids": ["L1"],
+                            "fulfillment_ids": [
+                                "F1"
+                            ],
+                            "location_ids": [
+                                "L1"
+                            ],
                             "related": false,
                             "recommended": true,
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "item"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CUSTOM_GROUP",
+                                    "descriptor": {
+                                        "code": "CUSTOM_GROUP"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG1"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CONFIG",
+                                    "descriptor": {
+                                        "code": "CONFIG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG1"
                                         },
                                         {
-                                            "code": "MIN",
+                                            "descriptor": {
+                                                "code": "MIN"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "MAX",
+                                            "descriptor": {
+                                                "code": "MAX"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "SEQ",
+                                            "descriptor": {
+                                                "code": "SEQ"
+                                            },
                                             "value": "1"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "TIMING",
+                                    "descriptor": {
+                                        "code": "TIMING"
+                                    },
                                     "list": [
                                         {
-                                            "code": "DAY_FROM",
+                                            "descriptor": {
+                                                "code": "DAY_FROM"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "DAY_TO",
+                                            "descriptor": {
+                                                "code": "DAY_TO"
+                                            },
                                             "value": "5"
                                         },
                                         {
-                                            "code": "TIME_FROM",
+                                            "descriptor": {
+                                                "code": "TIME_FROM"
+                                            },
                                             "value": "1800"
                                         },
                                         {
-                                            "code": "TIME_TO",
+                                            "descriptor": {
+                                                "code": "TIME_TO"
+                                            },
                                             "value": "2200"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "VEG_NONVEG",
+                                    "descriptor": {
+                                        "code": "VEG_NONVEG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VEG",
+                                            "descriptor": {
+                                                "code": "VEG"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "SKU_PROPERTIES",
+                                    "descriptor": {
+                                        "code": "SKU_PROPERTIES"
+                                    },
                                     "list": [
                                         {
-                                            "code": "RETURNABLE",
+                                            "descriptor": {
+                                                "code": "RETURNABLE"
+                                            },
                                             "value": "true"
                                         },
                                         {
-                                            "code": "CANCELLABLE",
+                                            "descriptor": {
+                                                "code": "CANCELLABLE"
+                                            },
                                             "value": "true"
                                         },
                                         {
-                                            "code": "RETURN_WINDOW",
+                                            "descriptor": {
+                                                "code": "RETURN_WINDOW"
+                                            },
                                             "value": "PT1H"
                                         },
                                         {
-                                            "code": "SELLER_PICKUP_RETURN",
+                                            "descriptor": {
+                                                "code": "SELLER_PICKUP_RETURN"
+                                            },
                                             "value": "true"
                                         },
                                         {
-                                            "code": "TIME_TO_SHIP",
+                                            "descriptor": {
+                                                "code": "TIME_TO_SHIP"
+                                            },
                                             "value": "PT45M"
                                         },
                                         {
-                                            "code": "AVAILABLE_ON_COD",
+                                            "descriptor": {
+                                                "code": "AVAILABLE_ON_COD"
+                                            },
                                             "value": "false"
                                         },
                                         {
-                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "descriptor": {
+                                                "code": "CONTACT_DETAILS_CONSUMER_CARE"
+                                            },
                                             "value": "Ramesh,info@keshking.com,18001035155"
                                         }
                                     ]
@@ -498,45 +627,65 @@
                                 "value": "0.0",
                                 "maximum_value": "0.0"
                             },
-                            "category_ids": ["CG4"],
+                            "category_ids": [
+                                "CG4"
+                            ],
                             "related": true,
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "customization"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "PARENT",
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG1"
                                         },
                                         {
-                                            "code": "DEFAULT",
+                                            "descriptor": {
+                                                "code": "DEFAULT"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CHILD",
+                                    "descriptor": {
+                                        "code": "CHILD"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG2"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "VEG_NONVEG",
+                                    "descriptor": {
+                                        "code": "VEG_NONVEG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VEG",
+                                            "descriptor": {
+                                                "code": "VEG"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -561,45 +710,65 @@
                                 "value": "0.0",
                                 "maximum_value": "0.0"
                             },
-                            "category_ids": ["CG4"],
+                            "category_ids": [
+                                "CG4"
+                            ],
                             "related": true,
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "customization"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "PARENT",
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG2"
                                         },
                                         {
-                                            "code": "DEFAULT",
+                                            "descriptor": {
+                                                "code": "DEFAULT"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "CHILD",
+                                    "descriptor": {
+                                        "code": "CHILD"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG3"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "VEG_NONVEG",
+                                    "descriptor": {
+                                        "code": "VEG_NONVEG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VEG",
+                                            "descriptor": {
+                                                "code": "VEG"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -624,36 +793,52 @@
                                 "value": "35.0",
                                 "maximum_value": "35.0"
                             },
-                            "category_ids": ["CG4"],
+                            "category_ids": [
+                                "CG4"
+                            ],
                             "related": true,
                             "tags": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "list": [
                                         {
-                                            "code": "TYPE",
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
                                             "value": "customization"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "PARENT",
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ID",
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
                                             "value": "CG3"
                                         },
                                         {
-                                            "code": "DEFAULT",
+                                            "descriptor": {
+                                                "code": "DEFAULT"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "VEG_NONVEG",
+                                    "descriptor": {
+                                        "code": "VEG_NONVEG"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VEG",
+                                            "descriptor": {
+                                                "code": "VEG"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -667,10 +852,10 @@
                             "descriptor": {
                                 "code": "discount",
                                 "images": [
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "location_ids": [
                                 "L1"
@@ -687,40 +872,58 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN_VALUE",
+                                            "descriptor": {
+                                                "code": "MIN_VALUE"
+                                            },
                                             "value": "159"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VALUE_TYPE",
+                                            "descriptor": {
+                                                "code": "VALUE_TYPE"
+                                            },
                                             "value": "percent"
                                         },
                                         {
-                                            "code": "VALUE",
+                                            "descriptor": {
+                                                "code": "VALUE"
+                                            },
                                             "value": "-60.00"
                                         },
                                         {
-                                            "code": "VALUE_CAP",
+                                            "descriptor": {
+                                                "code": "VALUE_CAP"
+                                            },
                                             "value": "-120.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -732,10 +935,10 @@
                             "descriptor": {
                                 "code": "discount",
                                 "images": [
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "location_ids": [
                                 "L1"
@@ -752,36 +955,52 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN_VALUE",
+                                            "descriptor": {
+                                                "code": "MIN_VALUE"
+                                            },
                                             "value": "499.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "VALUE_TYPE",
+                                            "descriptor": {
+                                                "code": "VALUE_TYPE"
+                                            },
                                             "value": "amount"
                                         },
                                         {
-                                            "code": "VALUE",
+                                            "descriptor": {
+                                                "code": "VALUE"
+                                            },
                                             "value": "-150.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -793,10 +1012,10 @@
                             "descriptor": {
                                 "code": "buyXgetY",
                                 "images": [
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "location_ids": [
                                 "L1"
@@ -813,36 +1032,52 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "item_count",
+                                            "descriptor": {
+                                                "code": "item_count"
+                                            },
                                             "value": "2"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ITEM_ID",
+                                            "descriptor": {
+                                                "code": "ITEM_ID"
+                                            },
                                             "value": "I1"
                                         },
                                         {
-                                            "code": "ITEM_COUNT",
+                                            "descriptor": {
+                                                "code": "ITEM_COUNT"
+                                            },
                                             "value": "3"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -854,10 +1089,10 @@
                             "descriptor": {
                                 "code": "freebie",
                                 "images": [
-                                {
-                                    "url": "https://sellerNP.com/images/np.png"
-                                }
-                            ]
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
                             },
                             "location_ids": [
                                 "L1"
@@ -874,40 +1109,58 @@
                             },
                             "tags": [
                                 {
-                                    "code": "QUALIFIER",
+                                    "descriptor": {
+                                        "code": "QUALIFIER"
+                                    },
                                     "list": [
                                         {
-                                            "code": "MIN_VALUE",
+                                            "descriptor": {
+                                                "code": "MIN_VALUE"
+                                            },
                                             "value": "598.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "BENEFIT",
+                                    "descriptor": {
+                                        "code": "BENEFIT"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ITEM_COUNT",
+                                            "descriptor": {
+                                                "code": "ITEM_COUNT"
+                                            },
                                             "value": "1"
                                         },
                                         {
-                                            "code": "ITEM_ID",
+                                            "descriptor": {
+                                                "code": "ITEM_ID"
+                                            },
                                             "value": "sku id for extra item"
                                         },
                                         {
-                                            "code": "ITEM_VALUE",
+                                            "descriptor": {
+                                                "code": "ITEM_VALUE"
+                                            },
                                             "value": "200.00"
                                         }
                                     ]
                                 },
                                 {
-                                    "code": "META",
+                                    "descriptor": {
+                                        "code": "META"
+                                    },
                                     "list": [
                                         {
-                                            "code": "ADDITIVE",
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
                                             "value": "no"
                                         },
                                         {
-                                            "code": "AUTO",
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
                                             "value": "yes"
                                         }
                                     ]
@@ -917,285 +1170,421 @@
                     ],
                     "tags": [
                         {
-                            "code": "ORDER_VALUE",
+                            "descriptor": {
+                                "code": "ORDER_VALUE"
+                            },
                             "list": [
                                 {
-                                    "code": "MIN_VALUE",
+                                    "descriptor": {
+                                        "code": "MIN_VALUE"
+                                    },
                                     "value": "300.00"
                                 }
                             ]
                         },
                         {
-                            "code": "CATALOG_LINK",
+                            "descriptor": {
+                                "code": "CATALOG_LINK"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "inline"
                                 },
                                 {
-                                    "code": "TYPE_VALUE",
+                                    "descriptor": {
+                                        "code": "TYPE_VALUE"
+                                    },
                                     "value": "https://s3.amazon.com/xjhjsfsdfs/s-12349.zip"
                                 },
                                 {
-                                    "code": "TYPE_VALIDITY",
+                                    "descriptor": {
+                                        "code": "TYPE_VALIDITY"
+                                    },
                                     "value": "PT24H"
                                 },
                                 {
-                                    "code": "LAST_UPDATE",
+                                    "descriptor": {
+                                        "code": "LAST_UPDATE"
+                                    },
                                     "value": "2023-05-21T00:00:00:000Z"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "5"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "0900"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "1100"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "5"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1300"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "1530"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "5"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1830"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2130"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "6"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1300"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "1600"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Order"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "6"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1900"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2300"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Self-Pickup"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1100"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2000"
                                 }
                             ]
                         },
                         {
-                            "code": "TIMING",
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "Delivery"
                                 },
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "DAY_FROM",
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
                                     "value": "1"
                                 },
                                 {
-                                    "code": "DAY_TO",
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
                                     "value": "7"
                                 },
                                 {
-                                    "code": "TIME_FROM",
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
                                     "value": "1100"
                                 },
                                 {
-                                    "code": "TIME_TO",
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
                                     "value": "2200"
                                 }
                             ]
                         },
                         {
-                            "code": "CLOSE_TIMING",
+                            "descriptor": {
+                                "code": "CLOSE_TIMING"
+                            },
                             "list": [
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "START",
+                                    "descriptor": {
+                                        "code": "START"
+                                    },
                                     "value": "2023-06-03T16:00:00.000Z"
                                 },
                                 {
-                                    "code": "END",
+                                    "descriptor": {
+                                        "code": "END"
+                                    },
                                     "value": "2023-06-03T23:59:00.000Z"
                                 }
                             ]
                         },
                         {
-                            "code": "SERVICEABILITY",
+                            "descriptor": {
+                                "code": "SERVICEABILITY"
+                            },
                             "list": [
                                 {
-                                    "code": "LOCATION",
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
                                     "value": "L1"
                                 },
                                 {
-                                    "code": "CATEGORY",
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
                                     "value": "F&B"
                                 },
                                 {
-                                    "code": "TYPE",
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
                                     "value": "10"
                                 },
                                 {
-                                    "code": "VAL",
+                                    "descriptor": {
+                                        "code": "VAL"
+                                    },
                                     "value": "3"
                                 },
                                 {
-                                    "code": "UNIT",
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
                                     "value": "km"
                                 }
                             ]
                         },
                         {
-                            "code": "FSSAI",
+                            "descriptor": {
+                                "code": "FSSAI"
+                            },
                             "list": [
                                 {
-                                    "code": "LICENSE_NO",
+                                    "descriptor": {
+                                        "code": "LICENSE_NO"
+                                    },
                                     "value": "1234567890"
                                 }
                             ]
@@ -1204,24 +1593,32 @@
                 }
             ],
             "tags": [
-                    {
-                        "code": "BPP_TERMS",
-                        "list": [
-                            {
-                                "code": "NP_TYPE",
-                                "value": "ISN"
+                {
+                    "descriptor": {
+                        "code": "BPP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "NP_TYPE"
                             },
-                            {
-                                "code": "ACCEPT_BAP_TERMS",
-                                "value": "Y"
+                            "value": "ISN"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "ACCEPT_BAP_TERMS"
                             },
-                            {
-                                "code": "COLLECT_PAYMENT",
-                                "value": "Y"
-                            }
-                        ]
-                    }
-                ]
+                            "value": "Y"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "COLLECT_PAYMENT"
+                            },
+                            "value": "Y"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
