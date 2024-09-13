@@ -168,7 +168,7 @@
                 "ttl": "P1D"
             },
             "payment": {
-                "type": "ON-ORDER",
+                "type": "ON-FULFILLMENT",
                 "collected_by": "BPP",
                 "uri": "https://snp.com/pg",
                 "status": "NOT-PAID",
