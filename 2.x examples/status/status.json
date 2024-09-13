@@ -1,5 +1,5 @@
 {
-    "context": {
+  "context": {
     "domain": "domain_value",
     "action": "action_value",
     "version": "2.x",
@@ -18,16 +18,7 @@
     "timestamp": "timestamp_value",
     "ttl": "ttl_value"
   },
-    "message": {
-      "intent": {
-        "fulfillment": {
-          "type": "Delivery"
-        },
-        "payment": {
-          "BUYER_FINDER_FEE_TYPE": "PERCENT",
-          "BUYER_FINDER_FEE_PERCENTAGE": "3"
-        }
-      }
-    }
+  "message": {
+    "order_id": "ORD-67890"
   }
-  
+}

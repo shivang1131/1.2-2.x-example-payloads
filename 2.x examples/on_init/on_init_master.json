@@ -1,0 +1,409 @@
+{
+  "context": {
+    "domain": "ecommerce",
+    "action": "order_status",
+    "version": "1.0.0",
+    "bap_id": "bap-12345",
+    "bap_uri": "https://bap.example.com",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "txn-67890",
+    "message_id": "msg-98765",
+    "location": {
+      "city": {
+        "code": "BLR"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "timestamp": "2024-09-04T12:34:56Z",
+    "ttl": "PT30M"
+  },
+  "message": {
+    "order": {
+      "billing": {
+        "address": "address_line1 | address_line2 | address_line3",
+        "city": {
+          "code": "city_code_value"
+        },
+        "state": {
+          "code": "state_code_value"
+        },
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "created_at_timestamp"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "updated_at_timestamp"
+              }
+            ]
+          }
+        ],
+        "email": "billing_email_value",
+        "name": "billing_name_value",
+        "phone": "billing_phone_value",
+        "tax_id": "billing_tax_id_value"
+      },
+      "cancellation_terms": {
+        "cancellation_fee": {
+          "amount": {
+            "currency": "currency_value",
+            "value": "fee_value"
+          },
+          "percentage": "cancellation_percentage"
+        },
+        "fulfillment_state": {
+          "descriptor": {
+            "code": "fulfillment_state_code_value",
+            "short_desc": "fulfillment_state_short_description"
+          }
+        }
+      },
+      "fulfillment": {
+        "stops": {
+          "type": "END",
+          "contact": {
+            "phone": "fulfillment_contact_phone_value"
+          },
+          "location": {
+            "area_code": "fulfillment_location_area_code_value",
+            "address": "name | building | locality",
+            "city": "fulfillment_city_value",
+            "country": "fulfillment_country_value",
+            "state": "fulfillment_state_value",
+            "gps": "fulfillment_gps_value"
+          }
+        },
+        "id": "fulfillment_id_value",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "RTO_ACTION"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "RETURN_TO_ORIGIN"
+                },
+                "value": "rto_action_value"
+              }
+            ]
+          }
+        ],
+        "tracking": "tracking_value",
+        "type": "fulfillment_type_value",
+        "vehicle": {
+          "registration": "vehicle_registration_value"
+        }
+      },
+      "items": [
+        {
+          "fulfillment_ids": ["fulfillment_id_value"],
+          "id": "item_id_value",
+          "parent_item_id": "parent_item_id_value",
+          "quantity": {
+            "selected": {
+              "count": "quantity_selected_count_value"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "parent_list_id_value"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "item_type_value"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_TYPE"
+              },
+              "value": "PERCENT"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+              },
+              "value": "3"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_AMOUNT"
+              },
+              "value": "100"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "SETTLEMENT_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_BASIS"
+              },
+              "value": "settlement_basis_value"
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_WINDOW"
+              },
+              "value": "settlement_window_value"
+            },
+            {
+              "descriptor": {
+                "code": "WITHHOLDING_AMOUNT"
+              },
+              "value": "withholding_amount_value"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "BPP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "COURT_JURISDICTION"
+              },
+              "value": "court_jurisdiction_value"
+            },
+            {
+              "descriptor": {
+                "code": "DELAY_INTEREST"
+              },
+              "value": "delay_interest_value"
+            },
+            {
+              "descriptor": {
+                "code": "MANDATORY_ARBITRATION"
+              },
+              "value": "mandatory_arbitration_value"
+            },
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY"
+              },
+              "value": "max_liability_value"
+            },
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY_CAP"
+              },
+              "value": "max_liability_cap_value"
+            },
+            {
+              "descriptor": {
+                "code": "PROVIDER_TAX_NUMBER"
+              },
+              "value": "provider_tax_number_value"
+            },
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
+              "value": "tax_number_value"
+            }
+          ]
+        }
+      ],
+      "payments": {
+        "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "bank_name_value"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "beneficiary_name_value"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "branch_name_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "settlement_counterparty_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "settlement_phase_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "settlement_type_value"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "BPP_COLLECT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "BPP_COLLECT"
+                },
+                "value": "bpp_collect_value"
+              }
+            ]
+          }
+        ],
+        "params": {
+          "back_account_number": "bank_account_number_value",
+          "bank_code": "bank_code_value",
+          "virtual_payment_address": "virtual_payment_address_value"
+        },
+        "collected_by": "payment_collected_by_value",
+        "status": "payment_status_value",
+        "type": "payment_type_value",
+        "url": "payment_url_value"
+      },
+      "providers": [
+        {
+          "id": "provider_id_value",
+          "locations": [
+            {
+              "id": "location_id_value"
+            }
+          ]
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "item": {
+              "id": "quote_item_id_value",
+              "quantity": {
+                "selected": {
+                  "count": "quote_item_quantity_selected_count"
+                },
+                "available": {
+                  "count": "quote_item_quantity_available_count"
+                },
+                "maximum": {
+                  "count": "quote_item_quantity_maximum_count"
+                }
+              },
+              "parent_item_id": "quote_parent_item_id_value",
+              "price": {
+                "currency": "quote_item_price_currency",
+                "value": "quote_item_price_value"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "quote_parent_list_id_value"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "quote_list_type_value"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "quote_item_type_value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "quote_price_currency",
+              "value": "quote_price_value"
+            },
+            "title": "quote_item_title"
+          }
+        ],
+        "price": {
+          "currency": "quote_total_price_currency",
+          "value": "quote_total_price_value"
+        },
+        "ttl": "quote_ttl_value"
+      }
+    }
+  }
+}

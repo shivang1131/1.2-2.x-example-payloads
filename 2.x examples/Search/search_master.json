@@ -1,14 +1,20 @@
 {
   "context": {
-    "domain": "ONDC:RET10",
-    "action": "search",
-    "country": "country_code_value",
-    "city": "city_code_value",
-    "core_version": "2.x",
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
     "bap_id": "bap_id_value",
     "bap_uri": "bap_uri_value",
     "transaction_id": "transaction_id_value",
     "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
     "timestamp": "timestamp_value",
     "ttl": "ttl_value"
   },
@@ -34,30 +40,89 @@
           "name": "item_name_value"
         }
       },
-      "tags": {
-        "BAP_TERMS": {
-          "list": {
-            "BUYER_FINDER_FEE_TYPE": "PERCENT",
-            "BUYER_FINDER_FEE_PERCENTAGE": "3",
-            "BUYER_FINDER_FEE_AMOUNT": "100",
-            "EFFECTIVE_DATE": "effective_date_value",
-            "STATIC_TERMS": "static_terms_value",
-            "STATIC_TERMS_NEW": "static_terms_new_value"
-          }
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_TYPE"
+              },
+              "value": "PERCENT"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+              },
+              "value": "3"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_AMOUNT"
+              },
+              "value": "100"
+            },
+            {
+              "descriptor": {
+                "code": "EFFECTIVE_DATE"
+              },
+              "value": "effective_date_value"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
+              },
+              "value": "static_terms_value"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS_NEW"
+              },
+              "value": "static_terms_new_value"
+            }
+          ]
         },
-        "CATALOG_FULL": {
-          "list": {
-            "PAYLOAD_TYPE": "payload_type_value"
-          }
+        {
+          "descriptor": {
+            "code": "CATALOG_FULL"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "PAYLOAD_TYPE"
+              },
+              "value": "payload_type_value"
+            }
+          ]
         },
-        "CATALOG_INC": {
-          "list": {
-            "END_TIME": "end_time_value",
-            "MODE": "mode_value",
-            "START_TIME": "start_time_value"
-          }
+        {
+          "descriptor": {
+            "code": "CATALOG_INC"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "END_TIME"
+              },
+              "value": "end_time_value"
+            },
+            {
+              "descriptor": {
+                "code": "MODE"
+              },
+              "value": "mode_value"
+            },
+            {
+              "descriptor": {
+                "code": "START_TIME"
+              },
+              "value": "start_time_value"
+            }
+          ]
         }
-      }
+      ]
     }
   }
 }

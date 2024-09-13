@@ -1,56 +1,75 @@
 {
-    "context": {
-      "domain": "ONDC:RET10",
-      "action": "search",
-      "country": "country_code_value",
-      "city": "city_code_value",
-      "core_version": "2.x",
-      "bap_id": "bap_id_value",
-      "bap_uri": "bap_uri_value",
-      "transaction_id": "transaction_id_value",
-      "message_id": "message_id_value",
-      "timestamp": "timestamp_value",
-      "ttl": "ttl_value"
-    },
-    "message": {
-      "intent": {
-        "payment": {
-          "@ondc/org/BUYER_FINDER_FEE_TYPE": "PERCENT",
-          "@ondc/org/BUYER_FINDER_FEE_AMOUNT": "3"
-        },
-        "tags": [
-          {
-            "code": "CATALOG_INC",
-            "list": [
-              {
-                "code": "START_TIME",
-                "value": "start_time_value"
-              },
-              {
-                "code": "END_TIME",
-                "value": "end_time_value"
-              }
-            ]
-          },
-          {
-            "code": "BAP_TERMS",
-            "list": [
-              {
-                "code": "STATIC_TERMS",
-                "value": "static_terms_value"
-              },
-              {
-                "code": "STATIC_TERMS_NEW",
-                "value": "static_terms_new_value"
-              },
-              {
-                "code": "EFFECTIVE_DATE",
-                "value": "effective_date_value"
-              }
-            ]
-          }
-        ]
+  "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
       }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "intent": {
+      "payment": {
+        "BUYER_FINDER_FEE_TYPE": "PERCENT",
+        "BUYER_FINDER_FEE_PERCENTAGE": "3"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "CATALOG_INC"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "START_TIME"
+              },
+              "value": "start_time_value"
+            },
+            {
+              "descriptor": {
+                "code": "END_TIME"
+              },
+              "value": "end_time_value"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
+              },
+              "value": "static_terms_value"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS_NEW"
+              },
+              "value": "static_terms_new_value"
+            },
+            {
+              "descriptor": {
+                "code": "EFFECTIVE_DATE"
+              },
+              "value": "effective_date_value"
+            }
+          ]
+        }
+      ]
     }
   }
-  
+}

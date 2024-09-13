@@ -1,0 +1,234 @@
+{
+  "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "order": {
+      "fulfillments": {
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "24 hours"
+              },
+              {
+                "descriptor": {
+                  "code": "CATEGORY"
+                },
+                "value": "Express"
+              },
+              {
+                "descriptor": {
+                  "code": "PROVIDER_NAME"
+                },
+                "value": "XYZ Logistics"
+              }
+            ]
+          }
+        ],
+        "stops": {
+          "type": "END",
+          "time": {
+            "range": {
+              "start": "2024-09-12T08:00:00Z",
+              "end": "2024-09-12T18:00:00Z"
+            }
+          }
+        },
+        "id": "FUL123456",
+        "state": {
+          "descriptor": {
+            "code": "IN_PROGRESS"
+          }
+        },
+        "tracking": "enabled",
+        "type": "home_delivery"
+      },
+      "items": [
+        {
+          "fulfillment_ids": ["FUL123456"],
+          "id": "ITEM001",
+          "parent_item_id": "ITEM000",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "PARENT001"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "physical"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "provider": {
+        "id": "PROVIDER001",
+        "locations": {
+          "id": "LOC001"
+        }
+      },
+      "quote": {
+        "breakup": {
+          "item": {
+            "id": "ITEM001",
+            "quantity": {
+              "selected": {
+                "count": 2
+              },
+              "available": {
+                "count": 50
+              },
+              "maximum": {
+                "count": 5
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "1000"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "OFFER"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIVE"
+                    },
+                    "value": true
+                  },
+                  {
+                    "descriptor": {
+                      "code": "AUTO"
+                    },
+                    "value": true
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ID"
+                    },
+                    "value": "OFFER001"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ITEM_COUNT"
+                    },
+                    "value": 1
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ITEM_ID"
+                    },
+                    "value": "ITEM001"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ITEM_VALUE"
+                    },
+                    "value": "500"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TYPE"
+                    },
+                    "value": "discount"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "PARENT"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ID"
+                    },
+                    "value": "PARENT001"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "QUOTE"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "TYPE"
+                    },
+                    "value": "fixed"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "TYPE"
+                    },
+                    "value": "itemized"
+                  }
+                ]
+              }
+            ]
+          },
+          "price": {
+            "currency": "INR",
+            "value": "2000"
+          },
+          "title": "Quote for ITEM001"
+        },
+        "price": {
+          "currency": "INR",
+          "value": "2000"
+        },
+        "ttl": "2024-09-12T23:59:59Z"
+      }
+    }
+  }
+}

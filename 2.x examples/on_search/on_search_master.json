@@ -1,0 +1,939 @@
+{
+  "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "images": {
+          "url": "image_url_value"
+        },
+        "long_desc": "long_description_value",
+        "name": "name_value",
+        "short_desc": "short_description_value"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BPP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "ACCEPT_BAP_TERMS"
+              },
+              "value": "accept_bap_terms_value"
+            },
+            {
+              "descriptor": {
+                "code": "COLLECT_PAYMENT"
+              },
+              "value": "collect_payment_value"
+            },
+            {
+              "descriptor": {
+                "code": "NP_TYPE"
+              },
+              "value": "np_type_value"
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "fulfillment_id_value",
+          "type": "fulfillment_type_value"
+        }
+      ],
+      "providers": {
+        "categories": [
+          {
+            "descriptor": {
+              "images": {
+                "url": "category_image_url_value"
+              },
+              "long_desc": "category_long_description_value",
+              "name": "category_name_value",
+              "short_desc": "category_short_description_value"
+            },
+            "id": "category_id_value",
+            "parent_category_id": "parent_category_id_value",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "ATTR"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "NAME"
+                    },
+                    "value": "attribute_name_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SEQ"
+                    },
+                    "value": "attribute_sequence_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "CONFIG"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "INPUT"
+                    },
+                    "value": "config_input_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MAX"
+                    },
+                    "value": "config_max_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MIN"
+                    },
+                    "value": "config_min_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SEQ"
+                    },
+                    "value": "config_seq_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "DISPLAY"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "RANK"
+                    },
+                    "value": "display_rank_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "TIMING"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "DAY_FROM"
+                    },
+                    "value": "timing_day_from_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DAY_TO"
+                    },
+                    "value": "timing_day_to_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TIME_FROM"
+                    },
+                    "value": "timing_time_from_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TIME_TO"
+                    },
+                    "value": "timing_time_to_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "TYPE"
+                    },
+                    "value": "category_type_value"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "creds": {
+          "descriptor": {
+            "code": "cred_code_value",
+            "name": "cred_name_value",
+            "short_desc": "cred_short_desc_value"
+          },
+          "id": "cred_id_value",
+          "valid_from": "valid_from_value",
+          "expires_on": "expires_on_value",
+          "verify_url": "verify_url_value",
+          "url": "cred_url_value"
+        },
+        "descriptor": {
+          "images": {
+            "url": "provider_image_url_value"
+          },
+          "long_desc": "provider_long_desc_value",
+          "name": "provider_name_value",
+          "short_desc": "provider_short_desc_value"
+        },
+        "fulfillments": [
+          {
+            "contact": {
+              "email": "fulfillment_contact_email_value",
+              "phone": "fulfillment_contact_phone_value"
+            },
+            "id": "provider_fulfillment_id_value",
+            "type": "provider_fulfillment_type_value"
+          }
+        ],
+        "id": "provider_id_value",
+        "items": [
+          {
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "SKU_PROPERTIES"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "AVAILABLE_ON_COD"
+                    },
+                    "value": "available_on_cod_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "CANCELLABLE"
+                    },
+                    "value": "cancellable_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "CONTACT_DETAILS_CONSUMER_CARE"
+                    },
+                    "value": "contact_details_consumer_care_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "RETURN_WINDOW"
+                    },
+                    "value": "return_window_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "RETURNABLE"
+                    },
+                    "value": "returnable_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SELLER_PICKUP_RETURN"
+                    },
+                    "value": "seller_pickup_return_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "STATUTORY_REQS_PACKAGED_COMMODITIES"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY"
+                    },
+                    "value": "generic_commodity_name_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "EXPIRY_DATE"
+                    },
+                    "value": "expiry_date_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANUFACTURER_OR_PACKER_ADDRESS"
+                    },
+                    "value": "packer_address_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANUFACTURER_OR_PACKER_NAME"
+                    },
+                    "value": "packer_name_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MFG_LICENSE_NO"
+                    },
+                    "value": "mfg_license_no_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT"
+                    },
+                    "value": "manufacture_date_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MULTIPLE_PRODUCTS_NAME_NUMBER_OR_QTY"
+                    },
+                    "value": "multiple_products_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "STATUTORY_REQS_PREPACKAGED_FOOD"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIVES_INFO"
+                    },
+                    "value": "additives_info_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BRAND_OWNER_FSSAI_LICENSE_NO"
+                    },
+                    "value": "brand_owner_fssai_license_no_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "IMPORTER_FSSAI_LICENSE_NO"
+                    },
+                    "value": "importer_fssai_license_no_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "INGREDIENTS_INFO"
+                    },
+                    "value": "ingredients_info_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "NUTRITIONAL_INFO"
+                    },
+                    "value": "nutritional_info_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "OTHER_FSSAI_LICENSE_NO"
+                    },
+                    "value": "other_fssai_license_no_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "DEFAULT_SELECTION"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "MAXIMUM_VALUE"
+                    },
+                    "value": "max_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "VALUE"
+                    },
+                    "value": "default_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "RANGE"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "LOWER"
+                    },
+                    "value": "range_lower_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "UPPER"
+                    },
+                    "value": "range_upper_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "CHILD"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ID"
+                    },
+                    "value": "child_list_id_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "CONFIG"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ID"
+                    },
+                    "value": "config_id_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MAX"
+                    },
+                    "value": "config_max_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MIN"
+                    },
+                    "value": "config_min_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SEQ"
+                    },
+                    "value": "config_seq_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOM_GROUP"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ID"
+                    },
+                    "value": "custom_group_id_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "IMAGE"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "TYPE"
+                    },
+                    "value": "image_type_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "URL"
+                    },
+                    "value": "image_url_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "ORIGIN"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "COUNTRY"
+                    },
+                    "value": "origin_country_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "PARENT"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "DEFAULT"
+                    },
+                    "value": "parent_default_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ID"
+                    },
+                    "value": "parent_list_id_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "TIMING"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "DAY_FROM"
+                    },
+                    "value": "item_timing_day_from_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DAY_TO"
+                    },
+                    "value": "item_timing_day_to_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TIME_FROM"
+                    },
+                    "value": "item_timing_time_from_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TIME_TO"
+                    },
+                    "value": "item_timing_time_to_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "TYPE"
+                    },
+                    "value": "item_type_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "VEG_NONVEG"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "NON_VEG"
+                    },
+                    "value": "non_veg_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "VEG"
+                    },
+                    "value": "veg_value"
+                  }
+                ]
+              }
+            ],
+            "category_ids": "category_ids_value",
+            "descriptor": {
+              "code": "item_descriptor_code_value",
+              "images": {
+                "url": "item_image_url_value"
+              },
+              "long_desc": "item_long_desc_value",
+              "name": "item_name_value",
+              "short_desc": "item_short_desc_value"
+            },
+            "fulfillment_ids": ["fulfillment_id_value"],
+            "id": "item_id_value",
+            "location_ids": ["location_id_value"],
+            "parent_item_id": "parent_item_id_value",
+            "price": {
+              "currency": "currency_value",
+              "maximum_value": "price_maximum_value",
+              "value": "price_value"
+            },
+            "quantity": {
+              "available": {
+                "count": "available_count_value"
+              },
+              "maximum": {
+                "count": "maximum_count_value"
+              },
+              "unitized": {
+                "measure": {
+                  "unit": "measure_unit_value",
+                  "value": "measure_value_value"
+                }
+              }
+            },
+            "recommended": "recommended_value",
+            "related": "related_value"
+          }
+        ],
+        "locations": {
+          "area_code": "area_code_value",
+          "city": "city_value",
+          "state": "state_value",
+          "address": "location_address_value",
+          "circle": {
+            "gps": "location_circle_gps_value",
+            "radius": {
+              "unit": "radius_unit_value",
+              "value": "radius_value_value"
+            }
+          },
+          "gps": "location_gps_value",
+          "id": "location_id_value",
+          "time": {
+            "days": "location_time_days_value",
+            "label": "location_time_label_value",
+            "range": {
+              "start": "location_time_range_start_value",
+              "end": "location_time_range_end_value"
+            },
+            "schedule": {
+              "frequency": "location_time_schedule_frequency_value",
+              "holidays": "location_time_schedule_holidays_value",
+              "times": "location_time_schedule_times_value"
+            },
+            "timestamp": "location_time_timestamp_value"
+          }
+        },
+        "offers": [
+          {
+            "descriptor": {
+              "code": "offer_code_value",
+              "images": {
+                "url": "offer_image_url_value"
+              }
+            },
+            "item_ids": ["item_id_value"],
+            "location_ids": ["location_id_value"],
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BENEFIT"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ITEM_COUNT"
+                    },
+                    "value": "offer_item_count_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ITEM_ID"
+                    },
+                    "value": "offer_item_id_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "ITEM_VALUE"
+                    },
+                    "value": "offer_item_value_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "VALUE"
+                    },
+                    "value": "offer_value_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "VALUE_CAP"
+                    },
+                    "value": "offer_value_cap_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "VALUE_TYPE"
+                    },
+                    "value": "offer_value_type_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "META"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIVE"
+                    },
+                    "value": "offer_meta_additive_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "AUTO"
+                    },
+                    "value": "offer_meta_auto_value"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "QUALIFIER"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "ITEM_COUNT"
+                    },
+                    "value": "offer_qualifier_item_count_value"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MIN_VALUE"
+                    },
+                    "value": "offer_qualifier_min_value_value"
+                  }
+                ]
+              }
+            ],
+            "time": {
+              "label": "offer_time_label_value",
+              "range": {
+                "start": "offer_time_range_start_value",
+                "end": "offer_time_range_end_value"
+              }
+            }
+          }
+        ],
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CATALOG_LINK"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "LAST_UPDATE"
+                },
+                "value": "catalog_link_last_update_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "catalog_link_type_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE_VALIDITY"
+                },
+                "value": "catalog_link_type_validity_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE_VALUE"
+                },
+                "value": "catalog_link_type_value_value"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "CLOSE_TIMING"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "END"
+                },
+                "value": "close_timing_end_value"
+              },
+              {
+                "descriptor": {
+                  "code": "LOCATION"
+                },
+                "value": "close_timing_location_value"
+              },
+              {
+                "descriptor": {
+                  "code": "START"
+                },
+                "value": "close_timing_start_value"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "ORDER_VALUE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "MIN_VALUE"
+                },
+                "value": "order_value_min_value"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "SERVICEABILITY"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CATEGORY"
+                },
+                "value": "serviceability_category_value"
+              },
+              {
+                "descriptor": {
+                  "code": "DAY_FROM"
+                },
+                "value": "serviceability_day_from_value"
+              },
+              {
+                "descriptor": {
+                  "code": "DAY_TO"
+                },
+                "value": "serviceability_day_to_value"
+              },
+              {
+                "descriptor": {
+                  "code": "LOCATION"
+                },
+                "value": "serviceability_location_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TIME_FROM"
+                },
+                "value": "serviceability_time_from_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TIME_TO"
+                },
+                "value": "serviceability_time_to_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "serviceability_type_value"
+              },
+              {
+                "descriptor": {
+                  "code": "UNIT"
+                },
+                "value": "serviceability_unit_value"
+              },
+              {
+                "descriptor": {
+                  "code": "VAL"
+                },
+                "value": "serviceability_val_value"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "TIMING"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "DAY_FROM"
+                },
+                "value": "provider_timing_day_from_value"
+              },
+              {
+                "descriptor": {
+                  "code": "DAY_TO"
+                },
+                "value": "provider_timing_day_to_value"
+              },
+              {
+                "descriptor": {
+                  "code": "LOCATION"
+                },
+                "value": "provider_timing_location_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TIME_FROM"
+                },
+                "value": "provider_timing_time_from_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TIME_TO"
+                },
+                "value": "provider_timing_time_to_value"
+              },
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "provider_timing_type_value"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "NP_FEES"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "ALLOW_BNP_FEE"
+                },
+                "value": "np_fees_allow_bnp_fee_value"
+              },
+              {
+                "descriptor": {
+                  "code": "CHANNEL_MARGIN_TYPE"
+                },
+                "value": "np_fees_channel_margin_type_value"
+              },
+              {
+                "descriptor": {
+                  "code": "CHANNEL_MARGIN_VALUE"
+                },
+                "value": "np_fees_channel_margin_value_value"
+              }
+            ]
+          }
+        ],
+        "ttl": "provider_ttl_value"
+      }
+    }
+  }
+}

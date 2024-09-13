@@ -16,7 +16,6 @@
     "message": {
       "tracking": {
         "id": "850b726f-609f-491b-b5ca-ae65c198c236",
-        "url": "https://wits-ref-logistics-app.thewitslab.com/order/status/6655ec2ec3eec5e9022e4aa7",
         "location": {
           "gps": "30.740459,76.652811",
           "time": { "timestamp": "2024-05-28T14:44:40.972Z" },

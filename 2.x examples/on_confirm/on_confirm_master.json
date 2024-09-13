@@ -1,0 +1,287 @@
+{
+  "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+  "message": {
+    "order": {
+      "id": "order_id_value",
+      "status": "order_status_value",
+      "provider": {
+        "id": "provider_id_value",
+        "locations": [
+          {
+            "id": "provider_location_id_value"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "item_id_value",
+          "fulfillment_ids": "item_fulfillment_ids_value",
+          "quantity": {
+            "selected": {
+              "count": "item_quantity_selected_count"
+            }
+          }
+        }
+      ],
+      "billing": {
+        "name": "billing_name_value",
+        "address": "address_line1 | address_line2 | address_line3",
+        "city": "billing_city_value",
+        "state": "billing_state_value",
+        "email": "billing_email_value",
+        "phone": "billing_phone_value",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "created_at_timestamp"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "updated_at_timestamp"
+              }
+            ]
+          }
+        ]
+      },
+      "fulfillments": {
+        "id": "fulfillment_id_value",
+        "tags": {
+          "CONSIGNMENT": {
+            "list": {
+              "PROVIDER_NAME": "provider_name_value",
+              "TAT": "consignment_TAT_value"
+            }
+          }
+        },
+        "state": {
+          "descriptor": {
+            "code": "fulfillment_state_code_value"
+          }
+        },
+        "type": "fulfillment_type_value",
+        "tracking": "tracking_value",
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "id": "start_location_id_value",
+              "descriptor": {
+                "name": "start_location_name_value"
+              },
+              "gps": "start_location_gps_value",
+              "address": "name | building | locality",
+              "city": "start_city_value",
+              "state": "start_state_value",
+              "area_code": "start_area_code_value"
+            },
+            "time": {
+              "range": {
+                "start": "start_time_range_start_value",
+                "end": "start_time_range_end_value"
+              }
+            },
+            "instructions": {
+              "code": "start_instructions_code_value",
+              "name": "start_instructions_name_value",
+              "short_desc": "start_instructions_short_desc_value",
+              "long_desc": "start_instructions_long_desc_value"
+            },
+            "contact": {
+              "phone": "start_contact_phone_value",
+              "email": "start_contact_email_value"
+            }
+          },
+          {
+            "type": "END",
+            "location": {
+              "gps": "end_location_gps_value",
+              "address": "name | building | locality",
+              "city": "end_city_value",
+              "state": "end_state_value",
+              "country": "end_country_value",
+              "area_code": "end_area_code_value"
+            },
+            "time": {
+              "range": {
+                "start": "end_time_range_start_value",
+                "end": "end_time_range_end_value"
+              }
+            },
+            "person": {
+              "name": "end_person_name_value"
+            },
+            "contact": {
+              "phone": "end_contact_phone_value",
+              "email": "end_contact_email_value"
+            }
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "quote_price_currency",
+          "value": "quote_price_value"
+        },
+        "ttl": "quote_ttl_value",
+        "breakup": [
+          {
+            "item": {
+              "id": "breakup_item_id_value",
+              "quantity": {
+                "selected": {
+                  "count": "breakup_item_quantity_selected_count"
+                }
+              },
+              "price": {
+                "currency": "breakup_item_price_currency",
+                "value": "breakup_item_price_value"
+              },
+              "tags": {
+                "quote": {
+                  "list": {
+                    "type": {
+                      "code": "breakup_quote_type_code",
+                      "value": "breakup_quote_type_value"
+                    }
+                  }
+                }
+              }
+            },
+            "title": "ENUM:free text TBD",
+            "price": {
+              "currency": "breakup_price_currency",
+              "value": "breakup_price_value"
+            }
+          }
+        ]
+      },
+      "payments": {
+        "url": "NOT APPLICABLE",
+        "params": {
+          "currency": "payment_currency_value",
+          "transaction_id": "payment_transaction_id_value",
+          "amount": "payment_amount_value"
+        },
+        "status": "payment_status_value",
+        "type": "payment_type_value",
+        "collected_by": "payment_collected_by_value",
+        "tags": {
+          "settlement_details": {
+            "list": {
+              "settlement_counterparty": "settlement_counterparty_value",
+              "settlement_phase": "settlement_phase_value",
+              "beneficiary_name": "beneficiary_name_value",
+              "settlement_type": "settlement_type_value",
+              "upi_address": "upi_address_value",
+              "settlement_bank_account_no": "settlement_bank_account_no_value",
+              "settlement_ifsc_code": "settlement_ifsc_code_value",
+              "bank_name": "bank_name_value",
+              "branch_name": "branch_name_value"
+            }
+          }
+        }
+      },
+      "tags": {
+        "BAP_TERMS": {
+          "list": {
+            "BUYER_FINDER_FEE_TYPE": "PERCENT",
+            "BUYER_FINDER_FEE_PERCENTAGE": "3",
+            "BUYER_FINDER_FEE_AMOUNT": "100"
+          }
+        },
+        "SETTLEMENT_TERMS": {
+          "list": {
+            "SETTLEMENT_BASIS": "settlement_basis_value",
+            "SETTLEMENT_WINDOW": "settlement_window_value",
+            "WITHHOLDING_AMOUNT": "withholding_amount_value"
+          }
+        },
+        "bpp_terms": {
+          "list": {
+            "max_liability": {
+              "value": "max_liability_value"
+            },
+            "max_liability_cap": {
+              "value": "max_liability_cap_value"
+            },
+            "mandatory_arbitration": {
+              "value": "mandatory_arbitration_value"
+            },
+            "court_jurisdiction": {
+              "value": "court_jurisdiction_value"
+            },
+            "delay_interest": {
+              "value": "delay_interest_value"
+            },
+            "np_type": {
+              "value": "np_type_value"
+            },
+            "tax_number": {
+              "value": "tax_number_value"
+            },
+            "provider_tax_number": {
+              "value": "provider_tax_number_value"
+            },
+            "accept_bap_terms": {
+              "value": "accept_bap_terms_value"
+            }
+          }
+        },
+        "bap_terms": {
+          "list": {
+            "static_terms": {
+              "value": "static_terms_value"
+            },
+            "tax_number": {
+              "value": "bap_tax_number_value"
+            }
+          }
+        }
+      },
+      "cancellation_terms": {
+        "fulfillment_state": {
+          "descriptor": {
+            "short_desc": "fulfillment_state_short_desc_value"
+          }
+        },
+        "cancellation_fee": {
+          "amount": {
+            "currency": "cancellation_fee_currency_value",
+            "value": "cancellation_fee_value"
+          }
+        }
+      },
+      "created_at": "order_created_at_value",
+      "updated_at": "order_updated_at_value"
+    }
+  }
+}
