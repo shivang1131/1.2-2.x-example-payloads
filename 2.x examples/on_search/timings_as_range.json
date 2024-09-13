@@ -1,0 +1,1074 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "catalog": {
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                {
+                    "id": "2",
+                    "type": "Self-Pickup"
+                },
+                {
+                    "id": "3",
+                    "type": "Delivery and Self-Pickup"
+                }
+            ],
+            "descriptor": {
+                "name": "Seller NP",
+                "symbol": "https://sellerNP.com/images/np.png",
+                "short_desc": "Seller Marketplace",
+                "long_desc": "Seller Marketplace",
+                "images": [{
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                ]
+            },
+            "providers": [
+                {
+                    "id": "P1",
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2023-06-03T07:00:30.000Z"
+                    },
+                    "fulfillments": [
+                        {
+                            "id": "F1",
+                            "type": "Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        },
+                        {
+                            "id": "F2",
+                            "type": "Self-Pickup",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        },
+                        {
+                            "id": "F3",
+                            "type": "Buyer-Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        }
+                    ],
+                    "descriptor": {
+                        "name": "Store 1",
+                        "short_desc": "Store 1",
+                        "long_desc": "Store 1",
+                        "images": [{
+                        "url": "https://sellerNP.com/symbol/np.png"
+                        },
+                        {
+                            "url": "https://sellerNP.com/images/np.png"
+                        }
+                    ]
+                    },
+                    "ttl": "P1D",
+                    "locations": [
+                        {
+                            "id": "L1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:30.000Z",
+                                "days": "1,2,3,4,5,6,7",
+                                "schedule": {
+                                    "holidays": [
+                                        "2023-08-15"
+                                    ],
+                                    "frequency": "PT4H",
+                                    "times": [
+                                        "1100",
+                                        "1900"
+                                    ]
+                                }
+                            },
+                            "gps": "12.967555,77.749666",
+                            "city": "Bengaluru",
+                            "area_code": "560076",
+                            "state": "KA",
+                            "address": "locality|street",
+                            "circle": {
+                                "gps": "12.967555,77.749666",
+                                "radius": {
+                                    "unit": "km",
+                                    "value": "3"
+                                }
+                            }
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "V1",
+                            "descriptor": {
+                                "name": "Variant Group 1"
+                            },
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "variant_group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "ATTR",
+                                    "list": [
+                                        {
+                                            "code": "NAME",
+                                            "value": "item.quantity.unitized.measure"
+                                        },
+                                        {
+                                            "code": "SEQ",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Foodgrains"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "I1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:00.000Z"
+                            },
+                            "parent_item_id": "V1",
+                            "descriptor": {
+                                "name": "Plain Atta",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "short_desc": "Plain Atta",
+                                "long_desc": "Plain Atta",
+                                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                                ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "kilogram",
+                                        "value": "1"
+                                    }
+                                },
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00",
+                                "maximum_value": "65.0"
+                            },
+                            "category_ids": ["CG1"],
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
+                            "tags": [
+                                {
+                                    "code": "ORIGIN",
+                                    "list": [
+                                        {
+                                            "code": "COUNTRY",
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "IMAGE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "back_image"
+                                        },
+                                        {
+                                            "code": "URL",
+                                            "value": "https://sellerNP.com/images/i1_back_image.png"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "SKU_PROPERTIES",
+                                    "list": [
+                                        {
+                                            "code": "RETURNABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "CANCELLABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "RETURN_WINDOW",
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "code": "SELLER_PICKUP_RETURN",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "TIME_TO_SHIP",
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "code": "AVAILABLE_ON_COD",
+                                            "value": "false"
+                                        },
+                                        {
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
+                                    "list": [
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
+                                            "value": "ITC"
+                                        },
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
+                                            "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
+                                        },
+                                        {
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
+                                            "value": "Ashirwad Atta"
+                                        },
+                                        {
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
+                                            "value": "01/2023"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PREPACKAGED_FOOD",
+                                    "list": [
+                                        {
+                                            "code": "NUTRITIONAL_INFO",
+                                            "value": "Energy(KCal)-(per 100kg) 420,(per serving 50g)250;Protein(g)-(per 100kg) 12,(per serving 50g) 6"
+                                        },
+                                        {
+                                            "code": "ADDITIVES_INFO",
+                                            "value": "Preservatives,Artificial Colours"
+                                        },
+                                        {
+                                            "code": "BRAND_OWNER_FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        },
+                                        {
+                                            "code": "OTHER_FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        },
+                                        {
+                                            "code": "BRAND__FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "I2",
+                            "parent_item_id": "V1",
+                            "descriptor": {
+                                "name": "Plain Atta",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "short_desc": "Plain Atta",
+                                "long_desc": "Plain Atta",
+                                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                                ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "kilogram",
+                                        "value": "2"
+                                    }
+                                },
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "125.00",
+                                "maximum_value": "125.0"
+                            },
+                            "category_ids": ["CG1"],
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
+                            "tags": [
+                                {
+                                    "code": "ORIGIN",
+                                    "list": [
+                                        {
+                                            "code": "COUNTRY",
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "SKU_PROPERTIES",
+                                    "list": [
+                                        {
+                                            "code": "RETURNABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "CANCELLABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "RETURN_WINDOW",
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "code": "SELLER_PICKUP_RETURN",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "TIME_TO_SHIP",
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "code": "AVAILABLE_ON_COD",
+                                            "value": "false"
+                                        },
+                                        {
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
+                                    "list": [
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
+                                            "value": "ITC"
+                                        },
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
+                                            "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
+                                        },
+                                        {
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
+                                            "value": "Ashirwad Atta"
+                                        },
+                                        {
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
+                                            "value": "01/2023"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PREPACKAGED_FOOD",
+                                    "list": [
+                                        {
+                                            "code": "NUTRITIONAL_INFO",
+                                            "value": "Energy(KCal)-(per 100kg) 420,(per serving 50g)250;Protein(g)-(per 100kg) 12,(per serving 50g) 6"
+                                        },
+                                        {
+                                            "code": "ADDITIVES_INFO",
+                                            "value": "Preservatives,Artificial Colours"
+                                        },
+                                        {
+                                            "code": "BRAND_OWNER_FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        },
+                                        {
+                                            "code": "OTHER_FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        },
+                                        {
+                                            "code": "BRAND__FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "I3",
+                            "parent_item_id": "V1",
+                            "descriptor": {
+                                "name": "Plain Atta",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "symbol": "https://sellerNP.com/images/i3.png",
+                                "short_desc": "Plain Atta",
+                                "long_desc": "Plain Atta",
+                                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                                ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "kilogram",
+                                        "value": "5"
+                                    }
+                                },
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300.00",
+                                "maximum_value": "300.0"
+                            },
+                            "category_ids": ["CG1"],
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
+                            "tags": [
+                                {
+                                    "code": "ORIGIN",
+                                    "list": [
+                                        {
+                                            "code": "COUNTRY",
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "SKU_PROPERTIES",
+                                    "list": [
+                                        {
+                                            "code": "RETURNABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "CANCELLABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "RETURN_WINDOW",
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "code": "SELLER_PICKUP_RETURN",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "TIME_TO_SHIP",
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "code": "AVAILABLE_ON_COD",
+                                            "value": "false"
+                                        },
+                                        {
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
+                                    "list": [
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
+                                            "value": "ITC"
+                                        },
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
+                                            "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
+                                        },
+                                        {
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
+                                            "value": "Ashirwad Atta"
+                                        },
+                                        {
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
+                                            "value": "01/2023"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PREPACKAGED_FOOD",
+                                    "list": [
+                                        {
+                                            "code": "NUTRITIONAL_INFO",
+                                            "value": "Energy(KCal)-(per 100kg) 420,(per serving 50g)250;Protein(g)-(per 100kg) 12,(per serving 50g) 6"
+                                        },
+                                        {
+                                            "code": "ADDITIVES_INFO",
+                                            "value": "Preservatives,Artificial Colours"
+                                        },
+                                        {
+                                            "code": "BRAND_OWNER_FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        },
+                                        {
+                                            "code": "OTHER_FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        },
+                                        {
+                                            "code": "BRAND__FSSAI_LICENSE_NO",
+                                            "value": "12345678901234"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "creds": [
+                        {
+                            "id": "ESG-12345678",
+                            "descriptor": {
+                                "code": "ESG-12345678",
+                                "short_desc": "ESG-12345678-FF",
+                                "name": "Dun & Bradstreet ESG Badge No."
+                            },
+                            "url": "https://abcd.cdn.com/images/badge-img",
+                            "tags": [
+                                {
+                                    "code": "VERIFICATION",
+                                    "list": [
+                                        {
+                                            "code": "VERIFY_URL",
+                                            "value": "https://abcd.dnb.com/verify?id=''ESG-12345678''"
+                                        },
+                                        {
+                                            "code": "VALID_FROM",
+                                            "value": "2023-06-03T00:00:00:000Z"
+                                        },
+                                        {
+                                            "code": "VALID_TO",
+                                            "value": "2024-06-03T23:59:59:999Z"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "offers": [
+                        {
+                            "id": "DISCP60",
+                            "descriptor": {
+                                "code": "discount",
+                                "images": [
+                                    "https://sellerNP.com/images/offer2-banner.png"
+                                ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-21T16:00:00.000Z",
+                                    "end": "2023-06-21T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "MIN_VALUE",
+                                            "value": "159.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "VALUE_TYPE",
+                                            "value": "percent"
+                                        },
+                                        {
+                                            "code": "VALUE",
+                                            "value": "-60.00"
+                                        },
+                                        {
+                                            "code": "VALUE_CAP",
+                                            "value": "-120.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FLAT150",
+                            "descriptor": {
+                                "code": "discount",
+                                "images": [
+                                    "https://sellerNP.com/images/offer2-banner.png"
+                                ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-22T16:00:00.000Z",
+                                    "end": "2023-06-22T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "MIN_VALUE",
+                                            "value": "499.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "VALUE_TYPE",
+                                            "value": "amount"
+                                        },
+                                        {
+                                            "code": "VALUE",
+                                            "value": "-150.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BUY2GET3",
+                            "descriptor": {
+                                "code": "buyXgetY",
+                                "images": [
+                                    "https://sellerNP.com/images/offer1-banner.png"
+                                ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-23T16:00:00.000Z",
+                                    "end": "2023-06-23T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "ITEM_COUNT",
+                                            "value": "2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "ITEM_COUNT",
+                                            "value": "3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FREEBIE",
+                            "descriptor": {
+                                "code": "freebie",
+                                "images": [
+                                    "https://sellerNP.com/images/offer3-banner.png"
+                                ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-24T16:00:00.000Z",
+                                    "end": "2023-06-24T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "MIN_VALUE",
+                                            "value": "598.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "ITEM_COUNT",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "ITEM_ID",
+                                            "value": "sku id for extra item"
+                                        },
+                                        {
+                                            "code": "ITEM_VALUE",
+                                            "value": "200.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "code": "ORDER_VALUE",
+                            "list": [
+                                {
+                                    "code": "MIN_VALUE",
+                                    "value": "300.00"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "CATALOG_LINK",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "inline"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "1500"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1900"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2300"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Self-Pickup"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2000"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Delivery"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2200"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "CLOSE_TIMING",
+                            "list": [
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "START",
+                                    "value": "2023-06-03T16:00:00.000Z"
+                                },
+                                {
+                                    "code": "END",
+                                    "value": "2023-06-03T23:59:00.000Z"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "SERVICEABILITY",
+                            "list": [
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "CATEGORY",
+                                    "value": "Foodgrains"
+                                },
+                                {
+                                    "code": "TYPE",
+                                    "value": "10"
+                                },
+                                {
+                                    "code": "VAL",
+                                    "value": "3"
+                                },
+                                {
+                                    "code": "UNIT",
+                                    "value": "km"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                    {
+                        "code": "BPP_TERMS",
+                        "list": [
+                            {
+                                "code": "NP_TYPE",
+                                "value": "MSN"
+                            },
+                            {
+                                "code": "ACCEPT_BAP_TERMS",
+                                "value": "Y"
+                            },
+                            {
+                                "code": "COLLECT_PAYMENT",
+                                "value": "Y"
+                            }
+                        ]
+                    }
+                ]
+        }
+        
+    }
+}

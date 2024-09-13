@@ -1,0 +1,470 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "catalog": {
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                {
+                    "id": "2",
+                    "type": "Self-Pickup"
+                },
+                {
+                    "id": "3",
+                    "type": "Delivery and Self-Pickup"
+                }
+            ],
+            "descriptor": {
+                "name": "Seller NP",
+                "short_desc": "Seller Marketplace",
+                "long_desc": "Seller Marketplace",
+                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+            },
+            "providers": [
+                {
+                    "id": "P1",
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2023-06-03T07:00:30.000Z"
+                    },
+                    "fulfillments": [
+                        {
+                            "id": "F1",
+                            "type": "Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        },
+                        {
+                            "id": "F2",
+                            "type": "Self-Pickup",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        },
+                        {
+                            "id": "F3",
+                            "type": "Buyer-Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        }
+                    ],
+                    "descriptor": {
+                        "name": "Store 1",
+                        "short_desc": "Store 1",
+                        "long_desc": "Store 1",
+                        "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                        ]
+                    },
+                    "ttl": "P1D",
+                    "locations": [
+                        {
+                            "id": "L1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:30.000Z",
+                                "days": "1,2,3,4,5,6,7",
+                                "schedule": {
+                                    "holidays": [
+                                        "2023-08-15"
+                                    ]
+                                },
+                                "range": {
+                                    "start": "1100",
+                                    "end": "2100"
+                                }
+                            },
+                            "gps": "12.967555,77.749666",
+                            "city": "Bengaluru",
+                            "area_code": "560076",
+                            "state": "KA",
+                            "address": "locality|street",
+                            "circle": {
+                                "gps": "12.967555,77.749666",
+                                "radius": {
+                                    "unit": "km",
+                                    "value": "3"
+                                }
+                            }
+                        }
+                    ],
+                    "categories" : [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Home Furnishings"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "I1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:00.000Z"
+                            },
+                            "descriptor": {
+                                "name": "Satin Double Bedsheet with Two Pillow Covers",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "long_desc": "Hantex | Satin Double Bedsheet with Two Pillow Covers | Vertical Stripe Bedsheet | Horizontal Stripe Pillow Cover | Colour - Ochre, Fir Green & Pearl Beige  | Viscose Rayon - Cotton Blend | Hantex | Handloom | Kerala Handcrafted Fabric | Kerala Kaithari ",
+                                "short_desc": "Satin Double Bedsheet with Two Pillow Covers | Vertical Stripe Bedsheet | Horizontal Stripe Pillow Cover | Colour - Ochre, Fir Green & Pearl Beige ",
+                                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "unit",
+                                        "value": "3"
+                                    }
+                                },
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "2808.00",
+                                "maximum_value": "2808.0"
+                            },
+                            "category_ids": ["CG1"],
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
+                            "tags": [
+                                {
+                                    "code": "ORIGIN",
+                                    "list": [
+                                        {
+                                            "code": "COUNTRY",
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "IMAGE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "back_image"
+                                        },
+                                        {
+                                            "code": "URL",
+                                            "value": "https://sellerNP.com/images/i1_back_image.png"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "ATTRIBUTE",
+                                    "list": [
+                                        {
+                                            "code": "BRAND",
+                                            "value": "Hiyanshi"
+                                        },
+                                        {
+                                            "code": "COLOUR",
+                                            "value": "#000000"
+                                        },
+                                        {
+                                            "code": "MATERIAL",
+                                            "value": "cotton"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "SKU_PROPERTIES",
+                                    "list": [
+                                        {
+                                            "code": "RETURNABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "CANCELLABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "RETURN_WINDOW",
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "code": "SELLER_PICKUP_RETURN",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "TIME_TO_SHIP",
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "code": "AVAILABLE_ON_COD",
+                                            "value": "false"
+                                        },
+                                        {
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "STATUTORY_REQS_PACKAGED_COMMODITIES",
+                                    "list": [
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_NAME",
+                                            "value": "ITC"
+                                        },
+                                        {
+                                            "code": "MANUFACTURER_OR_PACKER_ADDRESS",
+                                            "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
+                                        },
+                                        {
+                                            "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY",
+                                            "value": "Ashirwad Atta"
+                                        },
+                                        {
+                                            "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT",
+                                            "value": "01/2023"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "creds": [
+                        {
+                            "id": "ESG-12345678",
+                            "descriptor": {
+                                "code": "ESG-12345678",
+                                "short_desc": "ESG-12345678-FF",
+                                "name": "Dun & Bradstreet ESG Badge No."
+                            },
+                            "url": "https://abcd.cdn.com/images/badge-img",
+                            "tags": [
+                                {
+                                    "code": "VERIFICATION",
+                                    "list": [
+                                        {
+                                            "code": "VERIFY_URL",
+                                            "value": "https://abcd.dnb.com/verify?id=''ESG-12345678''"
+                                        },
+                                        {
+                                            "code": "VALID_FROM",
+                                            "value": "2023-06-03T00:00:00:000Z"
+                                        },
+                                        {
+                                            "code": "VALID_TO",
+                                            "value": "2024-06-03T23:59:59:999Z"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "code": "ORDER_VALUE",
+                            "list": [
+                                {
+                                    "code": "MIN_VALUE",
+                                    "value": "2000.00"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "CATALOG_LINK",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "inline"
+                                },
+                                {
+                                    "code": "TYPE_VALUE",
+                                    "value": "https://s3.amazon.com/x-12349.zip"
+                                },
+                                {
+                                    "code": "TYPE_VALIDITY",
+                                    "value": "PT24H"
+                                },
+                                {
+                                    "code": "LAST_UPDATE",
+                                    "value": "2023-05-21T00:00:00:000Z"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "0000"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2359"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Self-Pickup"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2000"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Delivery"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2200"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "SERVICEABILITY",
+                            "list": [
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "CATEGORY",
+                                    "value": "Home Furnishings"
+                                },
+                                {
+                                    "code": "TYPE",
+                                    "value": "12"
+                                },
+                                {
+                                    "code": "VAL",
+                                    "value": "IND"
+                                },
+                                {
+                                    "code": "UNIT",
+                                    "value": "country"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                    {
+                        "code": "BPP_TERMS",
+                        "list": [
+                            {
+                                "code": "NP_TYPE",
+                                "value": "MSN"
+                            },
+                            {
+                                "code": "ACCEPT_BAP_TERMS",
+                                "value": "Y"
+                            },
+                            {
+                                "code": "COLLECT_PAYMENT",
+                                "value": "Y"
+                            }
+                        ]
+                    }
+                ]
+        }
+    }
+}

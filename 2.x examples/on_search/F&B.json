@@ -1,0 +1,1227 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "catalog": {
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery"
+                },
+                {
+                    "id": "2",
+                    "type": "Self-Pickup"
+                },
+                {
+                    "id": "3",
+                    "type": "Delivery and Self-Pickup"
+                }
+            ],
+            "descriptor": {
+                "name": "Seller NP",
+                "short_desc": "Seller Marketplace",
+                "long_desc": "Seller Marketplace",
+                "images": [{
+                    "url": "https://sellerNP.com/symbol/np.png"
+                },
+                {
+                    "url": "https://sellerNP.com/images/np.png"
+                }
+            ]
+            },
+            "providers": [
+                {
+                    "id": "P1",
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2023-06-03T07:00:00.000Z"
+                    },
+                    "fulfillments": [
+                        {
+                            "id": "F1",
+                            "type": "Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        },
+                        {
+                            "id": "F2",
+                            "type": "Self-Pickup",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        },
+                        {
+                            "id": "F3",
+                            "type": "Buyer-Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        }
+                    ],
+                    "descriptor": {
+                        "name": "Store 1",
+                        "short_desc": "Store 1",
+                        "long_desc": "Store 1",
+                        "images": [{
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                    ]
+                    },
+                    "ttl": "P1D",
+                    "locations": [
+                        {
+                            "id": "L1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:30.000Z",
+                                "days": "1,2,3,4,5,6,7",
+                                "schedule": {
+                                    "holidays": [
+                                        "2023-08-15"
+                                    ]
+                                },
+                                "range": {
+                                    "start": "1100",
+                                    "end": "2100"
+                                }
+                            },
+                            "gps": "12.967555,77.749666",
+                            "city": "Bengaluru",
+                            "area_code": "560076",
+                            "state": "KA",
+                            "address": "locality|street",
+                            "circle": {
+                                "gps": "12.967555,77.749666",
+                                "radius": {
+                                    "unit": "km",
+                                    "value": "3"
+                                }
+                            }
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "5",
+                            "parent_category_id": "",
+                            "descriptor": {
+                                "name": "Pizza",
+                                "short_desc": "Veg and Non-Veg pizza",
+                                "long_desc": "American and Italian Veg and Non-Veg Pizza",
+                                "images": [{
+                        "url": "https://sellerNP.com/symbol/np.png"
+                        },
+                        {
+                            "url": "https://sellerNP.com/images/np.png"
+                        }
+                        ]
+                            },
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "custom_menu"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "TIMING",
+                                    "list": [
+                                        {
+                                            "code": "DAY_FROM",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "DAY_TO",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "code": "TIME_FROM",
+                                            "value": "1800"
+                                        },
+                                        {
+                                            "code": "TIME_TO",
+                                            "value": "2200"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "DISPLAY",
+                                    "list": [
+                                        {
+                                            "code": "rank",
+                                            "value": "3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Crust (any 1 option)"
+                            },
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "custom_group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CONFIG",
+                                    "list": [
+                                        {
+                                            "code": "MIN",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "MAX",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "INPUT",
+                                            "value": "select"
+                                        },
+                                        {
+                                            "code": "SEQ",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CG2",
+                            "descriptor": {
+                                "name": "Size (any 1 option)"
+                            },
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "custom_group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CONFIG",
+                                    "list": [
+                                        {
+                                            "code": "MIN",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "MAX",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "INPUT",
+                                            "value": "select"
+                                        },
+                                        {
+                                            "code": "SEQ",
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CG3",
+                            "descriptor": {
+                                "name": "Toppings (up to 2 options)"
+                            },
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "custom_group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CONFIG",
+                                    "list": [
+                                        {
+                                            "code": "MIN",
+                                            "value": "0"
+                                        },
+                                        {
+                                            "code": "MAX",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "code": "INPUT",
+                                            "value": "select"
+                                        },
+                                        {
+                                            "code": "SEQ",
+                                            "value": "3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "CG4",
+                            "descriptor": {
+                                "name": "F&B"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "I1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:00.000Z"
+                            },
+                            "descriptor": {
+                                "name": "Farmhouse Pizza",
+                                "short_desc": "Farmhouse Pizza",
+                                "long_desc": "Farmhouse Pizza",
+                                "images": [{
+                                    "url": "https://sellerNP.com/symbol/np.png"
+                                },
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "unit",
+                                        "value": "1"
+                                    }
+                                },
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "269.0",
+                                "maximum_value": "269.0",
+                                "tags": [
+                                    {
+                                        "code": "RANGE",
+                                        "list": [
+                                            {
+                                                "code": "LOWER",
+                                                "value": "269.00"
+                                            },
+                                            {
+                                                "code": "UPPER",
+                                                "value": "304.00"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "code": "DEFAULT_SELECTION",
+                                        "list": [
+                                            {
+                                                "code": "VALUE",
+                                                "value": "269.00"
+                                            },
+                                            {
+                                                "code": "MAXIMUM_VALUE",
+                                                "value": "290.00"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "category_ids": [
+                                "5:1","CG4"
+                            ],
+                            "fulfillment_ids": ["F1"],
+                            "location_ids": ["L1"],
+                            "related": false,
+                            "recommended": true,
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "item"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CUSTOM_GROUP",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CONFIG",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG1"
+                                        },
+                                        {
+                                            "code": "MIN",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "MAX",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "SEQ",
+                                            "value": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "TIMING",
+                                    "list": [
+                                        {
+                                            "code": "DAY_FROM",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "DAY_TO",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "code": "TIME_FROM",
+                                            "value": "1800"
+                                        },
+                                        {
+                                            "code": "TIME_TO",
+                                            "value": "2200"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "SKU_PROPERTIES",
+                                    "list": [
+                                        {
+                                            "code": "RETURNABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "CANCELLABLE",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "RETURN_WINDOW",
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "code": "SELLER_PICKUP_RETURN",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "code": "TIME_TO_SHIP",
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "code": "AVAILABLE_ON_COD",
+                                            "value": "false"
+                                        },
+                                        {
+                                            "code": "CONTACT_DETAILS_CONSUMER_CARE",
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "C1",
+                            "descriptor": {
+                                "name": "New Hand Tossed"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "0.0",
+                                "maximum_value": "0.0"
+                            },
+                            "category_ids": ["CG4"],
+                            "related": true,
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "customization"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "PARENT",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG1"
+                                        },
+                                        {
+                                            "code": "DEFAULT",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CHILD",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "C2",
+                            "descriptor": {
+                                "name": "Regular"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "0.0",
+                                "maximum_value": "0.0"
+                            },
+                            "category_ids": ["CG4"],
+                            "related": true,
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "customization"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "PARENT",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG2"
+                                        },
+                                        {
+                                            "code": "DEFAULT",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "CHILD",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "C3",
+                            "descriptor": {
+                                "name": "Grilled Mushrooms"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "99"
+                                },
+                                "maximum": {
+                                    "count": "99"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "35.0",
+                                "maximum_value": "35.0"
+                            },
+                            "category_ids": ["CG4"],
+                            "related": true,
+                            "tags": [
+                                {
+                                    "code": "TYPE",
+                                    "list": [
+                                        {
+                                            "code": "TYPE",
+                                            "value": "customization"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "PARENT",
+                                    "list": [
+                                        {
+                                            "code": "ID",
+                                            "value": "CG3"
+                                        },
+                                        {
+                                            "code": "DEFAULT",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "VEG_NONVEG",
+                                    "list": [
+                                        {
+                                            "code": "VEG",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "offers": [
+                        {
+                            "id": "DISCP60",
+                            "descriptor": {
+                                "code": "discount",
+                                "images": [
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-21T16:00:00.000Z",
+                                    "end": "2023-06-21T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "MIN_VALUE",
+                                            "value": "159"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "VALUE_TYPE",
+                                            "value": "percent"
+                                        },
+                                        {
+                                            "code": "VALUE",
+                                            "value": "-60.00"
+                                        },
+                                        {
+                                            "code": "VALUE_CAP",
+                                            "value": "-120.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FLAT150",
+                            "descriptor": {
+                                "code": "discount",
+                                "images": [
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-22T16:00:00.000Z",
+                                    "end": "2023-06-22T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "MIN_VALUE",
+                                            "value": "499.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "VALUE_TYPE",
+                                            "value": "amount"
+                                        },
+                                        {
+                                            "code": "VALUE",
+                                            "value": "-150.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BUY2GET3",
+                            "descriptor": {
+                                "code": "buyXgetY",
+                                "images": [
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-23T16:00:00.000Z",
+                                    "end": "2023-06-23T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "item_count",
+                                            "value": "2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "ITEM_ID",
+                                            "value": "I1"
+                                        },
+                                        {
+                                            "code": "ITEM_COUNT",
+                                            "value": "3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FREEBIE",
+                            "descriptor": {
+                                "code": "freebie",
+                                "images": [
+                                {
+                                    "url": "https://sellerNP.com/images/np.png"
+                                }
+                            ]
+                            },
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "item_ids": [
+                                "I1"
+                            ],
+                            "time": {
+                                "label": "valid",
+                                "range": {
+                                    "start": "2023-06-24T16:00:00.000Z",
+                                    "end": "2023-06-24T23:00:00.000Z"
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "code": "QUALIFIER",
+                                    "list": [
+                                        {
+                                            "code": "MIN_VALUE",
+                                            "value": "598.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "BENEFIT",
+                                    "list": [
+                                        {
+                                            "code": "ITEM_COUNT",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "code": "ITEM_ID",
+                                            "value": "sku id for extra item"
+                                        },
+                                        {
+                                            "code": "ITEM_VALUE",
+                                            "value": "200.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "META",
+                                    "list": [
+                                        {
+                                            "code": "ADDITIVE",
+                                            "value": "no"
+                                        },
+                                        {
+                                            "code": "AUTO",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "code": "ORDER_VALUE",
+                            "list": [
+                                {
+                                    "code": "MIN_VALUE",
+                                    "value": "300.00"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "CATALOG_LINK",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "inline"
+                                },
+                                {
+                                    "code": "TYPE_VALUE",
+                                    "value": "https://s3.amazon.com/xjhjsfsdfs/s-12349.zip"
+                                },
+                                {
+                                    "code": "TYPE_VALIDITY",
+                                    "value": "PT24H"
+                                },
+                                {
+                                    "code": "LAST_UPDATE",
+                                    "value": "2023-05-21T00:00:00:000Z"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "5"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "0900"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "1100"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "5"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1300"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "1530"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "5"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1830"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2130"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "6"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1300"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "1600"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Order"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "6"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1900"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2300"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Self-Pickup"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2000"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "TIMING",
+                            "list": [
+                                {
+                                    "code": "TYPE",
+                                    "value": "Delivery"
+                                },
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "DAY_FROM",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "DAY_TO",
+                                    "value": "7"
+                                },
+                                {
+                                    "code": "TIME_FROM",
+                                    "value": "1100"
+                                },
+                                {
+                                    "code": "TIME_TO",
+                                    "value": "2200"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "CLOSE_TIMING",
+                            "list": [
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "START",
+                                    "value": "2023-06-03T16:00:00.000Z"
+                                },
+                                {
+                                    "code": "END",
+                                    "value": "2023-06-03T23:59:00.000Z"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "SERVICEABILITY",
+                            "list": [
+                                {
+                                    "code": "LOCATION",
+                                    "value": "L1"
+                                },
+                                {
+                                    "code": "CATEGORY",
+                                    "value": "F&B"
+                                },
+                                {
+                                    "code": "TYPE",
+                                    "value": "10"
+                                },
+                                {
+                                    "code": "VAL",
+                                    "value": "3"
+                                },
+                                {
+                                    "code": "UNIT",
+                                    "value": "km"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "FSSAI",
+                            "list": [
+                                {
+                                    "code": "LICENSE_NO",
+                                    "value": "1234567890"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                    {
+                        "code": "BPP_TERMS",
+                        "list": [
+                            {
+                                "code": "NP_TYPE",
+                                "value": "ISN"
+                            },
+                            {
+                                "code": "ACCEPT_BAP_TERMS",
+                                "value": "Y"
+                            },
+                            {
+                                "code": "COLLECT_PAYMENT",
+                                "value": "Y"
+                            }
+                        ]
+                    }
+                ]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "context": {
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
+    "location": {
+      "city": {
+        "code": "city_code_value"
+      },
+      "country": {
+        "code": "country_code_value"
+      }
+    },
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
+  },
+    "message": {
+        "ack": {
+            "status": "NACK",
+            "tags": [
+                {
+                    "code": "BPP_TERMS",
+                    "list": [
+                        {
+                            "code": "FINDER_FEE_TYPE",
+                            "value": "percent"
+                        },
+                        {
+                            "code": "FINDER_FEE_AMOUNT_MIN",
+                            "value": "1.5"
+                        },
+                        {
+                            "code": "FINDER_FEE_AMOUNT_MAX",
+                            "value": "2.5"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "41001"
+    }
+}
