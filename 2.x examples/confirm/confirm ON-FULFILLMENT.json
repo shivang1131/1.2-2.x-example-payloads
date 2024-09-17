@@ -219,7 +219,7 @@
           "transaction_id": "3937",
           "amount": "680.00"
         },
-        "status": "PAID",
+        "status": "NOT-PAID",
         "type": "ON-FULFILLMENT",
         "collected_by": "BPP",
          "tags": [
