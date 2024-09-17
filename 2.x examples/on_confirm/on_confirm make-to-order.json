@@ -41,18 +41,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "DI1"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "DI1"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "item"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "ITEM"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C1",
@@ -62,18 +78,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG1"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG1"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C7",
@@ -83,18 +115,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG2"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG2"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C14",
@@ -104,18 +152,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG3"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG3"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C16",
@@ -125,18 +189,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG3"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG3"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "I1",
@@ -146,18 +226,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "DI2"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "DI2"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "item"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "ITEM"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C2",
@@ -167,18 +263,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG1"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG1"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C7",
@@ -188,18 +300,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG2"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG2"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C14",
@@ -209,18 +337,34 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG3"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG3"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         },
         {
           "id": "C15",
@@ -230,27 +374,47 @@
               "count": "1"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "CG3"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "CG3"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "customization"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "CUSTOMIZATION"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "billing": {
         "name": "ONDC buyer",
         "address": "my house or door or floor # | my building name or house # | my street name",
-        "city": "Bengaluru",
-        "state": "Karnataka",
-        "email": "nobody@nomail.com",
+        "city": {
+          "code": "Bengaluru"
+        },
+        "state": {
+          "code": "Karnataka"
+        },
         "phone": "9886098860",
+        "email": "nobody@nomail.com",
         "tags": [
           {
             "descriptor": {
@@ -275,54 +439,33 @@
       },
       "fulfillments": {
         "id": "F1",
-        "tags": {
-          "CONSIGNMENT": {
-            "list": {
-              "PROVIDER_NAME": "name_of_person",
-              "TAT": "PT60M"
-            }
-          }
-        },
-        "state": {
-          "descriptor": {
-            "code": "Pending"
-          }
-        },
         "type": "Delivery",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "PT60M"
+              }
+            ]
+          }
+        ],
         "tracking": false,
         "stops": [
           {
-            "type": "START",
-            "location": {
-              "id": "start_location_id_value",
-              "descriptor": {
-                "name": "start_location_name_value"
-              },
-              "gps": "12.453544,77.928379",
-              "address": "my house or door or floor # | my building name or house # | my street name",
-              "city": "Bengaluru",
-              "state": "Karnataka",
-              "area_code": "560037"
-            },
-            "time": {
-              "range": {
-                "start": "start_time_range_start_value",
-                "end": "start_time_range_end_value"
-              }
-            },
-            "instructions": {
-              "code": "start_instructions_code_value",
-              "name": "start_instructions_name_value",
-              "short_desc": "start_instructions_short_desc_value",
-              "long_desc": "start_instructions_long_desc_value"
+            "type": "END",
+            "person": {
+              "name": "name_of_person"
             },
             "contact": {
-              "phone": "start_contact_phone_value",
-              "email": "start_contact_email_value"
-            }
-          },
-          {
-            "type": "END",
+              "email": "nobody@nomail.com",
+              "phone": "9886098860"
+            },
             "location": {
               "gps": "12.453544,77.928379",
               "address": "my house or door or floor # | my building name or house # | my street name",
@@ -330,19 +473,6 @@
               "state": "Karnataka",
               "country": "IND",
               "area_code": "560037"
-            },
-            "time": {
-              "range": {
-                "start": "end_time_range_start_value",
-                "end": "end_time_range_end_value"
-              }
-            },
-            "person": {
-              "name": "name_of_person"
-            },
-            "contact": {
-              "phone": "9886098860",
-              "email": "nobody@nomail.com"
             }
           }
         ]
@@ -367,23 +497,47 @@
                 "currency": "INR",
                 "value": "269.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG1"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG1"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "item"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ITEM"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "item"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ITEM"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Farm House Pizza",
             "price": {
@@ -404,23 +558,47 @@
                 "currency": "INR",
                 "value": "0.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG1"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG1"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "New Hand Tossed",
             "price": {
@@ -441,23 +619,47 @@
                 "currency": "INR",
                 "value": "450.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG2"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG2"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Large",
             "price": {
@@ -478,23 +680,47 @@
                 "currency": "INR",
                 "value": "80.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG3"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG3"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Grilled Mushrooms",
             "price": {
@@ -515,23 +741,47 @@
                 "currency": "INR",
                 "value": "95.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG3"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG3"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Pepper Barbeque Chicken",
             "price": {
@@ -552,23 +802,47 @@
                 "currency": "INR",
                 "value": "269.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG1"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG1"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "item"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ITEM"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "item"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ITEM"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Farm House Pizza",
             "price": {
@@ -589,23 +863,47 @@
                 "currency": "INR",
                 "value": "0.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG1"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG1"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "100% Wheat Thin Crust",
             "price": {
@@ -626,23 +924,47 @@
                 "currency": "INR",
                 "value": "450.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG2"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG2"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Large",
             "price": {
@@ -663,23 +985,47 @@
                 "currency": "INR",
                 "value": "80.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG3"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG3"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Grilled Mushrooms",
             "price": {
@@ -700,23 +1046,47 @@
                 "currency": "INR",
                 "value": "80.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG3"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG3"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Fresh Tomato",
             "price": {
@@ -737,18 +1107,34 @@
                 "currency": "INR",
                 "value": "13.45"
               },
-              "tags": {
-                "quote": {
-                  "list": {
-                    "type": "item"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ITEM"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "item"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ITEM"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Tax",
             "price": {
@@ -769,23 +1155,47 @@
                 "currency": "INR",
                 "value": "22.50"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG1"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG1"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Tax",
             "price": {
@@ -806,23 +1216,47 @@
                 "currency": "INR",
                 "value": "22.50"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG2"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG2"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Tax",
             "price": {
@@ -843,23 +1277,47 @@
                 "currency": "INR",
                 "value": "4.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG3"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG3"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Tax",
             "price": {
@@ -880,23 +1338,47 @@
                 "currency": "INR",
                 "value": "4.00"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "CG3"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "CG3"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "customization"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CUSTOMIZATION"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Tax",
             "price": {
@@ -917,13 +1399,21 @@
                 "currency": "INR",
                 "value": "50.00"
               },
-              "tags": {
-                "quote": {
-                  "list": {
-                    "type": "delivery"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "DELIVERY"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Delivery charges",
             "price": {
@@ -944,13 +1434,21 @@
                 "currency": "INR",
                 "value": "9.00"
               },
-              "tags": {
-                "quote": {
-                  "list": {
-                    "type": "fulfillment"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "FULFILLMENT"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Tax",
             "price": {
@@ -971,13 +1469,21 @@
                 "currency": "INR",
                 "value": "25.00"
               },
-              "tags": {
-                "quote": {
-                  "list": {
-                    "type": "packing"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "PACKING"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Packing charges",
             "price": {
@@ -998,13 +1504,21 @@
                 "currency": "INR",
                 "value": "10.00"
               },
-              "tags": {
-                "quote": {
-                  "list": {
-                    "type": "misc"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "MISC"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "Convenience Fee",
             "price": {
@@ -1024,79 +1538,190 @@
         "status": "PAID",
         "type": "ON-ORDER",
         "collected_by": "BAP",
-        "tags": {
-          "settlement_details": {
-            "list": {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "sale-amount",
-              "beneficiary_name": "xxxxx",
-              "settlement_type": "upi",
-              "upi_address": "gft@oksbi",
-              "settlement_bank_account_no": "XXXXXXXXXX",
-              "settlement_ifsc_code": "XXXXXXXXX",
-              "bank_name": "xxxx",
-              "branch_name": "xxxx"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "seller-app"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "sale-amount"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "upi"
+              },
+              {
+                "descriptor": {
+                  "code": "UPI_ADDRESS"
+                },
+                "value": "gft@oksbi"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                },
+                "value": "XXXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_IFSC_CODE"
+                },
+                "value": "XXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "xxxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "xxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "xxxx"
+              }
+            ]
           }
-        }
+        ]
       },
-      "tags": {
-        "BAP_TERMS": {
-          "list": {
-            "BUYER_FINDER_FEE_TYPE": "percent",
-            "BUYER_FINDER_FEE_PERCENTAGE": "3",
-            "BUYER_FINDER_FEE_AMOUNT": "100"
-          }
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_TYPE"
+              },
+              "value": "percent"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+              },
+              "value": "3"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_AMOUNT"
+              },
+              "value": "100"
+            }
+          ]
         },
-        "SETTLEMENT_TERMS": {
-          "list": {
-            "SETTLEMENT_BASIS": "delivery",
-            "SETTLEMENT_WINDOW": "P1D",
-            "WITHHOLDING_AMOUNT": "10.00"
-          }
+        {
+          "descriptor": {
+            "code": "SETTLEMENT_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_BASIS"
+              },
+              "value": "delivery"
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_WINDOW"
+              },
+              "value": "P1D"
+            },
+            {
+              "descriptor": {
+                "code": "WITHHOLDING_AMOUNT"
+              },
+              "value": "10.00"
+            }
+          ]
         },
-        "bpp_terms": {
-          "list": {
-            "max_liability": {
+        {
+          "descriptor": {
+            "code": "BPP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY"
+              },
               "value": "2"
             },
-            "max_liability_cap": {
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY_CAP"
+              },
               "value": "10000"
             },
-            "mandatory_arbitration": {
+            {
+              "descriptor": {
+                "code": "MANDATORY_ARBITRATION"
+              },
               "value": "false"
             },
-            "court_jurisdiction": {
+            {
+              "descriptor": {
+                "code": "COURT_JURISDICTION"
+              },
               "value": "Bengaluru"
             },
-            "delay_interest": {
+            {
+              "descriptor": {
+                "code": "DELAY_INTEREST"
+              },
               "value": "7.50"
             },
-            "np_type": {
-              "value": "ONDC"
-            },
-            "tax_number": {
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
               "value": "gst_number_of_sellerNP"
-            },
-            "provider_tax_number": {
-              "value": "gst_number_of_sellerNP"
-            },
-            "accept_bap_terms": {
-              "value": "Y"
             }
-          }
+          ]
         },
-        "bap_terms": {
-          "list": {
-            "static_terms": {
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "ACCEPT_BPP_TERMS"
+              },
+              "value": "Y"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
+              },
               "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/tc.pdf"
             },
-            "tax_number": {
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
               "value": "gst_number_of_buyerNP"
             }
-          }
+          ]
         }
-      },
+      ],
       "cancellation_terms": {
         "fulfillment_state": {
           "descriptor": {

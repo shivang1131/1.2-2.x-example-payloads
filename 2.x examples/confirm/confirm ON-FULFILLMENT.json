@@ -85,25 +85,46 @@
         },
         "phone": "9886098860",
         "email": "nobody@nomail.com",
-        "tags": {
-          "AUDIT_TIMESTAMP": {
-            "list": {
-              "CREATED_AT": "2023-02-03T09:00:00.000Z",
-              "UPDATED_AT": "2023-02-03T09:00:00.000Z"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "2023-02-03T09:00:00.000Z"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "2023-02-03T09:00:00.000Z"
+              }
+            ]
           }
-        }
+        ]
       },
       "fulfillments": {
         "id": "F1",
         "type": "Delivery",
-        "tags": {
-          "CONSIGNMENT": {
-            "list": {
-              "TAT": "PT60M"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "PT60M"
+              }
+            ]
           }
-        },
+        ],
         "tracking": false,
         "stops": [
           {
@@ -127,51 +148,70 @@
         ]
       },
       "quote": {
+  "breakup": [
+    {
+      "item": {
+        "id": "I1",
+        "quantity": {
+          "selected": {
+            "count": "2"
+          }
+        },
+        "parent_item_id": null,
         "price": {
           "currency": "INR",
-          "value": "680.00"
+          "value": "340.00"
         },
-        "ttl": "P1D",
-        "breakup": [
+        "tags": [
           {
-            "item": {
-              "id": "I1",
-              "quantity": {
-                "selected": {
-                  "count": "2"
-                }
-              },
-              "parent_item_id": null,
-              "price": {
-                "currency": "INR",
-                "value": "340.00"
-              },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "BUY2GET3"
-                  }
-                },
-                "quote": {
-                  "list": {
-                    "type": "item"
-                  }
-                },
-                "type": {
-                  "list": {
-                    "type": "Atta"
-                  }
-                }
-              }
+            "descriptor": {
+              "code": "PARENT"
             },
-            "title": "item",
-            "price": {
-              "currency": "INR",
-              "value": "680.00"
-            }
+            "list": [
+              {
+                "descriptor": {
+                  "code": "ID"
+                },
+                "value": "BUY2GET3"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "QUOTE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "item"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "TYPE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "Atta"
+              }
+            ]
           }
         ]
       },
+      "title": "item",
+      "price": {
+        "currency": "INR",
+        "value": "680.00"
+      }
+    }
+  ]
+},
       "payments": {
         "url": "https://ondc.transaction.com/payment",
         "params": {
@@ -182,21 +222,69 @@
         "status": "PAID",
         "type": "ON-FULFILLMENT",
         "collected_by": "BPP",
-        "tags": {
-          "settlement_details": {
-            "list": {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "sale-amount",
-              "settlement_type": "upi",
-              "upi_address": "gft@oksbi",
-              "settlement_bank_account_no": "XXXXXXXXXX",
-              "settlement_ifsc_code": "XXXXXXXXX",
-              "beneficiary_name": "xxxxx",
-              "bank_name": "xxxx",
-              "branch_name": "xxxx"
-            }
+         "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "seller-app"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "sale-amount"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "upi"
+              },
+              {
+                "descriptor": {
+                  "code": "UPI_ADDRESS"
+                },
+                "value": "gft@oksbi"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                },
+                "value": "XXXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_IFSC_CODE"
+                },
+                "value": "XXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "xxxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "xxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "xxxx"
+              }
+            ]
           }
-        }
+        ]
       },
       "tags": [
         {

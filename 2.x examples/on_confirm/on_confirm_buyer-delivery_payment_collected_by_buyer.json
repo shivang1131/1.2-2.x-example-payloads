@@ -32,27 +32,43 @@
           }
         ]
       },
-      "items": [
+       "items": [
         {
           "id": "I1",
-          "fulfillment_ids": "F1",
+          "fulfillment_id": "F1",
           "quantity": {
             "selected": {
               "count": "2"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "BUY2GET3"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "BUY2GET3"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "Atta"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "Atta"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "billing": {
@@ -86,14 +102,21 @@
       },
       "fulfillments": {
         "id": "F1",
-        "tags": {
-          "CONSIGNMENT": {
-            "list": {
-              "PROVIDER_NAME": "name_of_person",
-              "TAT": "PT60M"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "PT60M"
+              }
+            ]
           }
-        },
+        ],
         "state": {
           "descriptor": {
             "code": "Pending"
@@ -158,44 +181,71 @@
           }
         ]
       },
-      "quote": {
+       "quote": {
+  "breakup": [
+    {
+      "item": {
+        "id": "I1",
+        "quantity": {
+          "selected": {
+            "count": "2"
+          }
+        },
+        "parent_item_id": null,
         "price": {
           "currency": "INR",
-          "value": "680.00"
+          "value": "340.00"
         },
-        "ttl": "P1D",
-        "breakup": [
+        "tags": [
           {
-            "item": {
-              "id": "I1",
-              "quantity": {
-                "selected": {
-                  "count": "2"
-                }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "340.00"
-              },
-              "tags": {
-                "quote": {
-                  "list": {
-                    "type": {
-                      "code": "item",
-                      "value": "item"
-                    }
-                  }
-                }
-              }
+            "descriptor": {
+              "code": "PARENT"
             },
-            "title": "item",
-            "price": {
-              "currency": "INR",
-              "value": "680.00"
-            }
+            "list": [
+              {
+                "descriptor": {
+                  "code": "ID"
+                },
+                "value": "BUY2GET3"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "QUOTE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "item"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "TYPE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "Atta"
+              }
+            ]
           }
         ]
       },
+      "title": "item",
+      "price": {
+        "currency": "INR",
+        "value": "680.00"
+      }
+    }
+  ]
+},
       "payments": {
         "url": "https://ondc.transaction.com/payment",
         "params": {
@@ -206,79 +256,190 @@
         "status": "PAID",
         "type": "ON-ORDER",
         "collected_by": "BAP",
-        "tags": {
-          "settlement_details": {
-            "list": {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "sale-amount",
-              "beneficiary_name": "xxxxx",
-              "settlement_type": "upi",
-              "upi_address": "gft@oksbi",
-              "settlement_bank_account_no": "XXXXXXXXXX",
-              "settlement_ifsc_code": "XXXXXXXXX",
-              "bank_name": "xxxx",
-              "branch_name": "xxxx"
-            }
+       "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "seller-app"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "sale-amount"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "upi"
+              },
+              {
+                "descriptor": {
+                  "code": "UPI_ADDRESS"
+                },
+                "value": "gft@oksbi"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                },
+                "value": "XXXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_IFSC_CODE"
+                },
+                "value": "XXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "xxxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "xxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "xxxx"
+              }
+            ]
           }
-        }
+        ]
       },
-      "tags": {
-        "BAP_TERMS": {
-          "list": {
-            "BUYER_FINDER_FEE_TYPE": "percent",
-            "BUYER_FINDER_FEE_PERCENTAGE": "3",
-            "BUYER_FINDER_FEE_AMOUNT": "100"
-          }
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_TYPE"
+              },
+              "value": "percent"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+              },
+              "value": "3"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_AMOUNT"
+              },
+              "value": "100"
+            }
+          ]
         },
-        "SETTLEMENT_TERMS": {
-          "list": {
-            "SETTLEMENT_BASIS": "delivery",
-            "SETTLEMENT_WINDOW": "P1D",
-            "WITHHOLDING_AMOUNT": "10.00"
-          }
+        {
+          "descriptor": {
+            "code": "SETTLEMENT_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_BASIS"
+              },
+              "value": "delivery"
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_WINDOW"
+              },
+              "value": "P1D"
+            },
+            {
+              "descriptor": {
+                "code": "WITHHOLDING_AMOUNT"
+              },
+              "value": "10.00"
+            }
+          ]
         },
-        "bpp_terms": {
-          "list": {
-            "max_liability": {
+        {
+          "descriptor": {
+            "code": "BPP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY"
+              },
               "value": "2"
             },
-            "max_liability_cap": {
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY_CAP"
+              },
               "value": "10000"
             },
-            "mandatory_arbitration": {
+            {
+              "descriptor": {
+                "code": "MANDATORY_ARBITRATION"
+              },
               "value": "false"
             },
-            "court_jurisdiction": {
+            {
+              "descriptor": {
+                "code": "COURT_JURISDICTION"
+              },
               "value": "Bengaluru"
             },
-            "delay_interest": {
+            {
+              "descriptor": {
+                "code": "DELAY_INTEREST"
+              },
               "value": "7.50"
             },
-            "np_type": {
-              "value": "ONDC"
-            },
-            "tax_number": {
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
               "value": "gst_number_of_sellerNP"
-            },
-            "provider_tax_number": {
-              "value": "gst_number_of_sellerNP"
-            },
-            "accept_bap_terms": {
-              "value": "Y"
             }
-          }
+          ]
         },
-        "bap_terms": {
-          "list": {
-            "static_terms": {
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "ACCEPT_BPP_TERMS"
+              },
+              "value": "Y"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
+              },
               "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/tc.pdf"
             },
-            "tax_number": {
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
               "value": "gst_number_of_buyerNP"
             }
-          }
+          ]
         }
-      },
+      ],
       "cancellation_terms": {
         "fulfillment_state": {
           "descriptor": {
