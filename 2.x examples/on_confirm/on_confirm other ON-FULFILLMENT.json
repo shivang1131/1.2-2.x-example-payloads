@@ -1,0 +1,299 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "action": "on_confirm",
+    "version": "2.x",
+    "bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "bpp_id": "sellerNP.com",
+    "bpp_uri": "https://sellerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M4",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "timestamp": "2023-06-03T09:30:04.798Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "O1",
+      "status": "Accepted",
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_ids": "F1",
+          "quantity": {
+            "selected": {
+              "count": "2"
+            }
+          },
+          "tags": {
+            "parent": {
+              "list": {
+                "id": "BUY2GET3"
+              }
+            },
+            "type": {
+              "list": {
+                "type": "Atta"
+              }
+            }
+          }
+        }
+      ],
+      "billing": {
+        "name": "ONDC buyer",
+        "address": "my house or door or floor # | my building name or house # | my street name",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "email": "nobody@nomail.com",
+        "phone": "9886098860",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "2023-02-03T09:00:00.000Z"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "2023-02-03T09:00:00.000Z"
+              }
+            ]
+          }
+        ]
+      },
+      "fulfillments": {
+        "id": "F1",
+        "tags": {
+          "CONSIGNMENT": {
+            "list": {
+              "PROVIDER_NAME": "name_of_person",
+              "TAT": "PT60M"
+            }
+          }
+        },
+        "state": {
+          "descriptor": {
+            "code": "Pending"
+          }
+        },
+        "type": "Delivery",
+        "tracking": false,
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "id": "start_location_id_value",
+              "descriptor": {
+                "name": "start_location_name_value"
+              },
+              "gps": "12.453544,77.928379",
+              "address": "my house or door or floor # | my building name or house # | my street name",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "area_code": "560037"
+            },
+            "time": {
+              "range": {
+                "start": "start_time_range_start_value",
+                "end": "start_time_range_end_value"
+              }
+            },
+            "instructions": {
+              "code": "start_instructions_code_value",
+              "name": "start_instructions_name_value",
+              "short_desc": "start_instructions_short_desc_value",
+              "long_desc": "start_instructions_long_desc_value"
+            },
+            "contact": {
+              "phone": "start_contact_phone_value",
+              "email": "start_contact_email_value"
+            }
+          },
+          {
+            "type": "END",
+            "location": {
+              "gps": "12.453544,77.928379",
+              "address": "my house or door or floor # | my building name or house # | my street name",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "country": "IND",
+              "area_code": "560037"
+            },
+            "time": {
+              "range": {
+                "start": "end_time_range_start_value",
+                "end": "end_time_range_end_value"
+              }
+            },
+            "person": {
+              "name": "name_of_person"
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "nobody@nomail.com"
+            }
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "680.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
+              "id": "I1",
+              "quantity": {
+                "selected": {
+                  "count": "2"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "340.00"
+              },
+              "tags": {
+                "quote": {
+                  "list": {
+                    "type": {
+                      "code": "item",
+                      "value": "item"
+                    }
+                  }
+                }
+              }
+            },
+            "title": "item",
+            "price": {
+              "currency": "INR",
+              "value": "680.00"
+            }
+          }
+        ]
+      },
+      "payments": {
+        "url": "https://ondc.transaction.com/payment",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "3937",
+          "amount": "680.00"
+        },
+        "status": "PAID",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BAP",
+        "tags": {
+          "settlement_details": {
+            "list": {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "beneficiary_name": "xxxxx",
+              "settlement_type": "upi",
+              "upi_address": "gft@oksbi",
+              "settlement_bank_account_no": "XXXXXXXXXX",
+              "settlement_ifsc_code": "XXXXXXXXX",
+              "bank_name": "xxxx",
+              "branch_name": "xxxx"
+            }
+          }
+        }
+      },
+      "tags": {
+        "BAP_TERMS": {
+          "list": {
+            "BUYER_FINDER_FEE_TYPE": "percent",
+            "BUYER_FINDER_FEE_PERCENTAGE": "3",
+            "BUYER_FINDER_FEE_AMOUNT": "100"
+          }
+        },
+        "SETTLEMENT_TERMS": {
+          "list": {
+            "SETTLEMENT_BASIS": "delivery",
+            "SETTLEMENT_WINDOW": "P1D",
+            "WITHHOLDING_AMOUNT": "10.00"
+          }
+        },
+        "bpp_terms": {
+          "list": {
+            "max_liability": {
+              "value": "2"
+            },
+            "max_liability_cap": {
+              "value": "10000"
+            },
+            "mandatory_arbitration": {
+              "value": "false"
+            },
+            "court_jurisdiction": {
+              "value": "Bengaluru"
+            },
+            "delay_interest": {
+              "value": "7.50"
+            },
+            "np_type": {
+              "value": "ONDC"
+            },
+            "tax_number": {
+              "value": "gst_number_of_sellerNP"
+            },
+            "provider_tax_number": {
+              "value": "gst_number_of_sellerNP"
+            },
+            "accept_bap_terms": {
+              "value": "Y"
+            }
+          }
+        },
+        "bap_terms": {
+          "list": {
+            "static_terms": {
+              "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/tc.pdf"
+            },
+            "tax_number": {
+              "value": "gst_number_of_buyerNP"
+            }
+          }
+        }
+      },
+      "cancellation_terms": {
+        "fulfillment_state": {
+          "descriptor": {
+            "short_desc": "Pending"
+          }
+        },
+        "cancellation_fee": {
+          "amount": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        }
+      },
+      "created_at": "2023-06-03T09:30:00.000Z",
+      "updated_at": "2023-06-03T09:30:04.798Z"
+    }
+  }
+}

@@ -41,18 +41,34 @@
               "count": "item_quantity_selected_count"
             }
           },
-          "tags": {
-            "parent": {
-              "list": {
-                "id": "parent_list_id_value"
-              }
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PARENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "ID"
+                  },
+                  "value": "parent_list_id_value"
+                }
+              ]
             },
-            "type": {
-              "list": {
-                "type": "item_type_value"
-              }
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "item_type_value"
+                }
+              ]
             }
-          }
+          ]
         }
       ],
       "offers": {
@@ -69,25 +85,46 @@
         },
         "phone": "billing_phone_value",
         "email": "billing_email_value",
-        "tags": {
-          "AUDIT_TIMESTAMP": {
-            "list": {
-              "CREATED_AT": "created_at_timestamp",
-              "UPDATED_AT": "updated_at_timestamp"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "created_at_timestamp"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "updated_at_timestamp"
+              }
+            ]
           }
-        }
+        ]
       },
       "fulfillments": {
         "id": "fulfillment_id_value",
         "type": "fulfillment_type_value",
-        "tags": {
-          "CONSIGNMENT": {
-            "list": {
-              "TAT": "consignment_TAT_value"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "consignment_TAT_value"
+              }
+            ]
           }
-        },
+        ],
         "tracking": "tracking_value",
         "stops": [
           {
@@ -130,23 +167,47 @@
                 "currency": "breakup_item_price_currency",
                 "value": "breakup_item_price_value"
               },
-              "tags": {
-                "parent": {
-                  "list": {
-                    "id": "breakup_parent_list_id_value"
-                  }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "breakup_parent_list_id_value"
+                    }
+                  ]
                 },
-                "quote": {
-                  "list": {
-                    "type": "breakup_quote_type_value"
-                  }
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "breakup_quote_type_value"
+                    }
+                  ]
                 },
-                "type": {
-                  "list": {
-                    "type": "breakup_type_value"
-                  }
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "breakup_type_value"
+                    }
+                  ]
                 }
-              }
+              ]
             },
             "title": "ENUM:free text TBD",
             "price": {
@@ -158,29 +219,92 @@
       },
       "payments": {
         "url": "payment_url_value",
-        "params": {
-          "currency": "payment_currency_value",
-          "transaction_id": "payment_transaction_id_value",
-          "amount": "payment_amount_value"
-        },
+        "params": [
+          {
+            "descriptor": {
+              "code": "CURRENCY"
+            },
+            "value": "payment_currency_value"
+          },
+          {
+            "descriptor": {
+              "code": "TRANSACTION_ID"
+            },
+            "value": "payment_transaction_id_value"
+          },
+          {
+            "descriptor": {
+              "code": "AMOUNT"
+            },
+            "value": "payment_amount_value"
+          }
+        ],
         "status": "payment_status_value",
         "type": "payment_type_value",
         "collected_by": "payment_collected_by_value",
-        "tags": {
-          "settlement_details": {
-            "list": {
-              "settlement_counterparty": "settlement_counterparty_value",
-              "settlement_phase": "settlement_phase_value",
-              "settlement_type": "settlement_type_value",
-              "upi_address": "upi_address_value",
-              "settlement_bank_account_no": "settlement_bank_account_no_value",
-              "settlement_ifsc_code": "settlement_ifsc_code_value",
-              "beneficiary_name": "beneficiary_name_value",
-              "bank_name": "bank_name_value",
-              "branch_name": "branch_name_value"
-            }
+        "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "settlement_counterparty_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "settlement_phase_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "settlement_type_value"
+              },
+              {
+                "descriptor": {
+                  "code": "UPI_ADDRESS"
+                },
+                "value": "upi_address_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                },
+                "value": "settlement_bank_account_no_value"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_IFSC_CODE"
+                },
+                "value": "settlement_ifsc_code_value"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "beneficiary_name_value"
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "bank_name_value"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "branch_name_value"
+              }
+            ]
           }
-        }
+        ]
       },
       "tags": [
         {
