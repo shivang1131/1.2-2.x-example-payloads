@@ -307,7 +307,7 @@
     "type": "payment_type_value",
     "url": "payment_url_value"
   },
-  "providers": [
+  "provider":
     {
       "id": "provider_id_value",
       "locations": [
@@ -315,8 +315,7 @@
           "id": "location_id_value"
         }
       ]
-    }
-  ],
+    },
   "quote": {
     "breakup": [
       {

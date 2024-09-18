@@ -293,7 +293,7 @@
                     }
                 ]
             },
-            "providers": [
+            "provider":
                 {
                     "id": "provider-123",
                     "locations": [
@@ -301,8 +301,7 @@
                             "id": "location-123"
                         }
                     ]
-                }
-            ],
+                },
             "quote": {
                 "breakup": [
                     {
