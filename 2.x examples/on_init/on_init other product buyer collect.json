@@ -1,0 +1,356 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "action": "on_init",
+        "version": "1.0.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M3",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2024-09-04T12:34:56Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": "123 Main St | 2nd Floor | Near Park",
+                "city": {
+                    "code": "std:080"
+                },
+                "state": {
+                    "code": "KA"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "AUDIT_TIMESTAMP"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "CREATED_AT"
+                                },
+                                "value": "2024-09-01T10:00:00Z"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPDATED_AT"
+                                },
+                                "value": "2024-09-03T15:00:00Z"
+                            }
+                        ]
+                    }
+                ],
+                "email": "customer@example.com",
+                "name": "John Doe",
+                "phone": "+919876543210",
+                "tax_id": "IN1234567890"
+            },
+            "cancellation_terms": {
+                "cancellation_fee": {
+                    "amount": {
+                        "currency": "INR",
+                        "value": "100"
+                    },
+                    "percentage": "10%"
+                },
+                "fulfillment_state": {
+                    "descriptor": {
+                        "code": "CANCELLED",
+                        "short_desc": "Order cancelled by user"
+                    }
+                }
+            },
+            "fulfillment": {
+                "stops": {
+                    "type": "END",
+                    "contact": {
+                        "phone": "+919876543210"
+                    },
+                    "location": {
+                        "area_code": "560001",
+                        "address": "45, High Street | 3rd Floor | Central Park",
+                        "city": "Bengaluru",
+                        "country": "India",
+                        "state": "Karnataka",
+                        "gps": "12.9715987,77.5945627"
+                    }
+                },
+                "id": "F1",
+                "tracking": "false",
+                "type": "Delivery"
+            },
+            "items": [
+                {
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "id": "I1",
+                    "quantity": {
+                        "selected": {
+                            "count": "2"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "item"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "BAP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEE_TYPE"
+                            },
+                            "value": "PERCENT"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+                            },
+                            "value": "3"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEE_AMOUNT"
+                            },
+                            "value": "100"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "SETTLEMENT_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "SETTLEMENT_BASIS"
+                            },
+                            "value": "on_delivery"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "SETTLEMENT_WINDOW"
+                            },
+                            "value": "7_days"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "WITHHOLDING_AMOUNT"
+                            },
+                            "value": "50"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "BPP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "COURT_JURISDICTION"
+                            },
+                            "value": "Bangalore"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "DELAY_INTEREST"
+                            },
+                            "value": "5%"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MANDATORY_ARBITRATION"
+                            },
+                            "value": "yes"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MAX_LIABILITY"
+                            },
+                            "value": "10000"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MAX_LIABILITY_CAP"
+                            },
+                            "value": "15000"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PROVIDER_TAX_NUMBER"
+                            },
+                            "value": "KA987654321"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TAX_NUMBER"
+                            },
+                            "value": "TX123456789"
+                        }
+                    ]
+                }
+            ],
+            "payments": {
+                "url": "https://ondc.transaction.com/payment",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "3937",
+                    "amount": "1000.00"
+                },
+                "status": "NOT-PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "SETTLEMENT_DETAILS"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_COUNTERPARTY"
+                                },
+                                "value": "seller-app"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_PHASE"
+                                },
+                                "value": "sale-amount"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_TYPE"
+                                },
+                                "value": "upi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPI_ADDRESS"
+                                },
+                                "value": "gft@oksbi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                                },
+                                "value": "XXXXXXXXXX"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_IFSC_CODE"
+                                },
+                                "value": "XXXXXXXXX"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BENEFICIARY_NAME"
+                                },
+                                "value": "xxxxx"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BANK_NAME"
+                                },
+                                "value": "xxxx"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BRANCH_NAME"
+                                },
+                                "value": "xxxx"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "providers": [
+                {
+                    "id": "provider-123",
+                    "locations": [
+                        {
+                            "id": "location-123"
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "breakup": [
+                    {
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "selected": {
+                                    "count": "2"
+                                },
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "5"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "500"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "item"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "1000"
+                        }
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "1000"
+                },
+                "ttl": "P1D"
+            }
+        }
+    }
+}

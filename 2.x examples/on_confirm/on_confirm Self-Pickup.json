@@ -44,19 +44,6 @@
           "tags": [
             {
               "descriptor": {
-                "code": "PARENT"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "ID"
-                  },
-                  "value": "BUY2GET3"
-                }
-              ]
-            },
-            {
-              "descriptor": {
                 "code": "TYPE"
               },
               "list": [
@@ -64,7 +51,7 @@
                   "descriptor": {
                     "code": "TYPE"
                   },
-                  "value": "Atta"
+                  "value": "ITEM"
                 }
               ]
             }

@@ -84,7 +84,9 @@
       "items": [
         {
           "id": "item_id_value",
-          "fulfillment_ids": ["fulfillment_id_value"],
+          "fulfillment_ids": [
+            "fulfillment_id_value"
+          ],
           "parent_item_id": "parent_item_id_value",
           "quantity": {
             "selected": {
