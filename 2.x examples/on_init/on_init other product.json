@@ -2,7 +2,7 @@
     "context": {
         "domain": "ONDC:RET10",
         "action": "on_init",
-        "version": "1.0.0",
+        "version": "2.x",
         "bap_id": "buyerNP.com",
         "bap_uri": "https://buyerNP.com/ondc",
         "bpp_id": "sellerNP.com",
