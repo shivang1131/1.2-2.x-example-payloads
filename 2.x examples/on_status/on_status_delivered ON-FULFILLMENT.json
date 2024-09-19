@@ -578,7 +578,6 @@
               "ttl": "P1D"
           },
           "payments": {
-              "url": "https://razorpay.com/",
               "params": {
                   "amount": "1753.45",
                   "currency": "INR",

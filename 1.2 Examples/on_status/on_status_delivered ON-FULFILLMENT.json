@@ -445,7 +445,6 @@
         "ttl": "P1D"
       },
       "payment": {
-        "uri": "https://razorpay.com/",
         "tl_method": "http/get",
         "params": {
           "amount": "1753.45",

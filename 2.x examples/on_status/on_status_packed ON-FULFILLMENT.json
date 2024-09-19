@@ -574,7 +574,6 @@
           "payments": {
               "type": "ON-FULFILLMENT",
               "collected_by": "BPP",
-              "url": "https://snp.com/pg",
               "status": "NOT-PAID",
               "tags": [
                   {
@@ -593,31 +592,6 @@
                                   "code": "BUYER_FINDER_FEE_AMOUNT"
                               },
                               "value": "3"
-                          }
-                      ]
-                  },
-                  {
-                      "descriptor": {
-                          "code": "SETTLEMENT_TERMS"
-                      },
-                      "list": [
-                          {
-                              "descriptor": {
-                                  "code": "SETTLEMENT_BASIS"
-                              },
-                              "value": "delivery"
-                          },
-                          {
-                              "descriptor": {
-                                  "code": "SETTLEMENT_WINDOW"
-                              },
-                              "value": "P1D"
-                          },
-                          {
-                              "descriptor": {
-                                  "code": "WITHHOLDING_AMOUNT"
-                              },
-                              "value": "10.00"
                           }
                       ]
                   },

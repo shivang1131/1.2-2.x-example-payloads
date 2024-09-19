@@ -116,7 +116,6 @@
         "payment": {
           "type": "ON-FULFILLMENT",
           "collected_by": "BPP",
-          "uri": "https://snp.com/pg",
           "status": "NOT-PAID",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
           "@ondc/org/buyer_app_finder_fee_amount": "3",
