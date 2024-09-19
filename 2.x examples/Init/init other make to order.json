@@ -1,0 +1,470 @@
+{
+    "context": {
+        "domain": "ONDC:RET11",
+        "action": "init",
+        "version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M3",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2023-06-03T09:00:00.000Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": "my house or door or floor # | my building name or house # | my street name | IND | 560037",
+                "city": {
+                    "code": "std:080"
+                },
+                "state": {
+                    "code": "Karnataka"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "AUDIT_TIMESTAMP"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "CREATED_AT"
+                                },
+                                "value": "2023-06-03T09:00:00.000Z"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPDATED_AT"
+                                },
+                                "value": "2023-06-03T09:00:00.000Z"
+                            }
+                        ]
+                    }
+                ],
+                "email": "nobody@nomail.com",
+                "name": "ONDC buyer",
+                "phone": "9886098860",
+                "tax_id": "XXXXXXXXXXXXXXX"
+            },
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Delivery",
+                    "stops": [
+                        {
+                            "type": "END",
+                            "contact": {
+                                "phone": "9886098860"
+                            },
+                            "location": {
+                                "area_code": "560037",
+                                "address": "my house or door or floor # | my building name or house # | my street name",
+                                "city": "Bengaluru",
+                                "country": "IND",
+                                "state": "Karnataka",
+                                "gps": "12.453544,77.928379"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI1",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "item"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI1",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C7",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI1",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C14",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI1",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C16",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI1",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI2",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "item"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C2",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI2",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C7",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI2",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C14",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI2",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C15",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "parent_item_id": "DI2",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "offers": [
+                {
+                    "id": "BUY2GET3"
+                }
+            ],
+            "provider": {
+                "id": "P1",
+                "locations": {
+                    "id": "L1"
+                }
+            }
+        }
+    }
+}

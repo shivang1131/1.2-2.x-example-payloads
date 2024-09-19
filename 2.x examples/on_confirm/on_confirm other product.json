@@ -1,0 +1,447 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "action": "on_confirm",
+    "version": "2.x",
+    "bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "bpp_id": "sellerNP.com",
+    "bpp_uri": "https://sellerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M4",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "timestamp": "2023-06-03T09:30:04.798Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "O1",
+      "status": "Accepted",
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+       "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "selected": {
+              "count": "2"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "ITEM"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "ONDC buyer",
+        "address": "my house or door or floor # | my building name or house # | my street name",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "email": "nobody@nomail.com",
+        "phone": "9886098860",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "AUDIT_TIMESTAMP"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "CREATED_AT"
+                },
+                "value": "2023-02-03T09:00:00.000Z"
+              },
+              {
+                "descriptor": {
+                  "code": "UPDATED_AT"
+                },
+                "value": "2023-02-03T09:00:00.000Z"
+              }
+            ]
+          }
+        ]
+      },
+      "fulfillments": {
+        "id": "F1",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "PT60M"
+              }
+            ]
+          }
+        ],
+        "state": {
+          "descriptor": {
+            "code": "Pending"
+          }
+        },
+        "type": "Delivery",
+        "tracking": false,
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "id": "start_location_id_value",
+              "descriptor": {
+                "name": "start_location_name_value"
+              },
+              "gps": "12.453544,77.928379",
+              "address": "my house or door or floor # | my building name or house # | my street name",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "area_code": "560037"
+            },
+            "time": {
+              "range": {
+                "start": "start_time_range_start_value",
+                "end": "start_time_range_end_value"
+              }
+            },
+            "instructions": {
+              "code": "start_instructions_code_value",
+              "name": "start_instructions_name_value",
+              "short_desc": "start_instructions_short_desc_value",
+              "long_desc": "start_instructions_long_desc_value"
+            },
+            "contact": {
+              "phone": "start_contact_phone_value",
+              "email": "start_contact_email_value"
+            }
+          },
+          {
+            "type": "END",
+            "location": {
+              "gps": "12.453544,77.928379",
+              "address": "my house or door or floor # | my building name or house # | my street name",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "country": "IND",
+              "area_code": "560037"
+            },
+            "time": {
+              "range": {
+                "start": "end_time_range_start_value",
+                "end": "end_time_range_end_value"
+              }
+            },
+            "person": {
+              "name": "name_of_person"
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "nobody@nomail.com"
+            }
+          }
+        ]
+      },
+       "quote": {
+  "breakup": [
+    {
+      "item": {
+        "id": "I1",
+        "quantity": {
+          "selected": {
+            "count": "2"
+          }
+        },
+        "parent_item_id": null,
+        "price": {
+          "currency": "INR",
+          "value": "340.00"
+        },
+        "tags": [
+          {
+            "descriptor": {
+              "code": "PARENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "ID"
+                },
+                "value": "BUY2GET3"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "QUOTE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "item"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "TYPE"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TYPE"
+                },
+                "value": "Atta"
+              }
+            ]
+          }
+        ]
+      },
+      "title": "item",
+      "price": {
+        "currency": "INR",
+        "value": "680.00"
+      }
+    }
+  ]
+},
+      "payments": {
+        "url": "https://ondc.transaction.com/payment",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "3937",
+          "amount": "680.00"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+       "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "seller-app"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "sale-amount"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "upi"
+              },
+              {
+                "descriptor": {
+                  "code": "UPI_ADDRESS"
+                },
+                "value": "gft@oksbi"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                },
+                "value": "XXXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_IFSC_CODE"
+                },
+                "value": "XXXXXXXXX"
+              },
+              {
+                "descriptor": {
+                  "code": "BENEFICIARY_NAME"
+                },
+                "value": "xxxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_NAME"
+                },
+                "value": "xxxx"
+              },
+              {
+                "descriptor": {
+                  "code": "BRANCH_NAME"
+                },
+                "value": "xxxx"
+              }
+            ]
+          }
+        ]
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_TYPE"
+              },
+              "value": "percent"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+              },
+              "value": "3"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEE_AMOUNT"
+              },
+              "value": "100"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "SETTLEMENT_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_BASIS"
+              },
+              "value": "delivery"
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_WINDOW"
+              },
+              "value": "P1D"
+            },
+            {
+              "descriptor": {
+                "code": "WITHHOLDING_AMOUNT"
+              },
+              "value": "10.00"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "BPP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY"
+              },
+              "value": "2"
+            },
+            {
+              "descriptor": {
+                "code": "MAX_LIABILITY_CAP"
+              },
+              "value": "10000"
+            },
+            {
+              "descriptor": {
+                "code": "MANDATORY_ARBITRATION"
+              },
+              "value": "false"
+            },
+            {
+              "descriptor": {
+                "code": "COURT_JURISDICTION"
+              },
+              "value": "Bengaluru"
+            },
+            {
+              "descriptor": {
+                "code": "DELAY_INTEREST"
+              },
+              "value": "7.50"
+            },
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
+              "value": "gst_number_of_sellerNP"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "BAP_TERMS"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "ACCEPT_BPP_TERMS"
+              },
+              "value": "Y"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
+              },
+              "value": "https://github.com/ONDC-Official/NP-Static-Terms/buyerNP_BNP/1.0/tc.pdf"
+            },
+            {
+              "descriptor": {
+                "code": "TAX_NUMBER"
+              },
+              "value": "gst_number_of_buyerNP"
+            }
+          ]
+        }
+      ],
+      "cancellation_terms": {
+        "fulfillment_state": {
+          "descriptor": {
+            "short_desc": "Pending"
+          }
+        },
+        "cancellation_fee": {
+          "amount": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        }
+      },
+      "created_at": "2023-06-03T09:30:00.000Z",
+      "updated_at": "2023-06-03T09:30:04.798Z"
+    }
+  }
+}

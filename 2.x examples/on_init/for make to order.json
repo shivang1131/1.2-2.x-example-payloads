@@ -1,0 +1,1723 @@
+{
+    "context": {
+        "domain": "ONDC:RET11",
+        "action": "on_init",
+        "version": "2.x",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M3",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2024-09-04T12:34:56Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": "123 Main St | 2nd Floor | Near Park",
+                "city": {
+                    "code": "std:080"
+                },
+                "state": {
+                    "code": "KA"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "AUDIT_TIMESTAMP"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "CREATED_AT"
+                                },
+                                "value": "2024-09-01T10:00:00Z"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPDATED_AT"
+                                },
+                                "value": "2024-09-03T15:00:00Z"
+                            }
+                        ]
+                    }
+                ],
+                "email": "customer@example.com",
+                "name": "John Doe",
+                "phone": "+919876543210",
+                "tax_id": "IN1234567890"
+            },
+            "cancellation_terms": {
+                "cancellation_fee": {
+                    "amount": {
+                        "currency": "INR",
+                        "value": "100"
+                    },
+                    "percentage": "10%"
+                },
+                "fulfillment_state": {
+                    "descriptor": {
+                        "code": "CANCELLED",
+                        "short_desc": "Order cancelled by user"
+                    }
+                }
+            },
+            "fulfillment": {
+                "id": "F1",
+                "type": "Delivery",
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "CONSIGNMENT"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "TAT"
+                                },
+                                "value": "PT60M"
+                            }
+                        ]
+                    }
+                ],
+                "tracking": false,
+                "stops": [
+                    {
+                        "type": "END",
+                        "person": {
+                            "name": "name_of_person"
+                        },
+                        "contact": {
+                            "email": "nobody@nomail.com",
+                            "phone": "9886098860"
+                        },
+                        "location": {
+                            "gps": "12.453544,77.928379",
+                            "address": "my house or door or floor # | my building name or house # | my street name",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560037"
+                        }
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "DI1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "ITEM"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C1",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C7",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG2"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C14",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C16",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "DI2"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "ITEM"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C2",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C7",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG2"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C14",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "C15",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "1"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "PARENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "CG3"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "CUSTOMIZATION"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "BAP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEE_TYPE"
+                            },
+                            "value": "PERCENT"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEE_PERCENTAGE"
+                            },
+                            "value": "3"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEE_AMOUNT"
+                            },
+                            "value": "100"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "SETTLEMENT_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "SETTLEMENT_BASIS"
+                            },
+                            "value": "on_delivery"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "SETTLEMENT_WINDOW"
+                            },
+                            "value": "7_days"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "WITHHOLDING_AMOUNT"
+                            },
+                            "value": "50"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "BPP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "COURT_JURISDICTION"
+                            },
+                            "value": "Bangalore"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "DELAY_INTEREST"
+                            },
+                            "value": "5%"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MANDATORY_ARBITRATION"
+                            },
+                            "value": "yes"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MAX_LIABILITY"
+                            },
+                            "value": "10000"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MAX_LIABILITY_CAP"
+                            },
+                            "value": "15000"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PROVIDER_TAX_NUMBER"
+                            },
+                            "value": "KA987654321"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TAX_NUMBER"
+                            },
+                            "value": "TX123456789"
+                        }
+                    ]
+                }
+            ],
+            "payments": {
+                "url": "https://ondc.transaction.com/payment",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "3937",
+                    "amount": "2064.15"
+                },
+                "status": "NOT-PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BPP",
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "SETTLEMENT_DETAILS"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_COUNTERPARTY"
+                                },
+                                "value": "seller-app"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_PHASE"
+                                },
+                                "value": "sale-amount"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_TYPE"
+                                },
+                                "value": "upi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPI_ADDRESS"
+                                },
+                                "value": "gft@oksbi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                                },
+                                "value": "XXXXXXXXXX"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_IFSC_CODE"
+                                },
+                                "value": "XXXXXXXXX"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BENEFICIARY_NAME"
+                                },
+                                "value": "xxxxx"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BANK_NAME"
+                                },
+                                "value": "xxxx"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BRANCH_NAME"
+                                },
+                                "value": "xxxx"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "provider":
+                {
+                    "id": "P1",
+                    "locations": [
+                        {
+                            "id": "L1"
+                        }
+                    ]
+                },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "2064.15"
+                },
+                "ttl": "1D",
+                "breakup": [
+                    {
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "269.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "ITEM"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "ITEM"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Farm House Pizza",
+                        "price": {
+                            "currency": "INR",
+                            "value": "269.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "0.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "New Hand Tossed",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C7",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "450.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "450.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C14",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "80.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Grilled Mushrooms",
+                        "price": {
+                            "currency": "INR",
+                            "value": "80.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C16",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "95.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Pepper Barbeque Chicken",
+                        "price": {
+                            "currency": "INR",
+                            "value": "95.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "269.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "ITEM"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "ITEM"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Farm House Pizza",
+                        "price": {
+                            "currency": "INR",
+                            "value": "269.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C2",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "0.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "100% Wheat Thin Crust",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C7",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "450.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "450.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C14",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "80.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Grilled Mushrooms",
+                        "price": {
+                            "currency": "INR",
+                            "value": "80.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C15",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "80.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Fresh Tomato",
+                        "price": {
+                            "currency": "INR",
+                            "value": "80.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "13.45"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "ITEM"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "ITEM"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "13.45"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C2",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "22.50"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "22.50"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C7",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "22.50"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "22.50"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C14",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "4.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "4.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "C15",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "4.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PARENT"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "CG3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "4.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "F1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "50.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "DELIVERY"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "F1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "9.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "FULFILLMENT"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "9.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "F1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "25.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "PACKING"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        }
+                    },
+                    {
+                        "item": {
+                            "id": "F1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "parent_item_id": "DI1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "10.00"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "MISC"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10.00"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

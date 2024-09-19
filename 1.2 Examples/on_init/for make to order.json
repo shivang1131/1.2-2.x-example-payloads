@@ -1161,21 +1161,6 @@
                 "@ondc/org/settlement_basis": "delivery",
                 "@ondc/org/settlement_window": "P1D",
                 "@ondc/org/withholding_amount": "10.00",
-                "tags": [
-                    {
-                        "code": "bpp_collect",
-                        "list": [
-                            {
-                                "code": "success",
-                                "value": "Y"
-                            },
-                            {
-                                "code": "error",
-                                "value": ".."
-                            }
-                        ]
-                    }
-                ],
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",

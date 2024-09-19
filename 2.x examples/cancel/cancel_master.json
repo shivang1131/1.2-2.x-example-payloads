@@ -1,0 +1,30 @@
+{
+    "context": {
+      "domain": "domain_value",
+      "action": "action_value",
+      "version": "2.x",
+      "bap_id": "bap_id_value",
+      "bap_uri": "bap_uri_value",
+      "transaction_id": "transaction_id_value",
+      "message_id": "message_id_value",
+      "location": {
+        "city": {
+          "code": "city_code_value"
+        },
+        "country": {
+          "code": "country_code_value"
+        }
+      },
+      "timestamp": "timestamp_value",
+      "ttl": "ttl_value"
+    },
+    "message": {
+      "order_id": "ORDER12345",
+      "cancellation_reason_id": "REASON001",
+      "descriptor": {
+        "name": "Order Cancellation",
+        "short_desc": "The order was cancelled due to unavailability of the item."
+      }
+    }
+  }
+  
