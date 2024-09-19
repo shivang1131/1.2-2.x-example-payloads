@@ -234,12 +234,6 @@
   ]
 },
       "payments": {
-        "url": "https://ondc.transaction.com/payment",
-        "params": {
-          "currency": "INR",
-          "transaction_id": "3937",
-          "amount": "680.00"
-        },
         "status": "NOT-PAID",
         "type": "ON-FULFILLMENT",
         "collected_by": "BPP",
