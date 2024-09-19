@@ -132,10 +132,10 @@
                                     }
                                 },
                                 "available": {
-                                    "count": "99"
+                                    "count": 99
                                 },
                                 "maximum": {
-                                    "count": "99"
+                                    "count": 99
                                 }
                             },
                             "price": {
