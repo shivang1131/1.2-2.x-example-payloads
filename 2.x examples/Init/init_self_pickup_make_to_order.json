@@ -2,15 +2,21 @@
   "context": {
     "domain": "ONDC:RET10",
     "action": "init",
-    "core_version": "2.x",
+    "version": "1.2.0",
     "bap_id": "buyerNP.com",
     "bap_uri": "https://buyerNP.com/ondc",
     "bpp_id": "sellerNP.com",
     "bpp_uri": "https://sellerNP.com/ondc",
     "transaction_id": "T2",
     "message_id": "M3",
-    "city": "std:080",
-    "country": "IND",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
     "timestamp": "2023-06-03T09:00:00.000Z",
     "ttl": "PT30S"
   },
@@ -55,7 +61,7 @@
                   "descriptor": {
                     "code": "TYPE"
                   },
-                  "value": "CUSTOMIZATION"
+                  "value": "customization"
                 }
               ]
             }
@@ -80,7 +86,7 @@
                   "descriptor": {
                     "code": "TYPE"
                   },
-                  "value": "ITEM"
+                  "value": "item"
                 }
               ]
             }
@@ -129,7 +135,7 @@
       "fulfillments": [
         {
           "id": "F1",
-          "type": "Delivery",
+          "type": "Self-Pickup",
           "stops": [
             {
               "type": "END",
@@ -145,7 +151,10 @@
                 "gps": "fulfillment_stop_gps_value"
               }
             }
-          ]
+          ],
+          "vehicle": {
+            "registration": "vehicle_registration_value"
+          }
         }
       ]
     }

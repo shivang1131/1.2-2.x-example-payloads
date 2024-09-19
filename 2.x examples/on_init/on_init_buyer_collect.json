@@ -1,22 +1,24 @@
 {
   "context": {
-    "domain": "domain_value",
-    "action": "action_value",
-    "version": "2.x",
-    "bap_id": "bap_id_value",
-    "bap_uri": "bap_uri_value",
-    "transaction_id": "transaction_id_value",
-    "message_id": "message_id_value",
+    "domain": "ecommerce",
+    "action": "order_status",
+    "version": "1.0.0",
+    "bap_id": "bap-12345",
+    "bap_uri": "https://bap.example.com",
+    "bpp_id": "bpp_id_value",
+    "bpp_uri": "bpp_uri_value",
+    "transaction_id": "txn-67890",
+    "message_id": "msg-98765",
     "location": {
       "city": {
-        "code": "city_code_value"
+        "code": "BLR"
       },
       "country": {
-        "code": "country_code_value"
+        "code": "IND"
       }
     },
-    "timestamp": "timestamp_value",
-    "ttl": "ttl_value"
+    "timestamp": "2024-09-04T12:34:56Z",
+    "ttl": "PT30M"
   },
   "message": {
     "order": {
@@ -300,12 +302,12 @@
       "bank_code": "bank_code_value",
       "virtual_payment_address": "virtual_payment_address_value"
     },
-    "collected_by": "payment_collected_by_value",
+    "collected_by": "BAP",
     "status": "NOT-PAID",
     "type": "payment_type_value",
     "url": "payment_url_value"
   },
-  "providers": [
+  "provider":
     {
       "id": "provider_id_value",
       "locations": [
@@ -313,8 +315,7 @@
           "id": "location_id_value"
         }
       ]
-    }
-  ],
+    },
   "quote": {
     "breakup": [
       {
