@@ -1,0 +1,253 @@
+{
+    "context": {
+        "domain": "ONDC:RET11",
+        "action": "on_select",
+        "core_version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M2",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2023-06-03T08:30:30.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P1",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": "LSP or Provider Name"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Immediate Delivery"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT60M"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1219.00"
+                },
+                "breakup": [
+                    {
+                        "title": "item:Veg Pizza",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1200.00"
+                        },
+                        "item": {
+                            "item": "I1",
+                            "quantity": {
+                                "available": {
+                                    "count": 99
+                                },
+                                "maximum": {
+                                    "count": 99
+                                },
+                                "selected": {
+                                    "count": 2
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "600.00"
+                            }
+                        }
+                    },
+                    {
+                        "title": "offer:Flat discount of \u00e2\u201a\u00b9150 on minimum cart value of \u00e2\u201a\u00b9499",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-150.00"
+                        },
+                        "item": {
+                            "id": "T2",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "order"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "OFFER"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ID"
+                                            },
+                                            "value": "FLAT150"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "discount"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO"
+                                            },
+                                            "value": "yes"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "ADDITIVE"
+                                            },
+                                            "value": "no"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "ITEM_ID"
+                                            },
+                                            "value": ""
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "ITEM_VALUE"
+                                            },
+                                            "value": ""
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "ITEM_COUNT"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "9.00"
+                        },
+                        "item": {
+                            "id": "F1",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "60.00"
+                        },
+                        "item": {
+                            "id": "I1"
+                        }
+                    },
+                    {
+                        "title": "misc:Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    }
+}
