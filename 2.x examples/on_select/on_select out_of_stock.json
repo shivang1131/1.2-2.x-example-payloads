@@ -1,0 +1,130 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "action": "on_select",
+    "version": "2.x",
+    "bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M2",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "timestamp": "2023-06-03T08:30:30.000Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": {
+          "id": "L1"
+        }
+      },
+      "items": [
+        {
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I1"
+        }
+      ],
+      "fulfillments": {
+        "id": "F1",
+        "state": {
+          "descriptor": {
+            "code": "Serviceable"
+          }
+        },
+        "tracking": false,
+        "type": "Delivery",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "PT60M"
+              },
+              {
+                "descriptor": {
+                  "code": "CATEGORY"
+                },
+                "value": "Immediate Delivery"
+              },
+              {
+                "descriptor": {
+                  "code": "PROVIDER_NAME"
+                },
+                "value": "LSP or Provider Name"
+              }
+            ]
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "breakup": [
+          {
+            "item": {
+              "id": "I1",
+              "quantity": {
+                "selected": {
+                  "count": 0
+                },
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "0"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "170.00"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "title": "Atta"
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002",
+    "message": "M1"
+  }
+}

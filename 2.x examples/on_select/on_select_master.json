@@ -1,24 +1,22 @@
 {
   "context": {
-    "domain": "ecommerce",
-    "action": "order_status",
-    "version": "1.0.0",
-    "bap_id": "bap-12345",
-    "bap_uri": "https://bap.example.com",
-    "bpp_id": "bpp_id_value",
-    "bpp_uri": "bpp_uri_value",
-    "transaction_id": "txn-67890",
-    "message_id": "msg-98765",
+    "domain": "domain_value",
+    "action": "action_value",
+    "version": "2.x",
+    "bap_id": "bap_id_value",
+    "bap_uri": "bap_uri_value",
+    "transaction_id": "transaction_id_value",
+    "message_id": "message_id_value",
     "location": {
       "city": {
-        "code": "BLR"
+        "code": "city_code_value"
       },
       "country": {
-        "code": "IND"
+        "code": "country_code_value"
       }
     },
-    "timestamp": "2024-09-04T12:34:56Z",
-    "ttl": "PT30M"
+    "timestamp": "timestamp_value",
+    "ttl": "ttl_value"
   },
   "message": {
     "order": {
@@ -33,13 +31,13 @@
                 "descriptor": {
                   "code": "TAT"
                 },
-                "value": "24 hours"
+                "value": "PT24H"
               },
               {
                 "descriptor": {
                   "code": "CATEGORY"
                 },
-                "value": "Express"
+                "value": "Express Delivery"
               },
               {
                 "descriptor": {
@@ -50,29 +48,22 @@
             ]
           }
         ],
-        "stops": {
-          "type": "END",
-          "time": {
-            "range": {
-              "start": "2024-09-12T08:00:00Z",
-              "end": "2024-09-12T18:00:00Z"
-            }
-          }
-        },
-        "id": "FUL123456",
+        "id": "fulfillment_id",
         "state": {
           "descriptor": {
-            "code": "IN_PROGRESS"
+            "code": "Serviceable"
           }
         },
-        "tracking": "enabled",
-        "type": "home_delivery"
+        "tracking": false,
+        "type": "Delivery"
       },
       "items": [
         {
-          "fulfillment_ids": ["FUL123456"],
-          "id": "ITEM001",
-          "parent_item_id": "ITEM000",
+          "fulfillment_ids": [
+            "fulfillment_id_value"
+          ],
+          "id": "fulfillment_id_value",
+          "parent_item_id": "parent_item_id_value",
           "tags": [
             {
               "descriptor": {
@@ -83,7 +74,7 @@
                   "descriptor": {
                     "code": "ID"
                   },
-                  "value": "PARENT001"
+                  "value": "parent_list_id_value"
                 }
               ]
             },
@@ -96,7 +87,7 @@
                   "descriptor": {
                     "code": "TYPE"
                   },
-                  "value": "physical"
+                  "value": "item_type_value"
                 }
               ]
             }
@@ -104,132 +95,135 @@
         }
       ],
       "provider": {
-        "id": "PROVIDER001",
+        "id": "provider_id_value",
         "locations": {
-          "id": "LOC001"
+          "id": "location_id_value"
         }
       },
       "quote": {
-        "breakup": {
-          "item": {
-            "id": "ITEM001",
-            "quantity": {
-              "selected": {
-                "count": 2
+        "breakup": [
+          {
+            "item": {
+              "id": "quote_item_id_value",
+              "quantity": {
+                "selected": {
+                  "count": "quote_item_quantity_selected_count"
+                },
+                "available": {
+                  "count": "quote_item_quantity_available_count"
+                },
+                "maximum": {
+                  "count": "quote_item_quantity_maximum_count"
+                }
               },
-              "available": {
-                "count": 50
+              "parent_item_id": "quote_parent_item_id_value",
+              "price": {
+                "currency": "quote_item_price_currency",
+                "value": "quote_item_price_value"
               },
-              "maximum": {
-                "count": 5
-              }
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "OFFER"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ADDITIVE"
+                      },
+                      "value": "yes_or_no"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "AUTO"
+                      },
+                      "value": "yes_or_no"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "offer_id"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ITEM_COUNT"
+                      },
+                      "value": "item_count"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ITEM_ID"
+                      },
+                      "value": "item_id"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ITEM_VALUE"
+                      },
+                      "value": "item_value"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "discount_buyXgetY_freebie"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "PARENT"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ID"
+                      },
+                      "value": "quote_parent_list_id_value"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "QUOTE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "quote_list_type_value"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "quote_item_type_value"
+                    }
+                  ]
+                }
+              ]
             },
             "price": {
-              "currency": "INR",
-              "value": "1000"
+              "currency": "quote_price_currency",
+              "value": "quote_price_value"
             },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "OFFER"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "ADDITIVE"
-                    },
-                    "value": true
-                  },
-                  {
-                    "descriptor": {
-                      "code": "AUTO"
-                    },
-                    "value": true
-                  },
-                  {
-                    "descriptor": {
-                      "code": "ID"
-                    },
-                    "value": "OFFER001"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "ITEM_COUNT"
-                    },
-                    "value": 1
-                  },
-                  {
-                    "descriptor": {
-                      "code": "ITEM_ID"
-                    },
-                    "value": "ITEM001"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "ITEM_VALUE"
-                    },
-                    "value": "500"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "TYPE"
-                    },
-                    "value": "discount"
-                  }
-                ]
-              },
-              {
-                "descriptor": {
-                  "code": "PARENT"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "ID"
-                    },
-                    "value": "PARENT001"
-                  }
-                ]
-              },
-              {
-                "descriptor": {
-                  "code": "QUOTE"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "TYPE"
-                    },
-                    "value": "fixed"
-                  }
-                ]
-              },
-              {
-                "descriptor": {
-                  "code": "TYPE"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "TYPE"
-                    },
-                    "value": "itemized"
-                  }
-                ]
-              }
-            ]
-          },
-          "price": {
-            "currency": "INR",
-            "value": "2000"
-          },
-          "title": "Quote for ITEM001"
-        },
+            "title": "quote_item_title"
+          }
+        ],
         "price": {
-          "currency": "INR",
-          "value": "2000"
+          "currency": "quote_total_price_currency",
+          "value": "quote_total_price_value"
         },
-        "ttl": "2024-09-12T23:59:59Z"
+        "ttl": "quote_ttl_value"
       }
     }
   }

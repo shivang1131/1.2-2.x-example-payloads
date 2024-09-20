@@ -33,7 +33,9 @@
       "items": [
         {
           "id": "ITEM001",
-          "fulfillment_ids": ["FULFILLMENT001"],
+          "fulfillment_ids": [
+            "FULFILLMENT001"
+          ],
           "quantity": {
             "selected": {
               "count": 2
@@ -95,7 +97,7 @@
                   "descriptor": {
                     "code": "TAT"
                   },
-                  "value": "48 hours"
+                  "value": "PT48H"
                 }
               ]
             }
@@ -161,22 +163,22 @@
       ],
       "quote": {
         "price": {
-          "currency": "USD",
-          "value": "100.00"
+          "currency": "INR",
+          "value": "0.00"
         },
         "breakup": {
           "price": {
-            "value": "50.00"
+            "value": "0.00"
           },
           "item": {
             "price": {
-              "currency": "USD",
-              "value": "25.00"
+              "currency": "INR",
+              "value": "170.00"
             },
-            "id": "ITEM002",
+            "id": "F1",
             "quantity": {
               "selected": {
-                "count": 2
+                "count": 0
               }
             },
             "tags": [
@@ -189,26 +191,20 @@
                     "descriptor": {
                       "code": "TYPE"
                     },
-                    "value": "QUANTITY"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "VALUE"
-                    },
-                    "value": "2"
+                    "value": "FULFILLMENT"
                   }
                 ]
               }
             ]
           },
-          "title": "Item Description: Sample"
+          "title": "item"
         },
         "ttl": "2024-09-14T08:00:00Z"
       },
       "payments": {
         "url": "https://payment.example.com",
         "params": {
-          "currency": "USD",
+          "currency": "INR",
           "transaction_id": "TRANS123",
           "amount": "100.00"
         },
