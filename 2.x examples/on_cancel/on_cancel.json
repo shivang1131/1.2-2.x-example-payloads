@@ -196,11 +196,11 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "84.00"
+          "value": "0.00"
         },
         "breakup": {
           "price": {
-            "value": "50.00"
+            "value": "0.00"
           },
           "item": {
             "price": {
@@ -210,7 +210,7 @@
             "id": "F1",
             "quantity": {
               "selected": {
-                "count": 2
+                "count": 0
               }
             },
             "tags": [
@@ -229,7 +229,7 @@
               }
             ]
           },
-          "title": "Delivery charges: 50.00"
+          "title": "item"
         },
         "ttl": "2024-09-14T08:00:00Z"
       },
@@ -238,7 +238,7 @@
         "params": {
           "currency": "INR",
           "transaction_id": "3937",
-          "amount": "424.00"
+          "amount": "340.00"
         },
         "status": "PAID",
         "type": "ON-ORDER",
