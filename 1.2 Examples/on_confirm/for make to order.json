@@ -107,12 +107,6 @@
                   "country": "IND",
                   "area_code": "560025"
                 }
-              },
-              "time": {
-                "range": {
-                  "start": "2024-08-23T12:48:01.885Z",
-                  "end": "2024-08-23T13:33:01.885Z"
-                }
               }
             },
             "type": "Delivery",
@@ -131,12 +125,6 @@
               "contact": {
                 "phone": "9001009009",
                 "email": "testing@thewitslab.com"
-              },
-              "time": {
-                "range": {
-                  "start": "2024-08-23T12:33:01.885Z",
-                  "end": "2024-08-23T12:48:01.885Z"
-                }
               }
             },
             "tracking": true,
@@ -268,14 +256,14 @@
           {
             "code": "bpp_terms",
             "list": [
-              { "code": "tax_number", "value": "12KKION9283J2IJ" },
-              { "code": "provider_tax_number", "value": "OLEOD8282N" },
+              { "code": "tax_number", "value": "XXXXXXXXXXXXXXX" },
+              { "code": "provider_tax_number", "value": "XXXXXXXXXX" },
               { "code": "np_type", "value": "MSN" }
             ]
           },
           {
             "code": "bap_terms",
-            "list": [{ "code": "tax_number", "value": "GSTIN1234567890" }]
+            "list": [{ "code": "tax_number", "value": "XXXXXXXXXXXXXXX" }]
           }
         ],
         "created_at": "2024-08-23T12:33:01.630Z",

@@ -70,18 +70,7 @@
                         "contact": {
                             "phone": "9886098860"
                         }
-                    },
-                    "tags": [
-                        {
-                            "code": "rto_action",
-                            "list": [
-                                {
-                                    "code": "return_to_origin",
-                                    "value": "yes"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "quote": {
@@ -150,15 +139,6 @@
                     },
                     {
                         "@ondc/org/item_id": "I1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "I1",
                         "title": "Discount",
                         "@ondc/org/title_type": "discount",
                         "price": {
@@ -197,19 +177,6 @@
                                 "value": "Y"
                             }
                         ]
-                    }
-                ],
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_phase": "sale-amount",
-                        "settlement_type": "upi",
-                        "beneficiary_name": "xxxxx",
-                        "upi_address": "gft@oksbi",
-                        "settlement_bank_account_no": "XXXXXXXXXX",
-                        "settlement_ifsc_code": "XXXXXXXXX",
-                        "bank_name": "xxxx",
-                        "branch_name": "xxxx"
                     }
                 ]
             },

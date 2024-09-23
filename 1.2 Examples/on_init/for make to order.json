@@ -325,18 +325,7 @@
                         "contact": {
                             "phone": "9886098860"
                         }
-                    },
-                    "tags": [
-                        {
-                            "code": "rto_action",
-                            "list": [
-                                {
-                                    "code": "return_to_origin",
-                                    "value": "yes"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "quote": {
