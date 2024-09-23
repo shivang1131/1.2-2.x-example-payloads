@@ -87,7 +87,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "424.00"
+                    "value": "340.00"
                 },
                 "breakup": [
                     {
@@ -106,46 +106,6 @@
                                 "currency": "INR",
                                 "value": "170.00"
                             }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "F1",
-                        "title": "Buyer-Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": "50.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "F1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "9.00"
-                        },
-                        "item": {
-                            "tags": [
-                                {
-                                    "code": "quote",
-                                    "list": [
-                                        {
-                                            "code": "type",
-                                            "value": "fulfillment"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "F1",
-                        "title": "Packing charges",
-                        "@ondc/org/title_type": "packing",
-                        "price": {
-                            "currency": "INR",
-                            "value": "25.00"
                         }
                     },
                     {

@@ -143,14 +143,14 @@
           {
             "code": "bpp_terms",
             "list": [
-              { "code": "tax_number", "value": "22KXPPS7862J1Z1" },
+              { "code": "tax_number", "value": "XXXXXXXXXXXXXXX" },
               { "code": "np_type", "value": "ISN" },
-              { "code": "provider_tax_number", "value": "KXPPS7862J" }
+              { "code": "provider_tax_number", "value": "XXXXXXXXXX" }
             ]
           },
           {
             "code": "bap_terms",
-            "list": [{ "code": "tax_number", "value": "GSTIN1234567890" }]
+            "list": [{ "code": "tax_number", "value": "XXXXXXXXXXXXXXX" }]
           }
         ],
         "created_at": "2024-04-28T10:16:22.294Z",

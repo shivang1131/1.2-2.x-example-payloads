@@ -445,7 +445,6 @@
       "payment": {
         "type": "ON-FULFILLMENT",
         "collected_by": "BPP",
-        "uri": "https://snp.com/pg",
         "status": "NOT-PAID",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3",
@@ -454,7 +453,7 @@
         "@ondc/org/withholding_amount": "10.00",
         "@ondc/org/settlement_details": [
             {
-                "settlement_counterparty": "seller-app",
+                "settlement_counterparty": "buyer-app",
                 "settlement_phase": "sale-amount",
                 "settlement_type": "upi",
                 "beneficiary_name": "xxxxx",

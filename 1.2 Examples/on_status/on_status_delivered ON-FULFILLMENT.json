@@ -466,7 +466,7 @@
             "beneficiary_name": " NAFFA INNOVATIONS PRIVATE LIMITED NODAL ACCOUNT",
             "settlement_phase": "sale-amount",
             "settlement_ifsc_code": "ICIC0000169",
-            "settlement_counterparty": "seller-app",
+            "settlement_counterparty": "buyer-app",
             "settlement_bank_account_no": "016905011158"
           }
         ]
