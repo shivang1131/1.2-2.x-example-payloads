@@ -430,31 +430,6 @@
                                 },
                                 {
                                     "code": "id",
-                                    "value": "C1"
-                                },
-                                {
-                                    "code": "currency",
-                                    "value": "INR"
-                                },
-                                {
-                                    "code": "value",
-                                    "value": "-0.00"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "quote_trail",
-                            "list": [
-                                {
-                                    "code": "type",
-                                    "value": "item"
-                                },
-                                {
-                                    "code": "subtype",
-                                    "value": "customization"
-                                },
-                                {
-                                    "code": "id",
                                     "value": "C7"
                                 },
                                 {
@@ -539,31 +514,6 @@
                                 {
                                     "code": "value",
                                     "value": "-13.45"
-                                }
-                            ]
-                        },
-                        {
-                            "code": "quote_trail",
-                            "list": [
-                                {
-                                    "code": "type",
-                                    "value": "tax"
-                                },
-                                {
-                                    "code": "subtype",
-                                    "value": "customization"
-                                },
-                                {
-                                    "code": "id",
-                                    "value": "C1"
-                                },
-                                {
-                                    "code": "currency",
-                                    "value": "INR"
-                                },
-                                {
-                                    "code": "value",
-                                    "value": "-0.00"
                                 }
                             ]
                         },

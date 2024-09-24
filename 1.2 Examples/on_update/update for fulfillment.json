@@ -89,15 +89,6 @@
                             },
                             "timestamp": "2023-11-17T09:45:00.000Z"
                         },
-                        "instructions": {
-                            "code": "1",
-                            "name": "ONDC Order",
-                            "short_desc": "value of PCC",
-                            "long_desc": "additional instructions for pickup",
-                            "images": [
-                                "link to downloadable shipping label (required for P2H2P)"
-                            ]
-                        },
                         "authorization": {
                             "type": "OTP",
                             "token": "OTP code",
@@ -138,12 +129,6 @@
                                 "https://lsp.com/delivery_image.png",
                                 "https://lsp.com/rider_location.png"
                             ]
-                        },
-                        "authorization": {
-                            "type": "OTP",
-                            "token": "OTP code",
-                            "valid_from": "2023-11-17T10:30:00.000Z",
-                            "valid_to": "2023-11-17T11:30:00.000Z"
                         },
                         "person": {
                             "name": "name_of_person"
