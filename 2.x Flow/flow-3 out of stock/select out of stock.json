@@ -1,0 +1,67 @@
+{
+    "context": {
+      "domain": "ONDC:RET10",
+      "action": "select",
+      "core_version": "2.x",
+      "bap_id": "buyerNP.com",
+      "bap_uri": "https://buyerNP.com/ondc",
+      "bpp_id": "sellerNP.com",
+      "bpp_uri": "https://sellerNP.com/ondc",
+      "transaction_id": "T2",
+      "message_id": "M2",
+      "city": "std:080",
+      "country": "IND",
+      "timestamp": "2024-09-26T08:54:27.870Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "P1",
+          "locations": [
+            {
+              "id": "L1"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "I1",
+            "location_id": "L1",
+            "quantity": {
+              "count": 2
+            }
+          },
+          {
+            "id": "I2",
+            "location_id": "L1",
+            "quantity": {
+              "count": 2
+            }
+          },
+          {
+            "id": "I3",
+            "location_id": "L1",
+            "quantity": {
+              "count": 2
+            }
+          }
+        ],
+        "fulfillment": {
+          "stops": [
+            {
+              "type": "END",
+              "location": {
+                "area_code": "560001",
+                "gps": "12.453544,77.928379"
+              }
+            }
+          ]
+        },
+        "payment": {
+          "type": "ON-ORDER"
+        }
+      }
+    }
+  }
+  

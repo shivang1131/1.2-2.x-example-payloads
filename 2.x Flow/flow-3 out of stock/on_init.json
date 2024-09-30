@@ -17,7 +17,7 @@
         "code": "IND"
       }
     },
-    "timestamp": "2024-09-04T12:34:56Z",
+    "timestamp": "2024-09-26T08:55:27.147Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -40,13 +40,13 @@
                 "descriptor": {
                   "code": "CREATED_AT"
                 },
-                "value": "2024-09-01T10:00:000Z"
+                "value": "2024-09-26T08:55:27.147Z"
               },
               {
                 "descriptor": {
                   "code": "UPDATED_AT"
                 },
-                "value": "2024-09-03T15:00:000Z"
+                "value": "2024-09-26T08:55:27.147Z"
               }
             ]
           }
@@ -87,33 +87,61 @@
           }
         },
         "id": "F1",
-        "tags": [
-          {
-            "descriptor": {
-              "code": "RTO_ACTION"
-            },
-            "list": [
-              {
-                "descriptor": {
-                  "code": "RETURN_TO_ORIGIN"
-                },
-                "value": "yes"
-              }
-            ]
-          }
-        ],
         "tracking": "false",
-        "type": "Buyer-Delivery"
+        "type": "Delivery"
       },
       "items": [
         {
-          "fulfillment_ids": ["F1"],
-          "id": "I1",
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I2",
           "quantity": {
             "selected": {
               "count": "2"
             }
-          }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I3",
+          "quantity": {
+            "selected": {
+              "count": "2"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "value": "item"
+                }
+              ]
+            }
+          ]
         }
       ],
       "tags": [
@@ -218,15 +246,8 @@
         }
       ],
       "payments": {
-        "url": "https://ondc.transaction.com/payment",
-        "params": {
-          "currency": "INR",
-          "transaction_id": "3937",
-          "amount": "1000.00"
-        },
         "status": "NOT-PAID",
         "type": "ON-ORDER",
-        "collected_by": "BAP",
         "tags": [
           {
             "descriptor": {
@@ -292,10 +313,10 @@
         ]
       },
       "provider": {
-        "id": "provider-123",
+        "id": "P1",
         "locations": [
           {
-            "id": "location-123"
+            "id": "L1"
           }
         ]
       },
@@ -303,32 +324,76 @@
         "breakup": [
           {
             "item": {
-              "id": "I1",
+              "id": "I2",
               "quantity": {
                 "selected": {
                   "count": "2"
-                },
-                "available": {
-                  "count": "10"
-                },
-                "maximum": {
-                  "count": "5"
                 }
               },
               "price": {
                 "currency": "INR",
-                "value": "500"
-              }
+                "value": "120.0"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
             },
             "price": {
               "currency": "INR",
-              "value": "1000"
-            }
+              "value": "240"
+            },
+            "title": "Rice"
+          },
+          {
+            "item": {
+              "id": "I3",
+              "quantity": {
+                "selected": {
+                  "count": "2"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "170.0"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "280"
+            },
+            "title": "Dal"
           }
         ],
         "price": {
           "currency": "INR",
-          "value": "1000"
+          "value": "520"
         },
         "ttl": "P1D"
       }

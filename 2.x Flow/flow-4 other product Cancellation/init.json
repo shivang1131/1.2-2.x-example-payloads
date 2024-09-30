@@ -1,0 +1,163 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "action": "init",
+        "version": "2.x",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M3",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2024-09-26T08:55:27.147Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": "my house or door or floor # | my building name or house # | my street name | IND | 560037",
+                "city": {
+                    "code": "std:080"
+                },
+                "state": {
+                    "code": "Karnataka"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "AUDIT_TIMESTAMP"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "CREATED_AT"
+                                },
+                                "value": "2024-09-26T08:55:27.147Z"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPDATED_AT"
+                                },
+                                "value": "2024-09-26T08:55:27.147Z"
+                            }
+                        ]
+                    }
+                ],
+                "email": "nobody@nomail.com",
+                "name": "ONDC buyer",
+                "phone": "9886098860",
+                "tax_id": "XXXXXXXXXXXXXXX"
+            },
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Delivery",
+                    "stops": [
+                        {
+                            "type": "END",
+                            "contact": {
+                                "phone": "9886098860"
+                            },
+                            "location": {
+                                "area_code": "560037",
+                                "address": "my house or door or floor # | my building name or house # | my street name",
+                                "city": "Bengaluru",
+                                "country": "IND",
+                                "state": "Karnataka",
+                                "gps": "12.453544,77.928379"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "2"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "ITEM"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I2",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "2"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "ITEM"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I3",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "selected": {
+                            "count": "2"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "TYPE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "ITEM"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "provider": {
+                "id": "P1",
+                "locations": {
+                    "id": "L1"
+                }
+            }
+        }
+    }
+}

@@ -401,7 +401,7 @@
           "currency": "quote_total_price_currency",
           "value": "quote_total_price_value"
         },
-        "ttl": "quote_ttl_value"
+        "ttl": "PT30S"
       }
     }
   }

@@ -19,7 +19,7 @@
         "id": "TRACK12345",
         
         "url": "https://trackingwebsite.com/track/12345",
-        "status": "in_transit"
+        "status": "active"
       }
   }
 }

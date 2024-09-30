@@ -40,13 +40,13 @@
                                 "descriptor": {
                                     "code": "CREATED_AT"
                                 },
-                                "value": "2024-09-01T10:00:00Z"
+                                "value": "2024-09-01T10:00:000Z"
                             },
                             {
                                 "descriptor": {
                                     "code": "UPDATED_AT"
                                 },
-                                "value": "2024-09-03T15:00:00Z"
+                                "value": "2024-09-03T15:00:000Z"
                             }
                         ]
                     }
@@ -100,22 +100,7 @@
                         "selected": {
                             "count": "2"
                         }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "TYPE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "item"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "tags": [
