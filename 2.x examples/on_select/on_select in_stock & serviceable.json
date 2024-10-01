@@ -94,22 +94,7 @@
               "price": {
                 "currency": "INR",
                 "value": "170.00"
-              },
-              "tags": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "list": [
-                    {
-                      "descriptor": {
-                        "code": "TYPE"
-                      },
-                      "value": "item"
-                    }
-                  ]
-                }
-              ]
+              }
             },
             "price": {
               "currency": "INR",

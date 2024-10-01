@@ -100,22 +100,7 @@
             "selected": {
               "count": "2"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "item"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "fulfillment_ids": [
@@ -126,22 +111,7 @@
             "selected": {
               "count": "2"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "item"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "fulfillment_ids": [
@@ -152,22 +122,7 @@
             "selected": {
               "count": "2"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "item"
-                }
-              ]
-            }
-          ]
+          }
         }
       ],
       "tags": [
@@ -187,12 +142,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },

@@ -17,7 +17,7 @@
                 "code": "IND"
             }
         },
-        "timestamp": "2024-09-04T12:34:56Z",
+        "timestamp": "2024-09-04T12:34:560Z",
         "ttl": "PT30S"
     },
     "message": {
@@ -98,24 +98,9 @@
                     "id": "I1",
                     "quantity": {
                         "selected": {
-                            "count": "2"
+                            "count": 2
                         }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "TYPE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "item"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "tags": [
@@ -153,13 +138,13 @@
                             "descriptor": {
                                 "code": "SETTLEMENT_BASIS"
                             },
-                            "value": "on_delivery"
+                            "value": "delivery"
                         },
                         {
                             "descriptor": {
                                 "code": "SETTLEMENT_WINDOW"
                             },
-                            "value": "7_days"
+                            "value": "P1D"
                         },
                         {
                             "descriptor": {
@@ -184,7 +169,7 @@
                             "descriptor": {
                                 "code": "DELAY_INTEREST"
                             },
-                            "value": "5%"
+                            "value": "5"
                         },
                         {
                             "descriptor": {
@@ -221,87 +206,19 @@
             ],
             "payments": {
                 "url": "https://ondc.transaction.com/payment",
-                "params": {
-                    "currency": "INR",
-                    "transaction_id": "3937",
-                    "amount": "1000.00"
-                },
+                
                 "status": "NOT-PAID",
                 "type": "ON-ORDER",
-                "collected_by": "BAP",
-                "tags": [
+                "collected_by": "BPP"
+            },
+            "provider": {
+                "id": "provider-123",
+                "locations": [
                     {
-                        "descriptor": {
-                            "code": "SETTLEMENT_DETAILS"
-                        },
-                        "list": [
-                            {
-                                "descriptor": {
-                                    "code": "SETTLEMENT_COUNTERPARTY"
-                                },
-                                "value": "seller-app"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "SETTLEMENT_PHASE"
-                                },
-                                "value": "sale-amount"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "SETTLEMENT_TYPE"
-                                },
-                                "value": "upi"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "UPI_ADDRESS"
-                                },
-                                "value": "gft@oksbi"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "SETTLEMENT_BANK_ACCOUNT_NO"
-                                },
-                                "value": "XXXXXXXXXX"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "SETTLEMENT_IFSC_CODE"
-                                },
-                                "value": "XXXXXXXXX"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "BENEFICIARY_NAME"
-                                },
-                                "value": "xxxxx"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "BANK_NAME"
-                                },
-                                "value": "xxxx"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "BRANCH_NAME"
-                                },
-                                "value": "xxxx"
-                            }
-                        ]
+                        "id": "location-123"
                     }
                 ]
             },
-            "provider":
-                {
-                    "id": "provider-123",
-                    "locations": [
-                        {
-                            "id": "location-123"
-                        }
-                    ]
-                },
             "quote": {
                 "breakup": [
                     {
@@ -309,34 +226,19 @@
                             "id": "I1",
                             "quantity": {
                                 "selected": {
-                                    "count": "2"
+                                    "count": 2
                                 },
                                 "available": {
-                                    "count": "10"
+                                    "count": 10
                                 },
                                 "maximum": {
-                                    "count": "5"
+                                    "count": 5
                                 }
                             },
                             "price": {
                                 "currency": "INR",
                                 "value": "500"
-                            },
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "code": "TYPE"
-                                            },
-                                            "value": "item"
-                                        }
-                                    ]
-                                }
-                            ]
+                            }
                         },
                         "price": {
                             "currency": "INR",

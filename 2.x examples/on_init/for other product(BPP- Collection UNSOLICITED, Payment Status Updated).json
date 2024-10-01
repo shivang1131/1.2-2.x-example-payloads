@@ -17,7 +17,7 @@
                 "code": "IND"
             }
         },
-        "timestamp": "2024-09-04T12:34:56Z",
+        "timestamp": "2024-09-04T12:34:560Z",
         "ttl": "PT30S"
     },
     "message": {
@@ -98,7 +98,7 @@
                     "id": "I1",
                     "quantity": {
                         "selected": {
-                            "count": "2"
+                            "count": 2
                         }
                     }
                 }
@@ -138,13 +138,13 @@
                             "descriptor": {
                                 "code": "SETTLEMENT_BASIS"
                             },
-                            "value": "on_delivery"
+                            "value": "delivery"
                         },
                         {
                             "descriptor": {
                                 "code": "SETTLEMENT_WINDOW"
                             },
-                            "value": "7_days"
+                            "value": "P1D"
                         },
                         {
                             "descriptor": {
@@ -169,7 +169,7 @@
                             "descriptor": {
                                 "code": "DELAY_INTEREST"
                             },
-                            "value": "5%"
+                            "value": "5"
                         },
                         {
                             "descriptor": {
@@ -206,11 +206,7 @@
             ],
             "payments": {
                 "url": "https://ondc.transaction.com/payment",
-                "params": {
-                    "currency": "INR",
-                    "transaction_id": "3937",
-                    "amount": "1000.00"
-                },
+               
                 "status": "PAID",
                 "type": "ON-ORDER",
                 "collected_by": "BPP",
@@ -307,34 +303,19 @@
                             "id": "I1",
                             "quantity": {
                                 "selected": {
-                                    "count": "2"
+                                    "count": 2
                                 },
                                 "available": {
-                                    "count": "10"
+                                    "count": 10
                                 },
                                 "maximum": {
-                                    "count": "5"
+                                    "count": 5
                                 }
                             },
                             "price": {
                                 "currency": "INR",
                                 "value": "500"
-                            },
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "code": "TYPE"
-                                            },
-                                            "value": "item"
-                                        }
-                                    ]
-                                }
-                            ]
+                            }
                         },
                         "price": {
                             "currency": "INR",

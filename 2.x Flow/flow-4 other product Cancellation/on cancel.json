@@ -35,79 +35,34 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
               "count": "0"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "id": "I2",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
               "count": "0"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "id": "I3",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": "F1",
           "quantity": {
             "selected": {
               "count": "0"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "id": "I1",
-          "fulfillment_id": "C1",
+          "fulfillment_ids": ["C1"],
           "quantity": {
             "selected": {
               "count": "2"
@@ -116,7 +71,7 @@
         },
         {
           "id": "I2",
-          "fulfillment_id": "C2",
+          "fulfillment_ids": ["C2"],
           "quantity": {
             "selected": {
               "count": "2"
@@ -125,7 +80,7 @@
         },
         {
           "id": "I3",
-          "fulfillment_id": "C3",
+          "fulfillment_ids": ["C3"],
           "quantity": {
             "selected": {
               "count": "2"
@@ -548,12 +503,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },

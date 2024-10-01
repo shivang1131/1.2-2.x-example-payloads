@@ -75,22 +75,7 @@
             "selected": {
               "count": 1
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "item"
-                }
-              ]
-            }
-          ]
+          }
         }
       ],
       "offers": [

@@ -35,51 +35,21 @@
       "items": [
         {
           "id": "I2",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
               "count": "2"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                }
-              ]
-            }
-          ]
+          }
         },
         {
           "id": "I3",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
               "count": "2"
             }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                }
-              ]
-            }
-          ]
+          }
         }
       ],
       "billing": {
@@ -358,12 +328,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },

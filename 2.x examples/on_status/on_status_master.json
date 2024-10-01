@@ -17,7 +17,7 @@
         "code": "IND"
       }
     },
-    "timestamp": "2024-09-04T12:34:56Z",
+    "timestamp": "2024-09-04T12:34:560Z",
     "ttl": "PT30M"
   },
   "message": {
@@ -41,7 +41,7 @@
       "items": [
         {
           "id": "ITEM001",
-          "fulfillment_id": "FULFILLMENT001",
+          "fulfillment_ids": "FULFILLMENT001",
           "quantity": {
             "selected": {
               "count": 2
@@ -298,12 +298,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },
