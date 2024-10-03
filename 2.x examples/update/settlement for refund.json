@@ -1,0 +1,76 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "action": "update",
+    "version": "2.x",
+    "bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "bpp_id": "sellerNP.com",
+    "bpp_uri": "https://sellerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M6",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "timestamp": "2023-06-03T11:00:00.000Z",
+    "ttl": "PT30M"
+  },
+  "message": {
+    "update_target": "payment",
+    "order": {
+      "id": "O1",
+      "fulfillments": [
+        {
+          "id": "R1",
+          "type": "Return"
+        }
+      ],
+      "payments": {
+        "tags": [
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_DETAILS"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_COUNTERPARTY"
+                },
+                "value": "seller-app"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_PHASE"
+                },
+                "value": "sale-amount"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TYPE"
+                },
+                "value": "upi"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_AMOUNT"
+                },
+                "value": "170.00"
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TIMESTAMP"
+                },
+                "value": "2023-06-03T11:00:00.000Z"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
