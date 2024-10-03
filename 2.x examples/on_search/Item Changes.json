@@ -1,0 +1,223 @@
+{
+    "context": {
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
+    },
+    "message": {
+        "catalog": {
+            "providers": [
+                {
+                    "id": "P1",
+                    "categories": [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Foodgrains"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "I1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:00.000Z"
+                            },
+                            "parent_item_id": "V1",
+                            "descriptor": {
+                                "name": "Plain Atta",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "short_desc": "Plain Atta",
+                                "long_desc": "Plain Atta",
+                                "images": [
+                                    {
+                                        "url": "https://sellerNP.com/symbol/np.png"
+                                    },
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "kilogram",
+                                        "value": "1"
+                                    }
+                                },
+                                "available": {
+                                    "count": 99
+                                },
+                                "maximum": {
+                                    "count": 99
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00",
+                                "maximum_value": "65.0"
+                            },
+                            "category_ids": [
+                                "CG1"
+                            ],
+                            "fulfillment_ids": [
+                                "F1"
+                            ],
+                            "location_id": [
+                                "L1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ORIGIN"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "COUNTRY"
+                                            },
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "IMAGE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "back_image"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "URL"
+                                            },
+                                            "value": "https://sellerNP.com/images/i1_back_image.png"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VEG_NONVEG"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "VEG"
+                                            },
+                                            "value": "yes"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SKU_PROPERTIES"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "RETURNABLE"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "CANCELLABLE"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "RETURN_WINDOW"
+                                            },
+                                            "value": "PT1H"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "SELLER_PICKUP_RETURN"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "TIME_TO_SHIP"
+                                            },
+                                            "value": "PT45M"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AVAILABLE_ON_COD"
+                                            },
+                                            "value": "false"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "CONTACT_DETAILS_CONSUMER_CARE"
+                                            },
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "STATUTORY_REQS_PACKAGED_COMMODITIES"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "MANUFACTURER_OR_PACKER_NAME"
+                                            },
+                                            "value": "ITC"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANUFACTURER_OR_PACKER_ADDRESS"
+                                            },
+                                            "value": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY"
+                                            },
+                                            "value": "Ashirwad Atta"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT"
+                                            },
+                                            "value": "01/2023"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "NET_QUANTITY_OR_MEASURE_OF_COMMODITY_IN_PKG"
+                                            },
+                                            "value": "1kg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

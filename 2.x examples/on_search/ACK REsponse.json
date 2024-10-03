@@ -1,0 +1,177 @@
+{
+    "context": {
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "bpp_id": "bpp_id_value",
+        "bpp_uri": "bpp_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK",
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "BAP_PROVIDER_LINK"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "PROVIDER_ID"
+                            },
+                            "value": "P1"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LOCATION_ID"
+                            },
+                            "value": "L1"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "SKU_COUNT"
+                            },
+                            "value": "1000"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK1_TYPE"
+                            },
+                            "value": "android"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK1_VALUE"
+                            },
+                            "value": "https://buyerNP.com/p1l1a"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK2_TYPE"
+                            },
+                            "value": "ios"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK2_VALUE"
+                            },
+                            "value": "https://buyerNP.com/p1l1i"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK3_TYPE"
+                            },
+                            "value": "web"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK3_VALUE"
+                            },
+                            "value": "https://buyerNP.com/p1l1w.htm"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "BAP_PROVIDER_LINK"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "PROVIDER_ID"
+                            },
+                            "value": "P1"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LOCATION_ID"
+                            },
+                            "value": "L2"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "SKU_COUNT"
+                            },
+                            "value": "1000"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK1_TYPE"
+                            },
+                            "value": "android"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK1_VALUE"
+                            },
+                            "value": "https://buyerNP.com/p1l1a"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK2_TYPE"
+                            },
+                            "value": "ios"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK2_VALUE"
+                            },
+                            "value": "https://buyerNP.com/p1l1i"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK3_TYPE"
+                            },
+                            "value": "web"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LINK3_VALUE"
+                            },
+                            "value": "https://buyerNP.com/p1l1w.htm"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "BAP_PROMOS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "CATEGORY"
+                            },
+                            "value": "Grocery"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "FROM"
+                            },
+                            "value": "2023-05-28T00:00:00.000Z"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TO"
+                            },
+                            "value": "2023-05-28T23:59:00.000Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

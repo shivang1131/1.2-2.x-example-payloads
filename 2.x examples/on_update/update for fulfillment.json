@@ -1,0 +1,817 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "action": "on_update",
+        "core_version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T1",
+        "message_id": "M10",
+        "location": {
+        "city": {
+            "code": "std:080"
+        },
+        "country": {
+            "code": "IND"
+        }
+        },
+        "timestamp": "2023-11-17T10:00:30.000Z"
+    },
+    "message": {
+        "order": {
+            "id": "O1",
+            "state": "In-progress",
+            "cancellation": {
+                "cancelled_by": "buyerNP.com",
+                "reason": {
+                    "id": "004"
+                }
+            },
+            "provider": {
+                "id": "P1",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_ids": [
+                        "F3"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    }
+                }
+            ],
+            "billing": {
+                "name": "ONDC buyer",
+                "city": {
+                    "code": "Bengaluru"
+                },
+                "state": {
+                    "code": "Karnataka"
+                },
+                "address": "my house or door or floor #|my building name or house #|my street name|IND|560037",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860",
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "AUDIT_TIMESTAMP"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "CREATED_AT"
+                                },
+                                "value": "2023-11-17T09:00:00.000Z"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPDATED_AT"
+                                },
+                                "value": "2023-11-17T09:00:00.000Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "F3",
+                    "type": "Buyer-Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up",
+                            "short_desc": "007"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "ABC Store"
+                            },
+                            "gps": "12.967555,77.749666",
+                            "city": "Bengaluru",
+                            "area_code": "560076",
+                            "state": "KA",
+                            "address": "name|building|locality"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-11-17T09:30:00.000Z",
+                                "end": "2023-11-17T10:00:00.000Z"
+                            },
+                            "timestamp": "2023-11-17T09:45:00.000Z"
+                        },
+                        "instructions": {
+                            "code": "1",
+                            "name": "ONDC Order",
+                            "short_desc": "value of PCC",
+                            "long_desc": "additional instructions for pickup",
+                            "images": [
+                                "link to downloadable shipping label (required for P2H2P)"
+                            ]
+                        },
+                        "authorization": {
+                            "type": "OTP",
+                            "token": "OTP code",
+                            "valid_from": "2023-11-17T09:00:00.000Z",
+                            "valid_to": "2023-11-17T10:00:00.000Z"
+                        },
+                        "contact": {
+                            "phone": "9886098860",
+                            "email": "nobody@nomail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.453544,77.928379",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560037",
+                            "address": "name|building|locality"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-11-17T10:30:00.000Z",
+                                "end": "2023-11-17T11:00:00.000Z"
+                            },
+                            "timestamp": "2023-11-17T11:00:00.000Z"
+                        },
+                        "instructions": {
+                            "code": "3",
+                            "name": "ONDC Order",
+                            "short_desc": "value of DCC",
+                            "long_desc": "additional instructions for delivery",
+                            "images": [
+                                "https://lsp.com/delivery_image.png",
+                                "https://lsp.com/rider_location.png"
+                            ]
+                        },
+                        "authorization": {
+                            "type": "OTP",
+                            "token": "OTP code",
+                            "valid_from": "2023-11-17T10:30:00.000Z",
+                            "valid_to": "2023-11-17T11:30:00.000Z"
+                        },
+                        "person": {
+                            "name": "name_of_person"
+                        },
+                        "contact": {
+                            "phone": "9886098860"
+                        }
+                    },
+                    "agent": {
+                        "name": "agent_name",
+                        "phone": "9886098860"
+                    },
+                    "vehicle": {
+                        "registration": "3LVJ945"
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CANCEL_REQUEST"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "RETRY_COUNT"
+                                    },
+                                    "value": "3"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "RTO_ID"
+                                    },
+                                    "value": "F3-RTO"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "REASON_ID"
+                                    },
+                                    "value": "013"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "INITIATED_BY"
+                                    },
+                                    "value": "lsp.com"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "IGM_REQUEST"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "Issue1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "FULFILLMENT_DELAY"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "STATE"
+                                    },
+                                    "value": "Order-picked-up"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "REASON_ID"
+                                    },
+                                    "value": "002"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TIMESTAMP"
+                                    },
+                                    "value": "2023-11-16T22:00:00.000Z"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "PRECANCEL_STATE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "FULFILLMENT_STATE"
+                                    },
+                                    "value": "Order-picked-up"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "UPDATED_AT"
+                                    },
+                                    "value": "2023-06-03T10:45:00.000Z"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "STATE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "READY_TO_SHIP"
+                                    },
+                                    "value": "yes"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "ROUTING"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "P2P"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TRACKING"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "GPS_ENABLED"
+                                    },
+                                    "value": "yes"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "URL_ENABLED"
+                                    },
+                                    "value": "no"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "URL"
+                                    },
+                                    "value": "https://sellerNP.com/ondc/tracking_url"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "REVERSEQC_OUTPUT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "P001"
+                                    },
+                                    "value": "Atta"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "P003"
+                                    },
+                                    "value": "1"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Q001"
+                                    },
+                                    "value": "Y"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BNP_RECEIVABLES_CLAIM"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "delivery"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CURRENCY"
+                                    },
+                                    "value": "INR"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "50.00"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BNP_DIFF_WEIGHT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "kilogram"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BNP_DIFF_LENGTH"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "centimeter"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BNP_DIFF_BREADTH"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "centimeter"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BNP_DIFF_HEIGHT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "centimeter"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": "LSP or Provider Name"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT60M"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "F3-RTO",
+                    "type": "RTO",
+                    "state": {
+                        "descriptor": {
+                            "code": "RTO-Initiated"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "timestamp": "2023-06-03T11:00:30.000Z"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "QUOTE_TRAIL"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "delivery"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "F1-RTO"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CURRENCY"
+                                    },
+                                    "value": "INR"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "50.00"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "QUOTE_TRAIL"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "item"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ID"
+                                    },
+                                    "value": "I1"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CURRENCY"
+                                    },
+                                    "value": "INR"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "-340.00"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "254"
+                },
+                "breakup": [
+                    {
+                        "title": "item:Atta",
+                        "price": {
+                            "currency": "INR",
+                            "value": "170"
+                        },
+                        "item": {
+                            "id": "I1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "170"
+                            },
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "9.00"
+                        },
+                        "item": {
+                            "id": "F1",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "id": "I1"
+                        }
+                    },
+                    {
+                        "title": "discount:Discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-10"
+                        },
+                        "item": {
+                            "id": "I1"
+                        }
+                    },
+                    {
+                        "title": "misc:Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payments": {
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "3937",
+                    "amount": "254"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "time": {
+                    "timestamp": "2023-11-17T09:30:00.000Z"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "BAP_TERMS"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "BUYER_FINDER_FEE_TYPE"
+                                },
+                                "value": "percent"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BUYER_FINDER_FEE_AMOUNT"
+                                },
+                                "value": "3"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "SETTLEMENT_DETAILS"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_COUNTERPARTY"
+                                },
+                                "value": "seller-app"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_PHASE"
+                                },
+                                "value": "sale-amount"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BENEFICIARY_NAME"
+                                },
+                                "value": "xxxxx"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_TYPE"
+                                },
+                                "value": "upi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "UPI_ADDRESS"
+                                },
+                                "value": "gft@oksbi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                                },
+                                "value": "XXXXXXXXXX"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_IFSC_CODE"
+                                },
+                                "value": "XXXXXXXXX"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BANK_NAME"
+                                },
+                                "value": "xxxx"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "BRANCH_NAME"
+                                },
+                                "value": "xxxx"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "SETTLEMENT_TERMS"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_BASIS"
+                                },
+                                "value": "delivery"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_WINDOW"
+                                },
+                                "value": "P1D"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "WITHHOLDING_AMOUNT"
+                                },
+                                "value": "10.00"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "SETTLEMENT_DETAILS"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_COUNTERPARTY"
+                                },
+                                "value": "buyer"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_PHASE"
+                                },
+                                "value": "refund"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_TYPE"
+                                },
+                                "value": "upi"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_AMOUNT"
+                                },
+                                "value": "1000"
+                            },
+                            {
+                                "descriptor": {
+                                    "code": "SETTLEMENT_TIMESTAMP"
+                                },
+                                "value": "2023-11-17T10:30:00.000Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://invoice_url",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-11-17T09:30:00.000Z",
+            "updated_at": "2023-11-17T10:00:30.000Z"
+        }
+    }
+}

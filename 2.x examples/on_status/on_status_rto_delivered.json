@@ -1,0 +1,508 @@
+{
+  "context": {
+      "domain": "ONDC:RET18",
+      "action": "on_status",
+      "version": "2.x",
+      "bap_id": "buyer-app-preprod-v2.ondc.org",
+      "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
+      "transaction_id": "5404e4d9-1c8f-431b-b690-80643d591913",
+      "message_id": "e2736b38-9291-4299-acda-95408ffe6f9b",
+      "timestamp": "2024-08-21T08:09:34.947Z",
+      "ttl": "PT30S",
+      "bpp_id": "seller.instastack.io",
+      "bpp_uri": "https://seller.instastack.io/pre-prod",
+      "location": {
+      "city": {
+        "code": "std:022"
+      },
+      "country": {
+        "code": "IND"
+      }
+    }
+  },
+  "message": {
+      "order": {
+          "id": "2024-08-21-287053",
+          "state": "Cancelled",
+          "provider": {
+              "id": "660416787fbbdb1492114977",
+              "locations": [
+                  {
+                      "id": "2c81a006-620f-46a2-9ebe-3b216fd21813"
+                  }
+              ]
+          },
+          "items": [
+              {
+                  "id": "660954fa7fbbdb14921149c5",
+                  "fulfillment_ids": [
+                      "default_fulfillment_1"
+                  ],
+                  "quantity": {
+                      "selected": {
+                          "count": 0
+                      }
+                  }
+              },
+              {
+                  "id": "660954fa7fbbdb14921149c5",
+                  "fulfillment_ids": [
+                      "default_RTO_1"
+                  ],
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  }
+              },
+              {
+                  "id": "660954fa7fbbdb14921149bd",
+                  "fulfillment_ids": [
+                      "default_fulfillment_1"
+                  ],
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  }
+              },
+              {
+                  "id": "660954fa7fbbdb14921149bd",
+                  "fulfillment_ids": [
+                      "default_RTO_1"
+                  ],
+                  "quantity": {
+                      "selected": {
+                          "count": 1
+                      }
+                  }
+              }
+          ],
+          "billing": {
+              "city": {
+                  "code": "Mumbai"
+              },
+              "state": {
+                  "code": "Maharashtra"
+              },
+              "address": "Ajinkya Shelar|Apartment Building|Hutatma Sitaram Ghadigaonkar Marg|IND|400034",
+              "phone": "9898989898",
+              "name": "Ajinkya Shelar",
+              "email": "ajinkya101@gmail.com",
+              "tags": [
+                  {
+                      "descriptor": {
+                          "code": "AUDIT_TIMESTAMP"
+                      },
+                      "list": [
+                          {
+                              "descriptor": {
+                                  "code": "CREATED_AT"
+                              },
+                              "value": "2024-08-21T07:59:29.607Z"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "UPDATED_AT"
+                              },
+                              "value": "2024-08-21T07:59:29.607Z"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "fulfillments": [
+              {
+                  "id": "default_fulfillment_1",
+                  "state": {
+                      "descriptor": {
+                          "code": "Cancelled"
+                      }
+                  },
+                  "type": "Delivery",
+                  "tracking": true,
+                  "stops": [
+                      {
+                          "type": "START",
+                          "location": {
+                              "id": "2c81a006-620f-46a2-9ebe-3b216fd21813",
+                              "descriptor": {
+                                  "name": "24x7 Wellness Forever - ANDHERI FOUR BUNGLOW"
+                              },
+                              "gps": "19.129076,72.825803",
+                              "city": "Mumbai",
+                              "state": "MH",
+                              "area_code": "400053",
+                              "address": "1 & 2,AMAR JYOTI CHS.BLDG.,,OPP.NAND KRIPA HALL,,FOUR BUNGLOWS,ANDHERI (W),MUMBAI,400053|ANDHERI FOUR BUNGLOW AMAR JYOTI CHS"
+                          },
+                          "time": {
+                              "range": {
+                                  "start": "2024-08-21T07:59:57.452Z",
+                                  "end": "2024-08-21T08:04:57.452Z"
+                              },
+                              "timestamp": "2024-08-21T08:01:04.937Z"
+                          },
+                          "contact": {
+                              "email": "ajinkya101@gmail.com",
+                              "phone": "9898989898"
+                          }
+                      },
+                      {
+                          "type": "END",
+                          "person": {
+                              "name": "Ajinkya Shelar"
+                          },
+                          "contact": {
+                              "email": "ajinkya101@gmail.com",
+                              "phone": "9898989898"
+                          },
+                          "location": {
+                              "gps": "18.972749082374275,72.81623843125999",
+                              "city": "Mumbai",
+                              "state": "Maharashtra",
+                              "country": "IND",
+                              "area_code": "400034",
+                              "address": "Ajinkya Shelar|Apartment Building|Hutatma Sitaram Ghadigaonkar Marg"
+                          },
+                          "time": {
+                              "range": {
+                                  "start": "2024-08-21T08:04:57.452Z",
+                                  "end": "2024-08-28T07:59:57.452Z"
+                              }
+                          }
+                      }
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "CANCEL_REQUEST"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "RETRY_COUNT"
+                                  },
+                                  "value": "3"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "RTO_ID"
+                                  },
+                                  "value": "default_RTO_1"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "REASON_ID"
+                                  },
+                                  "value": "011"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "INITIATED_BY"
+                                  },
+                                  "value": "seller.instastack.io"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "PRECANCEL_STATE"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "FULFILLMENT_STATE"
+                                  },
+                                  "value": "Out-for-delivery"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "UPDATED_AT"
+                                  },
+                                  "value": "2024-08-21T08:04:48.803Z"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "CONSIGNMENT"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "PROVIDER_NAME"
+                                  },
+                                  "value": "24x7 Wellness Forever - ANDHERI FOUR BUNGLOW"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "TAT"
+                                  },
+                                  "value": "P2D"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "id": "default_RTO_1",
+                  "type": "RTO",
+                  "state": {
+                      "descriptor": {
+                          "code": "RTO-Delivered"
+                      }
+                  },
+                  "stops": [
+                      {
+                          "type": "START",
+                          "time": {
+                              "timestamp": "2024-08-21T08:06:46.129Z"
+                          },
+                          "location": {
+                              "gps": "18.972749082374275,72.81623843125999",
+                              "city": "Mumbai",
+                              "state": "Maharashtra",
+                              "country": "IND",
+                              "area_code": "400034",
+                              "address": "Ajinkya Shelar|Apartment Building|Hutatma Sitaram Ghadigaonkar Marg"
+                          }
+                      },
+                      {
+                          "type": "END",
+                          "time": {
+                              "timestamp": "2024-08-21T08:09:34.924Z"
+                          },
+                          "location": {
+                              "id": "2c81a006-620f-46a2-9ebe-3b216fd21813",
+                              "descriptor": {
+                                  "name": "24x7 Wellness Forever - ANDHERI FOUR BUNGLOW"
+                              },
+                              "gps": "19.129076,72.825803",
+                              "city": "Mumbai",
+                              "state": "MH",
+                              "area_code": "400053",
+                              "address": "1 & 2,AMAR JYOTI CHS.BLDG.,,OPP.NAND KRIPA HALL,,FOUR BUNGLOWS,ANDHERI (W),MUMBAI,400053|ANDHERI FOUR BUNGLOW AMAR JYOTI CHS"
+                          }
+                      }
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "QUOTE_TRAIL"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "item"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "ID"
+                                  },
+                                  "value": "660954fa7fbbdb14921149c5"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "CURRENCY"
+                                  },
+                                  "value": "INR"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "VALUE"
+                                  },
+                                  "value": "-300"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "QUOTE_TRAIL"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "item"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "ID"
+                                  },
+                                  "value": "660954fa7fbbdb14921149bd"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "CURRENCY"
+                                  },
+                                  "value": "INR"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "VALUE"
+                                  },
+                                  "value": "-269"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "quote": {
+              "price": {
+                  "currency": "INR",
+                  "value": "0.00"
+              },
+              "breakup": [
+                  {
+                      "title": "item:Durex Flavoured Condoms, Wild Berry, 10 pcs",
+                      "price": {
+                          "currency": "INR",
+                          "value": "0.00"
+                      },
+                      "item": {
+                          "price": {
+                              "currency": "INR",
+                              "value": "150.00"
+                          },
+                          "id": "660954fa7fbbdb14921149c5",
+                          "quantity": {
+                              "selected": {
+                                  "count": 0
+                              }
+                          }
+                      }
+                  },
+                  {
+                      "title": "item:Durex Love Sex Air Condoms Ultra Thin, 10 pcs",
+                      "price": {
+                          "currency": "INR",
+                          "value": "0.00"
+                      },
+                      "item": {
+                          "price": {
+                              "currency": "INR",
+                              "value": "269.00"
+                          },
+                          "id": "660954fa7fbbdb14921149bd",
+                          "quantity": {
+                              "selected": {
+                                  "count": 0
+                              }
+                          }
+                      }
+                  },
+                  {
+                      "title": "delivery:Delivery charges",
+                      "item": {
+                          "id": "default_fulfillment_1"
+                      },
+                      "price": {
+                          "currency": "INR",
+                          "value": "0.00"
+                      }
+                  }
+              ],
+              "ttl": "P1D"
+          },
+          "payments": {
+              "url": "https://razorpay.com/",
+              "params": {
+                  "amount": "569.00",
+                  "currency": "INR",
+                  "transaction_id": "order_OnTXTgjiVRfcpG"
+              },
+              "status": "PAID",
+              "type": "ON-ORDER",
+              "collected_by": "BAP",
+              "tags": [
+                  {
+                      "descriptor": {
+                          "code": "BAP_TERMS"
+                      },
+                      "list": [
+                          {
+                              "descriptor": {
+                                  "code": "BUYER_FINDER_FEE_TYPE"
+                              },
+                              "value": "percent"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BUYER_FINDER_FEE_AMOUNT"
+                              },
+                              "value": "3"
+                          }
+                      ]
+                  },
+                  {
+                      "descriptor": {
+                          "code": "SETTLEMENT_DETAILS"
+                      },
+                      "list": [
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_COUNTERPARTY"
+                              },
+                              "value": "seller-app"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_PHASE"
+                              },
+                              "value": "sale-amount"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_TYPE"
+                              },
+                              "value": "neft"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BENEFICIARY_NAME"
+                              },
+                              "value": "Just Instastack Technology Private Limited"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "UPI_ADDRESS"
+                              },
+                              "value": ""
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                              },
+                              "value": "10136906710"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_IFSC_CODE"
+                              },
+                              "value": "IDFB0040101"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BANK_NAME"
+                              },
+                              "value": "IDFC First Bank"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BANK_BRANCH"
+                              },
+                              "value": "Naman Branch"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "created_at": "2024-08-21T07:59:57.312Z",
+          "updated_at": "2024-08-21T08:09:34.924Z"
+      }
+  }
+}

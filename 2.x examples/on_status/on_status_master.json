@@ -41,7 +41,7 @@
       "items": [
         {
           "id": "ITEM001",
-          "fulfillment_ids": "FULFILLMENT001",
+          "fulfillment_ids": ["FULFILLMENT001"],
           "quantity": {
             "selected": {
               "count": 2

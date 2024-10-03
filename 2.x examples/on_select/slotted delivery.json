@@ -1,0 +1,406 @@
+{
+    "context": {
+        "domain": "ONDC:RET11",
+        "action": "on_select",
+        "core_version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M2",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2023-06-03T08:30:30.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P1"
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "END",
+                            "time": {
+                                "range": {
+                                    "start": "2023-06-03T09:30:00.000Z",
+                                    "end": "2023-06-03T10:00:00.000Z"
+                                }
+                            }
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": "Provider Name"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Immediate Delivery"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT60M"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "F2",
+                    "type": "Delivery",
+                    "tracking": true,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "END",
+                            "time": {
+                                "range": {
+                                    "start": "2023-06-03T10:30:00.000Z",
+                                    "end": "2023-06-03T11:00:00.000Z"
+                                }
+                            }
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": "Provider Name"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Immediate Delivery"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT90M"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "F3",
+                    "type": "Self-Pickup",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "START",
+                            "time": {
+                                "range": {
+                                    "start": "2023-06-03T09:15:00.000Z",
+                                    "end": "2023-06-03T09:30:00.000Z"
+                                }
+                            }
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Takeaway"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT30M"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "F4",
+                    "type": "Self-Pickup",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "START",
+                            "time": {
+                                "range": {
+                                    "start": "2023-06-03T10:30:00.000Z",
+                                    "end": "2023-06-03T10:45:00.000Z"
+                                }
+                            }
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Kerbside"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT15M"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1335.00"
+                },
+                "breakup": [
+                    {
+                        "title": "item:Veg Pizza",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1200.00"
+                        },
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "available": {
+                                    "count": 99
+                                },
+                                "maximum": {
+                                    "count": 99
+                                },
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "600.00"
+                            }
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "9.00"
+                        },
+                        "item": {
+                            "id": "F1",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "quote"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "type"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30.00"
+                        },
+                        "item": {
+                            "id": "F2"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.40"
+                        },
+                        "item": {
+                            "id": "F2",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "quote"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "type"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F2"
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                            "id": "F3"
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F3"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "F4",
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                            "id": "F4"
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F4"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "60.00"
+                        },
+                        "item": {
+                            "id": "I1"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            }
+        }
+    }
+}

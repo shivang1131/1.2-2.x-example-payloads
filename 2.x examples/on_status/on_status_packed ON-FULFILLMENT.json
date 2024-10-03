@@ -1,0 +1,666 @@
+{
+  "context": {
+      "domain": "ONDC:RET11",
+      "action": "on_status",
+      "version": "2.x",
+      "bap_id": "buyer-app-preprod-v2.ondc.org",
+      "bap_uri": "https://buyer-app-preprod-v2.ondc.org/protocol/v1",
+      "bpp_id": "extweb.oyeti.com/ecommerce/ondc",
+      "bpp_uri": "https://extweb.oyeti.com/ecommerce/ondc/ecommerce/ondc",
+      "transaction_id": "1e2f6c47-fc7a-4362-820e-6fb2d4e322d2",
+      "message_id": "fab762fe-d2ef-46e4-9a8c-6f118a576194",
+      "timestamp": "2024-07-30T03:21:57.474Z",
+      "ttl": "PT30S",
+      "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    }
+  },
+  "message": {
+      "order": {
+          "provider": {
+              "id": "1039535",
+              "locations": [
+                  {
+                      "id": "378278"
+                  }
+              ]
+          },
+          "state": "In-progress",
+          "items": [
+              {
+                  "id": "13691127",
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  },
+                  "fulfillment_ids": [
+                      "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                  ]
+              },
+              {
+                  "id": "13691092",
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  },
+                  "fulfillment_ids": [
+                      "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "TYPE"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "item"
+                              }
+                          ]
+                      }
+                  ],
+                  "parent_item_id": "f1cP/IOvEOLM"
+              },
+              {
+                  "id": "936462-13691123",
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  },
+                  "fulfillment_ids": [
+                      "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "TYPE"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "customization"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "PARENT"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "ID"
+                                  },
+                                  "value": "Addon-13691092"
+                              }
+                          ]
+                      }
+                  ],
+                  "parent_item_id": "f1cP/IOvEOLM"
+              },
+              {
+                  "id": "936462-13691124",
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  },
+                  "fulfillment_ids": [
+                      "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "TYPE"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "customization"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "PARENT"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "ID"
+                                  },
+                                  "value": "Addon-13691092"
+                              }
+                          ]
+                      }
+                  ],
+                  "parent_item_id": "f1cP/IOvEOLM"
+              },
+              {
+                  "id": "Variant@988013",
+                  "quantity": {
+                      "selected": {
+                          "count": 2
+                      }
+                  },
+                  "fulfillment_ids": [
+                      "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "TYPE"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "customization"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "PARENT"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "ID"
+                                  },
+                                  "value": "Size-13691092"
+                              }
+                          ]
+                      }
+                  ],
+                  "parent_item_id": "f1cP/IOvEOLM"
+              }
+          ],
+          "billing": {
+              "name": "Gagan Reddy",
+              "city": {
+                  "code": "Bengaluru"
+              },
+              "state": {
+                  "code": "Karnataka"
+              },
+              "address": "name|building|locality|country|area_code",
+              "email": "venky5007.ror@gmail.com",
+              "phone": "8073415788",
+              "tags": [
+                  {
+                      "descriptor": {
+                          "code": "AUDIT_TIMESTAMP"
+                      },
+                      "list": [
+                          {
+                              "descriptor": {
+                                  "code": "CREATED_AT"
+                              },
+                              "value": "2024-07-30T03:21:18.057Z"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "UPDATED_AT"
+                              },
+                              "value": "2024-07-30T03:21:18.057Z"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "fulfillments": [
+              {
+                  "id": "02cac156-6a9b-419e-ae24-0b3259ca5fa0",
+                  "state": {
+                      "descriptor": {
+                          "code": "Packed"
+                      }
+                  },
+                  "type": "Delivery",
+                  "tracking": true,
+                  "stops": [
+                      {
+                          "type": "START",
+                          "location": {
+                              "id": "378278",
+                              "descriptor": {
+                                  "name": "Nandyal Chefs"
+                              },
+                              "city": "Bengaluru",
+                              "area_code": "560001",
+                              "state": "Karnataka",
+                              "address": "Name|Building|Locality",
+                              "gps": "12.9713073,77.5920295"
+                          },
+                          "contact": {
+                              "email": "venkateshmurapureddy@gmail.com",
+                              "phone": "7893847511"
+                          },
+                          "time": {
+                              "range": {
+                                  "start": "2024-07-30T03:31:42.530Z",
+                                  "end": "2024-07-30T03:46:42.530Z"
+                              }
+                          }
+                      },
+                      {
+                          "type": "END",
+                          "contact": {
+                              "phone": "8073415788"
+                          },
+                          "person": {
+                              "name": "Gagan Reddy"
+                          },
+                          "location": {
+                              "gps": "12.9753850802527,77.5887429714203",
+                              "city": "Bengaluru",
+                              "state": "Karnataka",
+                              "country": "IND",
+                              "area_code": "560001",
+                              "address": "Name|Building|Locality"
+                          },
+                          "time": {
+                              "range": {
+                                  "start": "2024-07-30T04:06:42.530Z",
+                                  "end": "2024-07-30T04:21:42.530Z"
+                              }
+                          }
+                      }
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "ROUTING"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "value": "P2P"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "TRACKING"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "GPS_ENABLED"
+                                  },
+                                  "value": "yes"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "URL_ENABLED"
+                                  },
+                                  "value": "yes"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "URL"
+                                  },
+                                  "value": "https://ref-logistics-app-preprod.ondc.org/order/status/66a85c2f98a0ad3c6bef2a70"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "CONSIGNMENT"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "PROVIDER_NAME"
+                                  },
+                                  "value": "ONDC Logistics Seller App by WITS"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "TAT"
+                                  },
+                                  "value": "PT60M"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "quote": {
+              "price": {
+                  "currency": "INR",
+                  "value": "1753.45"
+              },
+              "breakup": [
+                  {
+                      "title": "item:Nandyal Chicken Dum Biryani",
+                      "price": {
+                          "currency": "INR",
+                          "value": "700.0"
+                      },
+                      "item": {
+                          "price": {
+                              "currency": "INR",
+                              "value": "350.0"
+                          },
+                          "id": "13691127",
+                          "quantity": {
+                              "selected": {
+                                  "count": 2
+                              }
+                          }
+                      }
+                  },
+                  {
+                      "title": "item:Farm House Pizza",
+                      "price": {
+                          "currency": "INR",
+                          "value": "320.0"
+                      },
+                      "item": {
+                          "id": "13691092",
+                          "price": {
+                              "currency": "INR",
+                              "value": "160.0"
+                          },
+                          "quantity": {
+                              "selected": {
+                                  "count": 2
+                              }
+                          },
+                          "tags": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "TYPE"
+                                          },
+                                          "value": "item"
+                                      }
+                                  ]
+                              }
+                          ],
+                          "parent_item_id": "f1cP/IOvEOLM"
+                      }
+                  },
+                  {
+                      "title": "item:Crispy Capsicum",
+                      "price": {
+                          "currency": "INR",
+                          "value": "100.0"
+                      },
+                      "item": {
+                          "id": "936462-13691123",
+                          "price": {
+                              "currency": "INR",
+                              "value": "50.0"
+                          },
+                          "quantity": {
+                              "selected": {
+                                  "count": 2
+                              }
+                          },
+                          "tags": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "TYPE"
+                                          },
+                                          "value": "customization"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "PARENT"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "ID"
+                                          },
+                                          "value": "Addon-13691092"
+                                      }
+                                  ]
+                              }
+                          ],
+                          "parent_item_id": "f1cP/IOvEOLM"
+                      }
+                  },
+                  {
+                      "title": "item:Red Pepper",
+                      "price": {
+                          "currency": "INR",
+                          "value": "120.0"
+                      },
+                      "item": {
+                          "id": "936462-13691124",
+                          "price": {
+                              "currency": "INR",
+                              "value": "60.0"
+                          },
+                          "quantity": {
+                              "selected": {
+                                  "count": 2
+                              }
+                          },
+                          "tags": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "TYPE"
+                                          },
+                                          "value": "customization"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "PARENT"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "ID"
+                                          },
+                                          "value": "Addon-13691092"
+                                      }
+                                  ]
+                              }
+                          ],
+                          "parent_item_id": "f1cP/IOvEOLM"
+                      }
+                  },
+                  {
+                      "title": "item:Regular",
+                      "price": {
+                          "currency": "INR",
+                          "value": "340.0"
+                      },
+                      "item": {
+                          "id": "Variant@988013",
+                          "price": {
+                              "currency": "INR",
+                              "value": "170.0"
+                          },
+                          "quantity": {
+                              "selected": {
+                                  "count": 2
+                              }
+                          },
+                          "tags": [
+                              {
+                                  "descriptor": {
+                                      "code": "TYPE"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "TYPE"
+                                          },
+                                          "value": "customization"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "PARENT"
+                                  },
+                                  "list": [
+                                      {
+                                          "descriptor": {
+                                              "code": "ID"
+                                          },
+                                          "value": "Size-13691092"
+                                      }
+                                  ]
+                              }
+                          ],
+                          "parent_item_id": "f1cP/IOvEOLM"
+                      }
+                  },
+                  {
+                      "item": {
+                          "id": "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                      },
+                      "title": "delivery:Delivery charges",
+                      "price": {
+                          "currency": "INR",
+                          "value": "122.38"
+                      }
+                  },
+                  {
+                      "item": {
+                          "id": "02cac156-6a9b-419e-ae24-0b3259ca5fa0"
+                      },
+                      "title": "misc:Convenience Fee",
+                      "price": {
+                          "currency": "INR",
+                          "value": "51.07"
+                      }
+                  }
+              ],
+              "ttl": "P1D"
+          },
+          "payments": {
+              "type": "ON-FULFILLMENT",
+              "collected_by": "BPP",
+              "status": "NOT-PAID",
+              "tags": [
+                  {
+                      "descriptor": {
+                          "code": "BAP_TERMS"
+                      },
+                      "list": [
+                          {
+                              "descriptor": {
+                                  "code": "BUYER_FINDER_FEE_TYPE"
+                              },
+                              "value": "percent"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BUYER_FINDER_FEE_AMOUNT"
+                              },
+                              "value": "3"
+                          }
+                      ]
+                  },
+                  {
+                      "descriptor": {
+                          "code": "SETTLEMENT_DETAILS"
+                      },
+                      "list": [
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_COUNTERPARTY"
+                              },
+                              "value": "seller-app"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_PHASE"
+                              },
+                              "value": "sale-amount"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_TYPE"
+                              },
+                              "value": "upi"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BENEFICIARY_NAME"
+                              },
+                              "value": "xxxxx"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "UPI_ADDRESS"
+                              },
+                              "value": "gft@oksbi"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_BANK_ACCOUNT_NO"
+                              },
+                              "value": "XXXXXXXXXXXXXX"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "SETTLEMENT_IFSC_CODE"
+                              },
+                              "value": "XXXXXXXXXXXXXXX"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BANK_NAME"
+                              },
+                              "value": "XXXXXXXXXXXXXXX"
+                          },
+                          {
+                              "descriptor": {
+                                  "code": "BANK_BRANCH"
+                              },
+                              "value": "XXXXXXXXXXXXXXX"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "id": "2024-07-30-282895",
+          "created_at": "2024-07-30T03:21:40.788Z",
+          "updated_at": "2024-07-30T03:21:57.474Z"
+      }
+  }
+}

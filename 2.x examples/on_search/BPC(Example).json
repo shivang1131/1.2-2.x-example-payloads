@@ -1,0 +1,478 @@
+{
+    "context": {
+        "domain": "domain_value",
+        "action": "action_value",
+        "version": "2.x",
+        "bap_id": "bap_id_value",
+        "bap_uri": "bap_uri_value",
+        "transaction_id": "transaction_id_value",
+        "message_id": "message_id_value",
+        "location": {
+            "city": {
+                "code": "city_code_value"
+            },
+            "country": {
+                "code": "country_code_value"
+            }
+        },
+        "timestamp": "timestamp_value",
+        "ttl": "ttl_value"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Seller NP",
+                "short_desc": "Seller Marketplace",
+                "long_desc": "Seller Marketplace",
+                "images": [
+                    {
+                        "url": "https://sellerNP.com/symbol/np.png"
+                    },
+                    {
+                        "url": "https://sellerNP.com/images/np.png"
+                    }
+                ]
+            },
+            "providers": [
+                {
+                    "id": "P1",
+                    "time": {
+                        "label": "enable",
+                        "timestamp": "2023-06-03T08:00:30.000Z"
+                    },
+                    "fulfillments": [
+                        {
+                            "id": "F1",
+                            "type": "Delivery",
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "abc@xyz.com"
+                            }
+                        }
+                    ],
+                    "descriptor": {
+                        "name": "Store 1",
+                        "short_desc": "Store 1",
+                        "long_desc": "Store 1",
+                        "images": [
+                            {
+                                "url": "https://sellerNP.com/symbol/np.png"
+                            },
+                            {
+                                "url": "https://sellerNP.com/images/np.png"
+                            }
+                        ]
+                    },
+                    "ttl": "P1D",
+                    "locations": [
+                        {
+                            "id": "L1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:30.000Z",
+                                "days": "1,2,3,4,5,6,7",
+                                "schedule": {
+                                    "holidays": [
+                                        "2023-08-15"
+                                    ]
+                                },
+                                "range": {
+                                    "start": "1100",
+                                    "end": "2100"
+                                }
+                            },
+                            "gps": "12.967555,77.749666",
+                            "area_code": "560076",
+                            "city": "Bengaluru",
+                            "state": "KA",
+                            "address": "locality|street",
+                            "circle": {
+                                "gps": "12.967555,77.749666",
+                                "radius": {
+                                    "unit": "km",
+                                    "value": "3"
+                                }
+                            }
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "CG1",
+                            "descriptor": {
+                                "name": "Hair Care - Shampoo, Oils, Conditioners"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "I1",
+                            "time": {
+                                "label": "enable",
+                                "timestamp": "2023-06-03T07:30:00.000Z"
+                            },
+                            "descriptor": {
+                                "name": "Kesh King Ayurvedic Hair Oil",
+                                "code": "1:XXXXXXXXXXXXX",
+                                "short_desc": "Kesh King Ayurvedic Hair Oil",
+                                "long_desc": "Kesh King Ayurvedic Hair Oil",
+                                "images": [
+                                    {
+                                        "url": "https://sellerNP.com/symbol/np.png"
+                                    },
+                                    {
+                                        "url": "https://sellerNP.com/images/np.png"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "millilitre",
+                                        "value": "300"
+                                    }
+                                },
+                                "available": {
+                                    "count": 99
+                                },
+                                "maximum": {
+                                    "count": 99
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "251.00",
+                                "maximum_value": "349.0"
+                            },
+                            "category_ids": [
+                                "CG1"
+                            ],
+                            "fulfillment_ids": [
+                                "F1"
+                            ],
+                            "location_ids": [
+                                "L1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ORIGIN"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "COUNTRY"
+                                            },
+                                            "value": "IND"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "IMAGE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "type"
+                                            },
+                                            "value": "back_image"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "url"
+                                            },
+                                            "value": "https://sellerNP.com/images/i1_back_image.png"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "BRAND"
+                                            },
+                                            "value": "Kesh King"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "COLOUR"
+                                            },
+                                            "value": "#000000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "COLOUR_NAME"
+                                            },
+                                            "value": "Black"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "GENDER"
+                                            },
+                                            "value": "male"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "CONCERN"
+                                            },
+                                            "value": "tangled_hair"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "INGREDIENT"
+                                            },
+                                            "value": "neem"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "CONSCIOUS"
+                                            },
+                                            "value": "natural"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "PREFERENCE"
+                                            },
+                                            "value": "herbal"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "FORMULATION"
+                                            },
+                                            "value": "liquid"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "SKIN_TYPE"
+                                            },
+                                            "value": "normal"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SKU_PROPERTIES"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "RETURNABLE"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "CANCELLABLE"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "RETURN_WINDOW"
+                                            },
+                                            "value": "P7D"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "SELLER_PICKUP_RETURN"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "TIME_TO_SHIP"
+                                            },
+                                            "value": "P1D"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AVAILABLE_ON_COD"
+                                            },
+                                            "value": "false"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "CONTACT_DETAILS_CONSUMER_CARE"
+                                            },
+                                            "value": "Ramesh,info@keshking.com,18001035155"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "STATUTORY_REQS_PACKAGED_COMMODITIES"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "MANUFACTURER_OR_PACKER_NAME"
+                                            },
+                                            "value": "Emami Ltd"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANUFACTURER_OR_PACKER_ADDRESS"
+                                            },
+                                            "value": "Emami Ltd., 687 Anandapur, Kolkata 700107"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "COMMON_OR_GENERIC_NAME_OF_COMMODITY"
+                                            },
+                                            "value": "Hair Oil"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MONTH_YEAR_OF_MANUFACTURE_PACKING_IMPORT"
+                                            },
+                                            "value": "06/2023"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "creds": [
+                        {
+                            "id": "ESG-12345678",
+                            "descriptor": {
+                                "code": "ESG-12345678",
+                                "short_desc": "ESG-12345678-FF",
+                                "name": "Dun & Bradstreet ESG Badge No."
+                            },
+                            "verify_url": "https://abcd.dnb.com/verify?id=''ESG-12345678'",
+                            "valid_from": "2023-06-03T00:00:00:000Z",
+                            "valid_to": "2024-06-03T23:59:59:999Z",
+                            "url": "https://abcd.cdn.com/images/badge-img"
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ORDER_VALUE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "MIN_VALUE"
+                                    },
+                                    "value": "300.00"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TIMING"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "All"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
+                                    "value": "L1"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "DAY_FROM"
+                                    },
+                                    "value": "1"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "DAY_TO"
+                                    },
+                                    "value": "7"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TIME_FROM"
+                                    },
+                                    "value": "0000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TIME_TO"
+                                    },
+                                    "value": "2359"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "SERVICEABILITY"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "LOCATION"
+                                    },
+                                    "value": "L1"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Hair Care"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "12"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VAL"
+                                    },
+                                    "value": "IND"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "country"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "BPP_TERMS"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "NP_TYPE"
+                            },
+                            "value": "MSN"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "ACCEPT_BAP_TERMS"
+                            },
+                            "value": "Y"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "COLLECT_PAYMENT"
+                            },
+                            "value": "Y"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

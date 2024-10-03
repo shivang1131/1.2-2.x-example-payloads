@@ -1,0 +1,410 @@
+{
+    "context": {
+        "domain": "ONDC:RET11",
+        "action": "on_select",
+        "core_version": "1.2.0",
+        "bap_id": "buyerNP.com",
+        "bap_uri": "https://buyerNP.com/ondc",
+        "bpp_id": "sellerNP.com",
+        "bpp_uri": "https://sellerNP.com/ondc",
+        "transaction_id": "T2",
+        "message_id": "M2",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "timestamp": "2023-06-03T08:30:30.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P1"
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": "LSP or Provider Name"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Immediate Delivery"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT60M"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "F2",
+                    "type": "Self-Pickup",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": "Takeaway"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT15M"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "F3",
+                    "type": "Buyer-Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "WEIGHT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "kilogram"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "LENGTH"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "centimeter"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "BREADTH"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "centimeter"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "HEIGHT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "UNIT"
+                                    },
+                                    "value": "centimeter"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "VALUE"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "CONSIGNMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "PROVIDER_NAME"
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CATEGORY"
+                                    },
+                                    "value": ""
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "TAT"
+                                    },
+                                    "value": "PT15M"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1394.00"
+                },
+                "breakup": [
+                    {
+                        "title": "item:Veg Pizza",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1200.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 99
+                                },
+                                "maximum": {
+                                    "count": 99
+                                },
+                                "selected": {
+                                    "count": 2
+                                }
+                            },
+                            "id": "I1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "600.00"
+                            }
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "9.00"
+                        },
+                        "item": {
+                            "id": "F1",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F1"
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                            "id": "F2"
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F2"
+                        }
+                    },
+                    {
+                        "title": "delivery:Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                            "id": "F3",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "packing:Packing charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "id": "F3",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "misc:Convenience fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                            "id": "F3",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "QUOTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "fulfillment"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "tax:Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "60.00"
+                        },
+                        "item": {
+                            "id": "I1"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            }
+        }
+    }
+}
