@@ -1,0 +1,217 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "action": "on_select",
+    "version": "2.x",
+    "bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M2",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "timestamp": "2024-09-26T08:54:29.580Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": {
+          "id": "L1"
+        }
+      },
+      "items": [
+        {
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I1"
+        },
+        {
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I2"
+        },
+        {
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I3"
+        }
+      ],
+      "fulfillments": {
+        "id": "F1",
+        "state": {
+          "descriptor": {
+            "code": "Serviceable"
+          }
+        },
+        "tracking": false,
+        "type": "Delivery",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "TAT"
+                },
+                "value": "PT60M"
+              },
+              {
+                "descriptor": {
+                  "code": "CATEGORY"
+                },
+                "value": "Immediate Delivery"
+              },
+              {
+                "descriptor": {
+                  "code": "PROVIDER_NAME"
+                },
+                "value": "LSP or Provider Name"
+              }
+            ]
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "860"
+        },
+        "breakup": [
+          {
+            "item": {
+              "id": "I1",
+              "quantity": {
+                "selected": {
+                  "count": 2
+                },
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "170.00"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "340"
+            },
+            "title": "Atta"
+          },
+          {
+            "item": {
+              "id": "I2",
+              "quantity": {
+                "selected": {
+                  "count": 2
+                },
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "120.00"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "240"
+            },
+            "title": "Rice"
+          },
+          {
+            "item": {
+              "id": "I3",
+              "quantity": {
+                "selected": {
+                  "count": 2
+                },
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "140.00"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "TYPE"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "item"
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": "280"
+            },
+            "title": "Dal"
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}
