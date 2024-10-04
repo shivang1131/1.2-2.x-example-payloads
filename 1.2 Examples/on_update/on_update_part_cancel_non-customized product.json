@@ -164,27 +164,6 @@
                                     "value": "-170.00"
                                 }
                             ]
-                        },
-                        {
-                            "code": "quote_trail",
-                            "list": [
-                                {
-                                    "code": "type",
-                                    "value": "tax"
-                                },
-                                {
-                                    "code": "id",
-                                    "value": "I1"
-                                },
-                                {
-                                    "code": "currency",
-                                    "value": "INR"
-                                },
-                                {
-                                    "code": "value",
-                                    "value": "0.00"
-                                }
-                            ]
                         }
                     ]
                 }

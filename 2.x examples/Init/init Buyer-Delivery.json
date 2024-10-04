@@ -81,27 +81,12 @@
             "items": [
                 {
                     "id": "I1",
-                    "fulfillment_id": "F1",
+                    "fulfillment_ids": ["F1"],
                     "quantity": {
                         "selected": {
-                            "count": "2"
+                            "count": 2
                         }
-                    },
-                    "tags": [
-            {
-              "descriptor": {
-                "code": "TYPE"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                }
-              ]
-            }
-          ]
+                    }
                 }
             ],
             "offers": [

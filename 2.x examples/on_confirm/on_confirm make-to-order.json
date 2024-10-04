@@ -35,10 +35,10 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -72,10 +72,10 @@
         },
         {
           "id": "C1",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -109,10 +109,10 @@
         },
         {
           "id": "C7",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -146,10 +146,10 @@
         },
         {
           "id": "C14",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -183,10 +183,10 @@
         },
         {
           "id": "C16",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -220,10 +220,10 @@
         },
         {
           "id": "I1",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -257,10 +257,10 @@
         },
         {
           "id": "C2",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -294,10 +294,10 @@
         },
         {
           "id": "C7",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -331,10 +331,10 @@
         },
         {
           "id": "C14",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -368,10 +368,10 @@
         },
         {
           "id": "C15",
-          "fulfillment_id": "F1",
+          "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "1"
+              "count": 1
             }
           },
           "tags": [
@@ -1619,12 +1619,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },

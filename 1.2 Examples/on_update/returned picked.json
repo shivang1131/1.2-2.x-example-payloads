@@ -96,12 +96,6 @@
                                 "https://lsp.com/rider_location.png"
                             ]
                         },
-                        "authorization": {
-                            "type": "OTP",
-                            "token": "OTP code",
-                            "valid_from": "2023-06-03T12:00:00.000Z",
-                            "valid_to": "2023-06-03T14:00:00.000Z"
-                        },
                         "contact": {
                             "phone": "9886098860",
                             "email": "nobody@nomail.com"
@@ -122,21 +116,6 @@
                         },
                         "time": {
                             "timestamp": "2023-06-03T11:35:00.000Z"
-                        },
-                        "instructions": {
-                            "code": "3",
-                            "name": "Proof of delivery",
-                            "short_desc": "value of delivery code",
-                            "images": [
-                                "https://lsp.com/delivery_image.png",
-                                "https://lsp.com/rider_location.png"
-                            ]
-                        },
-                        "authorization": {
-                            "type": "OTP",
-                            "token": "OTP code",
-                            "valid_from": "2023-06-03T18:00:00.000Z",
-                            "valid_to": "2023-06-03T22:00:00.000Z"
                         },
                         "person": {
                             "name": "name_of_person"

@@ -60,12 +60,6 @@
             },
             {
               "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
-            },
-            {
-              "descriptor": {
                 "code": "EFFECTIVE_DATE"
               },
               "value": "effective_date_value"

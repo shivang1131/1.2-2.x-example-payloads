@@ -151,7 +151,7 @@
           "currency": "quote_price_currency",
           "value": "quote_price_value"
         },
-        "ttl": "quote_ttl_value",
+        "ttl": "PT30S",
         "breakup": [
           {
             "item": {

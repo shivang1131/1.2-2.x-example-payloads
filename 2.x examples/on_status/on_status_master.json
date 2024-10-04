@@ -17,7 +17,7 @@
         "code": "IND"
       }
     },
-    "timestamp": "2024-09-04T12:34:56Z",
+    "timestamp": "2024-09-04T12:34:560Z",
     "ttl": "PT30M"
   },
   "message": {
@@ -101,13 +101,13 @@
                 "descriptor": {
                   "code": "CREATED_AT"
                 },
-                "value": "2023-08-29T12:00:00Z"
+                "value": "2023-08-29T12:00:000Z"
               },
               {
                 "descriptor": {
                   "code": "UPDATED_AT"
                 },
-                "value": "2023-08-30T12:00:00Z"
+                "value": "2023-08-30T12:00:000Z"
               }
             ]
           }
@@ -160,10 +160,10 @@
               },
               "time": {
                 "range": {
-                  "start": "2023-08-29T10:00:00Z",
-                  "end": "2023-08-29T11:00:00Z"
+                  "start": "2023-08-29T10:00:000Z",
+                  "end": "2023-08-29T11:00:000Z"
                 },
-                "timestamp": "2023-08-29T10:30:00Z"
+                "timestamp": "2023-08-29T10:30:000Z"
               },
               "instructions": {
                 "code": "INST001",
@@ -174,8 +174,8 @@
                 "authorization": {
                   "type": "QR",
                   "token": "AUTH_TOKEN_123",
-                  "valid_from": "2023-08-29T09:00:00Z",
-                  "valid_to": "2023-08-29T12:00:00Z"
+                  "valid_from": "2023-08-29T09:00:000Z",
+                  "valid_to": "2023-08-29T12:00:000Z"
                 }
               },
               "contact": {
@@ -199,10 +199,10 @@
               },
               "time": {
                 "range": {
-                  "start": "2023-08-30T14:00:00Z",
-                  "end": "2023-08-30T16:00:00Z"
+                  "start": "2023-08-30T14:00:000Z",
+                  "end": "2023-08-30T16:00:000Z"
                 },
-                "timestamp": "2023-08-30T15:30:00Z"
+                "timestamp": "2023-08-30T15:30:000Z"
               },
               "instructions": {
                 "code": "INST002",
@@ -213,8 +213,8 @@
                 "authorization": {
                   "type": "QR",
                   "token": "AUTH_TOKEN_456",
-                  "valid_from": "2023-08-30T13:00:00Z",
-                  "valid_to": "2023-08-30T17:00:00Z"
+                  "valid_from": "2023-08-30T13:00:000Z",
+                  "valid_to": "2023-08-30T17:00:000Z"
                 }
               },
               "person": {
@@ -265,7 +265,7 @@
             }
           }
         ],
-        "ttl": "2023-09-01T12:00:00Z"
+        "ttl": "2023-09-01T12:00:000Z"
       },
       "payments": {
         "url": "https://paymentgateway.com/pay",
@@ -278,7 +278,7 @@
         "type": "prepaid",
         "collected_by": "payment_gateway",
         "time": {
-          "timestamp": "2023-08-29T12:15:00Z"
+          "timestamp": "2023-08-29T12:15:000Z"
         }
       },
       "tags": [
@@ -298,12 +298,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },

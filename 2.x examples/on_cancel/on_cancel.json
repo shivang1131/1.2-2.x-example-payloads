@@ -231,7 +231,7 @@
           },
           "title": "item"
         },
-        "ttl": "2024-09-14T08:00:00Z"
+        "ttl": "2024-09-14T08:00:000Z"
       },
       "payments": {
         "url": "https://ondc.transaction.com/payment",

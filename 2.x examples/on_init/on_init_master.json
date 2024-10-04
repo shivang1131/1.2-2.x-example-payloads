@@ -17,7 +17,7 @@
         "code": "IND"
       }
     },
-    "timestamp": "2024-09-04T12:34:56Z",
+    "timestamp": "2024-09-04T12:34:560Z",
     "ttl": "PT30M"
   },
   "message": {
@@ -165,12 +165,6 @@
                 "code": "BUYER_FINDER_FEE_PERCENTAGE"
               },
               "value": "3"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEE_AMOUNT"
-              },
-              "value": "100"
             }
           ]
         },
@@ -401,7 +395,7 @@
           "currency": "quote_total_price_currency",
           "value": "quote_total_price_value"
         },
-        "ttl": "quote_ttl_value"
+        "ttl": "PT30S"
       }
     }
   }

@@ -17,7 +17,7 @@
                 "code": "IND"
             }
         },
-        "timestamp": "2024-09-04T12:34:56Z",
+        "timestamp": "2024-09-04T12:34:560Z",
         "ttl": "PT30S"
     },
     "message": {
@@ -40,20 +40,20 @@
                                 "descriptor": {
                                     "code": "CREATED_AT"
                                 },
-                                "value": "2024-09-01T10:00:00Z"
+                                "value": "2024-09-01T10:00:000Z"
                             },
                             {
                                 "descriptor": {
                                     "code": "UPDATED_AT"
                                 },
-                                "value": "2024-09-03T15:00:00Z"
+                                "value": "2024-09-03T15:00:000Z"
                             }
                         ]
                     }
                 ],
                 "email": "customer@example.com",
                 "name": "John Doe",
-                "phone": "+919876543210",
+                "phone": "9876543210",
                 "tax_id": "IN1234567890"
             },
             "cancellation_terms": {
@@ -75,7 +75,7 @@
                 "stops": {
                     "type": "END",
                     "contact": {
-                        "phone": "+919876543210"
+                        "phone": "9876543210"
                     },
                     "location": {
                         "area_code": "560001",
@@ -98,24 +98,9 @@
                     "id": "I1",
                     "quantity": {
                         "selected": {
-                            "count": "2"
+                            "count": 2
                         }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "TYPE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "item"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "tags": [
@@ -153,13 +138,13 @@
                             "descriptor": {
                                 "code": "SETTLEMENT_BASIS"
                             },
-                            "value": "on_delivery"
+                            "value": "delivery"
                         },
                         {
                             "descriptor": {
                                 "code": "SETTLEMENT_WINDOW"
                             },
-                            "value": "7_days"
+                            "value": "P1D"
                         },
                         {
                             "descriptor": {
@@ -184,7 +169,7 @@
                             "descriptor": {
                                 "code": "DELAY_INTEREST"
                             },
-                            "value": "5%"
+                            "value": "5"
                         },
                         {
                             "descriptor": {
@@ -221,11 +206,7 @@
             ],
             "payments": {
                 "url": "https://ondc.transaction.com/payment",
-                "params": {
-                    "currency": "INR",
-                    "transaction_id": "3937",
-                    "amount": "1000.00"
-                },
+              
                 "status": "NOT-PAID",
                 "type": "ON-ORDER",
                 "collected_by": "BPP",
@@ -290,25 +271,6 @@
                                 "value": "xxxx"
                             }
                         ]
-                    },
-                    {
-                        "descriptor": {
-                            "code": "BPP_COLLECT"
-                        },
-                        "list": [
-                            {
-                                "descriptor": {
-                                    "code": "SUCCESS"
-                                },
-                                "value": "N"
-                            },
-                            {
-                                "descriptor": {
-                                    "code": "ERROR"
-                                },
-                                "value": ".."
-                            }
-                        ]
                     }
                 ]
             },
@@ -328,34 +290,19 @@
                             "id": "I1",
                             "quantity": {
                                 "selected": {
-                                    "count": "2"
+                                    "count": 2
                                 },
                                 "available": {
-                                    "count": "10"
+                                    "count": 10
                                 },
                                 "maximum": {
-                                    "count": "5"
+                                    "count": 5
                                 }
                             },
                             "price": {
                                 "currency": "INR",
                                 "value": "500"
-                            },
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "code": "TYPE"
-                                            },
-                                            "value": "item"
-                                        }
-                                    ]
-                                }
-                            ]
+                            }
                         },
                         "price": {
                             "currency": "INR",

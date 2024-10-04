@@ -79,16 +79,6 @@
                         "time": {
                             "timestamp": "2023-06-03T10:25:00.000Z"
                         },
-                        "instructions": {
-                            "code": "1",
-                            "name": "Proof of pickup",
-                            "short_desc": "pickup confirmation code",
-                            "long_desc": "detailed instructions for pickup",
-                            "images": [
-                                "https://lsp.com/pickup_image.png",
-                                "https://lsp.com/rider_location.png"
-                            ]
-                        },
                         "authorization": {
                             "type": "OTP",
                             "token": "OTP code",
@@ -124,12 +114,6 @@
                                 "https://lsp.com/delivery_image.png",
                                 "https://lsp.com/rider_location.png"
                             ]
-                        },
-                        "authorization": {
-                            "type": "OTP",
-                            "token": "OTP code",
-                            "valid_from": "2023-06-03T18:00:00.000Z",
-                            "valid_to": "2023-06-03T22:00:00.000Z"
                         },
                         "person": {
                             "name": "name_of_person"
