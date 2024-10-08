@@ -84,7 +84,7 @@
                     "fulfillment_ids": ["F1"],
                     "quantity": {
                         "selected": {
-                            "count": 2
+                            "count": "2"
                         }
                     },
                     "tags": [
@@ -108,7 +108,7 @@
                     "fulfillment_ids": ["F1"],
                     "quantity": {
                         "selected": {
-                            "count": 2
+                            "count": "2"
                         }
                     },
                     "tags": [
@@ -132,7 +132,7 @@
                     "fulfillment_ids": ["F1"],
                     "quantity": {
                         "selected": {
-                            "count": 2
+                            "count": "2"
                         }
                     },
                     "tags": [

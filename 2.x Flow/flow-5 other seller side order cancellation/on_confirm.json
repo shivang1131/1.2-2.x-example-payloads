@@ -1,14 +1,14 @@
 {
   "context": {
     "domain": "ONDC:RET10",
-    "action": "on_status",
+    "action": "on_confirm",
     "version": "2.x",
     "bap_id": "buyerNP.com",
     "bap_uri": "https://buyerNP.com/ondc",
     "bpp_id": "sellerNP.com",
     "bpp_uri": "https://sellerNP.com/ondc",
     "transaction_id": "T2",
-    "message_id": "M8",
+    "message_id": "M4",
     "location": {
       "city": {
         "code": "std:080"
@@ -17,13 +17,13 @@
         "code": "IND"
       }
     },
-    "timestamp": "2024-09-26T09:10:00.125Z",
+    "timestamp": "2024-09-26T08:57:30.321Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "id": "O1",
-      "status": "In-progress",
+      "status": "Accepted",
       "provider": {
         "id": "P1",
         "locations": [
@@ -38,7 +38,7 @@
           "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": "0"
+              "count": "2"
             }
           }
         },
@@ -54,15 +54,6 @@
         {
           "id": "I3",
           "fulfillment_ids": ["F1"],
-          "quantity": {
-            "selected": {
-              "count": "2"
-            }
-          }
-        },
-        {
-          "id": "I1",
-          "fulfillment_ids": ["C1"],
           "quantity": {
             "selected": {
               "count": "2"
@@ -103,171 +94,81 @@
           }
         ]
       },
-      "fulfillments": [
-        {
-          "id": "F1",
-          "type": "Delivery",
-          "tags": [
-            {
-              "descriptor": {
-                "code": "CONSIGNMENT"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TAT"
-                  },
-                  "value": "PT60M"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "TRACKING"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "GPS_ENABLED"
-                  },
-                  "value": "no"
-                },
-                {
-                  "descriptor": {
-                    "code": "URL_ENABLED"
-                  },
-                  "value": "no"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "ROUTING"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "P2P"
-                }
-              ]
-            }
-          ],
-          "state": {
+      "fulfillments": {
+        "id": "F1",
+        "type": "Delivery",
+        "tags": [
+          {
             "descriptor": {
-              "code": "Order-picked-up"
-            }
-          },
-          "tracking": false,
-          "stops": [
-            {
-              "type": "START",
-              "location": {
-                "id": "L1",
+              "code": "CONSIGNMENT"
+            },
+            "list": [
+              {
                 "descriptor": {
-                  "name": "XYZ Store"
+                  "code": "TAT"
                 },
-                "gps": "12.453544,77.928379",
-                "address": "my house or door or floor # | my building name or house # | my street name",
-                "city": "Bengaluru",
-                "state": "Karnataka",
-                "area_code": "560037"
+                "value": "PT60M"
+              }
+            ]
+          }
+        ],
+        "state": {
+          "descriptor": {
+            "code": "Pending"
+          }
+        },
+        "tracking": false,
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "id": "L1",
+              "descriptor": {
+                "name": "XYZ Store"
               },
-              "time": {
-                "timestamp": "2024-09-26T09:10:00.125Z"
-              },
-              "contact": {
-                "email": "nobody2@nomail.com",
-                "phone": "8860988609"
+              "gps": "12.453544,77.928379",
+              "address": "my house or door or floor # | my building name or house # | my street name",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "area_code": "560037"
+            },
+            "time": {
+              "range": {
+                "start": "2024-09-26T08:57:30.321Z",
+                "end": "2024-09-26T09:59:45.143Z"
               }
             },
-            {
-              "type": "END",
-              "location": {
-                "area_code": "560001",
-                "address": "45, High Street | 3rd Floor | Central Park",
-                "city": "Bengaluru",
-                "country": "India",
-                "state": "Karnataka",
-                "gps": "12.9715987,77.5945627"
-              },
-              "time": {
-                "range": {
-                  "start": "2024-09-26T10:57:30.321Z",
-                  "end": "2024-09-26T11:57:30.321Z"
-                }
-              },
-              "person": {
-                "name": "name_of_person"
-              },
-              "contact": {
-                "email": "nobody@nomail.com",
-                "phone": "9886098860"
-              }
-            }
-          ]
-        },
-        {
-          "id": "C1",
-          "type": "Cancel",
-          "state": {
-            "descriptor": {
-              "code": "Cancelled"
+            "contact": {
+              "email": "nobody2@nomail.com",
+              "phone": "8860988609"
             }
           },
-          "tags": [
-            {
-              "code": "cancel_request",
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "reason_id"
-                  },
-                  "value": "002"
-                },
-                {
-                  "descriptor": {
-                    "code": "initiated_by"
-                  },
-                  "value": "sellerNP.com"
-                }
-              ]
+          {
+            "type": "END",
+            "location": {
+              "area_code": "560001",
+              "address": "45, High Street | 3rd Floor | Central Park",
+              "city": "Bengaluru",
+              "country": "India",
+              "state": "Karnataka",
+              "gps": "12.9715987,77.5945627"
             },
-            {
-              "descriptor": {
-                "code": "QUOTE_TRAIL"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "CURRENCY"
-                  },
-                  "value": "INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "ID"
-                  },
-                  "value": "I1"
-                },
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                },
-                {
-                  "descriptor": {
-                    "code": "VALUE"
-                  },
-                  "value": "-340.00"
-                }
-              ]
+            "time": {
+              "range": {
+                "start": "2024-09-26T10:57:30.321Z",
+                "end": "2024-09-26T11:57:30.321Z"
+              }
+            },
+            "person": {
+              "name": "name_of_person"
+            },
+            "contact": {
+              "email": "nobody@nomail.com",
+              "phone": "9886098860"
             }
-          ]
-        }
-      ],
+          }
+        ]
+      },
       "quote": {
         "breakup": [
           {
@@ -275,7 +176,7 @@
               "id": "I1",
               "quantity": {
                 "selected": {
-                  "count": "0"
+                  "count": "2"
                 }
               },
               "price": {
@@ -300,7 +201,7 @@
             },
             "price": {
               "currency": "INR",
-              "value": "0"
+              "value": "340"
             },
             "title": "Atta"
           },
@@ -375,7 +276,7 @@
         ],
         "price": {
           "currency": "INR",
-          "value": "520.00"
+          "value": "860"
         },
         "ttl": "P1D"
       },
@@ -448,43 +349,6 @@
                   "code": "BRANCH_NAME"
                 },
                 "value": "xxxx"
-              }
-            ]
-          },
-          {
-            "descriptor": {
-              "code": "SETTLEMENT_DETAILS"
-            },
-            "list": [
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_COUNTERPARTY"
-                },
-                "value": "seller-app"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_PHASE"
-                },
-                "value": "sale-amount"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_TYPE"
-                },
-                "value": "upi"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_AMOUNT"
-                },
-                "value": "340.00"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_TIMESTAMP"
-                },
-                "value": "2024-09-26T09:02:31.148Z"
               }
             ]
           }
@@ -617,14 +481,8 @@
           }
         }
       },
-      "documents": [
-        {
-          "url": "https://invoice_url",
-          "label": "Invoice"
-        }
-      ],
       "created_at": "2024-09-26T08:57:27.147Z",
-      "updated_at": "2024-09-26T09:00:30.148Z"
+      "updated_at": "2024-09-26T08:57:30.321Z"
     }
   }
 }
