@@ -8,7 +8,7 @@
     "bpp_id": "sellerNP.com",
     "bpp_uri": "https://sellerNP.com/ondc",
     "transaction_id": "T2",
-    "message_id": "M8",
+    "message_id": "M5",
     "location": {
       "city": {
         "code": "std:080"
@@ -17,13 +17,13 @@
         "code": "IND"
       }
     },
-    "timestamp": "2024-09-26T09:06:58.578Z",
+    "timestamp": "2024-09-26T09:05:58.578Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "id": "O1",
-      "status": "In-progress",
+      "status": "Accepted",
       "provider": {
         "id": "P1",
         "locations": [
@@ -38,7 +38,7 @@
           "fulfillment_ids": ["F1"],
           "quantity": {
             "selected": {
-              "count": 0
+              "count": 2
             }
           }
         },
@@ -54,15 +54,6 @@
         {
           "id": "I3",
           "fulfillment_ids": ["F1"],
-          "quantity": {
-            "selected": {
-              "count": 2
-            }
-          }
-        },
-        {
-          "id": "I1",
-          "fulfillment_ids": ["C1"],
           "quantity": {
             "selected": {
               "count": 2
@@ -120,43 +111,11 @@
                   "value": "PT60M"
                 }
               ]
-            },
-            {
-              "descriptor": {
-                "code": "TRACKING"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "GPS_ENABLED"
-                  },
-                  "value": "no"
-                },
-                {
-                  "descriptor": {
-                    "code": "URL_ENABLED"
-                  },
-                  "value": "no"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "ROUTING"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "P2P"
-                }
-              ]
             }
           ],
           "state": {
             "descriptor": {
-              "code": "Packed"
+              "code": "Pending"
             }
           },
           "tracking": false,
@@ -204,65 +163,6 @@
               }
             }
           ]
-        },
-        {
-          "id": "C1",
-          "type": "Cancel",
-          "state": {
-            "descriptor": {
-              "code": "Cancelled"
-            }
-          },
-          "tags": [
-            {
-              "code": "cancel_request",
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "reason_id"
-                  },
-                  "value": "002"
-                },
-                {
-                  "descriptor": {
-                    "code": "initiated_by"
-                  },
-                  "value": "sellerNP.com"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "QUOTE_TRAIL"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "CURRENCY"
-                  },
-                  "value": "INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "ID"
-                  },
-                  "value": "I1"
-                },
-                {
-                  "descriptor": {
-                    "code": "TYPE"
-                  },
-                  "value": "ITEM"
-                },
-                {
-                  "descriptor": {
-                    "code": "VALUE"
-                  },
-                  "value": "-340.00"
-                }
-              ]
-            }
-          ]
         }
       ],
       "quote": {
@@ -272,7 +172,7 @@
               "id": "I1",
               "quantity": {
                 "selected": {
-                  "count": 0
+                  "count": 2
                 }
               },
               "price": {
@@ -372,7 +272,7 @@
         ],
         "price": {
           "currency": "INR",
-          "value": "520.00"
+          "value": "860.00"
         },
         "ttl": "P1D"
       },
@@ -445,43 +345,6 @@
                   "code": "BRANCH_NAME"
                 },
                 "value": "xxxx"
-              }
-            ]
-          },
-          {
-            "descriptor": {
-              "code": "SETTLEMENT_DETAILS"
-            },
-            "list": [
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_COUNTERPARTY"
-                },
-                "value": "seller-app"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_PHASE"
-                },
-                "value": "sale-amount"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_TYPE"
-                },
-                "value": "upi"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_AMOUNT"
-                },
-                "value": "340.00"
-              },
-              {
-                "descriptor": {
-                  "code": "SETTLEMENT_TIMESTAMP"
-                },
-                "value": "2024-09-26T09:02:31.148Z"
               }
             ]
           }
