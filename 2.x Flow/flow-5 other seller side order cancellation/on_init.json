@@ -98,7 +98,7 @@
           "id": "I1",
           "quantity": {
             "selected": {
-              "count": 2
+              "count": "2"
             }
           }
         },
@@ -109,7 +109,7 @@
           "id": "I2",
           "quantity": {
             "selected": {
-              "count": 2
+              "count": "2"
             }
           }
         },
@@ -120,7 +120,7 @@
           "id": "I3",
           "quantity": {
             "selected": {
-              "count": 2
+              "count": "2"
             }
           }
         }
@@ -302,7 +302,7 @@
               "id": "I1",
               "quantity": {
                 "selected": {
-                  "count": 2
+                  "count": "2"
                 }
               },
               "price": {
@@ -336,7 +336,7 @@
               "id": "I2",
               "quantity": {
                 "selected": {
-                  "count": 2
+                  "count": "2"
                 }
               },
               "price": {
@@ -370,7 +370,7 @@
               "id": "I3",
               "quantity": {
                 "selected": {
-                  "count": 2
+                  "count": "2"
                 }
               },
               "price": {
